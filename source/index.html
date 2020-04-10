@@ -10,7 +10,7 @@
     <div class="nav-box container">
       <nav class="nav wrapper">
         <div class="logo">
-          <span>Логотип пинк</span>
+          <strong class="visually-hidden">Логотип пинк</strong>
         </div>
         <ul class="nav-list">
           <li class="nav-list__item">
@@ -53,8 +53,8 @@
     </div>
   </header>
   <main class="main container">
-    <h2 class="main__caption wrapper">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-    <div class="promo container">
+    <section class="promo container">
+      <h2 class="main__caption wrapper">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
       <ul class="promo-list wrapper">
         <li class="promo-list__item">
           <img src="" alt="" class="promo-list__img">
@@ -81,9 +81,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <h2 class="visually-hidden">Отзывы о нас</h2>
-    <div class="rewiew wrapper">
+    </section>
+    <section class="rewiew wrapper">
+      <h2 class="visually-hidden">Отзывы о нас</h2>
       <blockquote class="rewiew__item">
         <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         <cite class="rewiew__autor">
@@ -98,10 +98,11 @@
           <span class="rewiew__autor-info">25 лет, водитель трамвая</span>
         </cite>
       </blockquote>      
-    </div>
+    </section>
     <div class="price-table-box container">
+      <h2 class="visually-hidden">Таблица c тарифами приложения Pink</h2>
       <table class="price-table wrapper">
-        <caption>Таблица тарифов Приложения Pink</caption>
+        <caption class="visually-hidden">Таблица тарифов приложения Pink</caption>
         <tr class="price-table__tr">
           <th class="price-table__th"></th>
           <th class="price-table__th">База<span class="price-table__price">1,99 USD</span></th>
@@ -129,5 +130,51 @@
       </table>
     </div>
   </main>
+  <footer class="footer container">
+    <section class="location">
+      <h2 class="location__caption">Остались вопросы? Свяжитесь с нами!</h2>
+      <div class="contacts wrapper">
+        <p class="contacts__text">
+          Звоните:
+          <a class="contacts__link" href="tel:+79887646888">+7(988)764-68-88</a>
+        </p>
+        <p class="contacts__text">
+          Приезжайте в гости:
+          <a class="contacts__link" href="#">г. Ставрополь, ул. Дзержинского 176</a>
+        </p>      
+        <p class="contacts__text">
+          Пишите:
+          <a class="contacts__link" href="mailto:gurovdmitriy1991@gmail.com">г. gurovdmitriy1991@gmail.com</a>
+        </p>     
+      </div>
+      <div class="map"></div>    
+    </section>
+    <section class="copyright wrapper">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <div class="copyright__logo logo">
+        <strong class="visually-hidden">Логотип пинк</strong>
+      </div>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <strong>Разработано<a class="copyright__link" href="#">
+        <span class="visually-hidden">HtmlAcademy</span></a>
+      </strong>
+    </section>
+  </footer>
 </body>
 </html>
