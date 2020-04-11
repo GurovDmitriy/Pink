@@ -7,13 +7,13 @@
 <body>
   <header class="header container">
     <h1 class="visually-hidden">Фотографии пользователей</h1>
-    <div class="nav-box container header__nav-box">
-      <nav class="nav wrapper nav-box__nav">
+    <div class="container header__nav-box">
+      <nav class="wrapper header__nav">
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
-        <a class="logo nav__logo" href="index.html">
+        <a class="logo header__logo" href="index.html">
           <strong class="visually-hidden">Логотип пинк</strong>
         </a>
-        <ul class="menu nav__menu">
+        <ul class="menu header__menu">
           <li class="menu__item">
             <a class="menu__link" href="index.html">Главная</a>
           </li>
@@ -32,12 +32,12 @@
     <span class="caption header__caption">Фотографии пользователей</span>
   </header>
   <main class="main container">
-    <h2 class="caption-min main__caption wrapper">
+    <h2 class="caption-min main__caption-gallery wrapper">
       Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
     </h2>
-    <div class="panorama">
-      <a class="btn panorama__btn" href="#">Панорама дня</a>
-      <figure class="post panorama__post">
+    <div class="main__panorama">
+      <a class="btn main__panorama-btn" href="#">Панорама дня</a>
+      <figure class="post main__post">
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
@@ -48,9 +48,9 @@
         </figcaption>
       </figure>
     </div>
-    <section class="gallery wrapper">
+    <section class="wrapper main__gallery">
       <h2 class="visually-hidden">Галлерея</h2>
-      <figure class="post gallery__post">
+      <figure class="post main-gallery-post">
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
@@ -60,7 +60,7 @@
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">356</span></span>
         </figcaption>
       </figure>
-      <figure class="post gallery__post">
+      <figure class="post main-gallery-post">
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
@@ -70,7 +70,7 @@
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">666</span></span>
         </figcaption>
       </figure>
-      <figure class="post gallery__post">
+      <figure class="post main-gallery-post">
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
@@ -80,7 +80,7 @@
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">215</span></span>
         </figcaption>
       </figure>  
-      <figure class="post gallery__post">
+      <figure class="post main-gallery-post">
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
@@ -90,7 +90,7 @@
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">4</span></span>
         </figcaption>
       </figure>
-      <figure class="post gallery__post">
+      <figure class="post main-gallery-post">
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
@@ -100,7 +100,7 @@
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">150</span></span>
         </figcaption>
       </figure>
-      <figure class="post gallery__post">
+      <figure class="post main-gallery-post">
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
@@ -111,8 +111,8 @@
         </figcaption>
       </figure>                   
     </section>
-    <h2 class="caption-min wrapper upload-photo__caption ">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-    <form class="form-upload wrapper">
+    <h2 class="caption-min wrapper main__upload-caption">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+    <form class="form-upload wrapper main__form-upload">
       <div class="form-upload__photo">
         <img class="form-upload__img" src="">
       </div>
@@ -134,12 +134,12 @@
     </form>
   </main>
   <footer class="footer container">
-    <section class="copyright wrapper footer__copyright">
+    <section class="wrapper footer__copyright">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a class="logo copyright__logo" href="index.html">
+      <a class="logo footer__logo" title="Вы уже здесь">
         <strong class="visually-hidden">Логотип пинк</strong>
       </a>
-      <ul class="icon-list copyright__icon-list">
+      <ul class="icon-list footer__icon-list">
         <li class="icon-list__item">
           <a class="icon-list-link" href="#">
             <span class="visually-hidden">Твиттер</span></a>
@@ -155,7 +155,7 @@
           </a>
         </li>
       </ul>
-      <strong class="copyright__text">Разработано<a class="copyright__link" href="#">
+      <strong class="footer__copyright-text">Разработано<a class="footer__copyright-link" href="#">
         <span class="visually-hidden">HtmlAcademy</span></a>
       </strong>
     </section>
