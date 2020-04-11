@@ -41,7 +41,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Анна &#40<time class="post__time" datetime="2020-04-11T16:20">5 минут назад</time>&#41
+            Анна <time class="post__time" datetime="2020-04-11T16:20">&#40;5 минут назад&#41;</time>
           </span>
             Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">215</span></span>
@@ -49,11 +49,12 @@
       </figure>
     </div>
     <section class="gallery wrapper">
+      <h2 class="visually-hidden">Галлерея</h2>
       <figure class="post gallery__post">
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Левон &#40<time class="post__time" datetime="2020-04-11T16:20">5 часов назад</time>&#41
+            Левон <time class="post__time" datetime="2020-04-11T16:20">&#40;5 часов назад&#41;</time>
           </span>
             Вчера он на луну летал, сегодня в руки к нам попал.
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">356</span></span>
@@ -63,7 +64,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Антон &#40<time class="post__time" datetime="2020-04-11T16:20">12 часов назад</time>&#41
+            Антон <time class="post__time" datetime="2020-04-11T16:20">&#40;12 часов назад&#41;</time>
           </span>
             Соседи будут рады!
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">666</span></span>
@@ -73,7 +74,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Борис &#40<time class="post__time" datetime="2020-04-11T16:20">20 часов назад</time>&#41
+            Борис <time class="post__time" datetime="2020-04-11T16:20">&#40;20 часов назад&#41;</time>
           </span>
             Здесь могла быть ваша цитата о высоком и вечном.
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">215</span></span>
@@ -83,7 +84,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Сергей &#40<time class="post__time" datetime="2020-04-11T16:20">25 часов назад</time>&#41
+            Сергей <time class="post__time" datetime="2020-04-11T16:20">&#40;25 часов назад&#41;</time>
           </span>
             Самая кубанская в мире!
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">4</span></span>
@@ -93,7 +94,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Максим &#40<time class="post__time" datetime="2020-04-11T16:20">40 часов назад</time>&#41
+            Максим <time class="post__time" datetime="2020-04-11T16:20">&#40;40 часов назад&#41;</time>
           </span>
             Где снег-то?
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">150</span></span>
@@ -103,7 +104,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Надежда &#40<time class="post__time" datetime="2020-04-11T16:20">45 часов назад</time>&#41
+            Надежда <time class="post__time" datetime="2020-04-11T16:20">&#40;45 часов назад&#41;</time>
           </span>
             Всем GM и взаимные лайки!
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">2560</span></span>
@@ -112,23 +113,21 @@
     </section>
     <h2 class="caption-min wrapper upload-photo__caption ">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
     <form class="form-upload wrapper">
-      <img class="form-upload__img" src="">
+      <div class="form-upload__photo">
+        <img class="form-upload__img" src="">
+      </div>
       <div class="form-upload__filter">
-        <label class="visually-hidden" for="clip-field">Обрезать фото</label>
-        <input class="visually-hidden" type="range" name="clip" id="clip-field">
         <div class="custom-range form-upload__custom-range">
           <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
         </div>
-        <label class="visually-hidden" for="clip-field">Заливка фото</label>
-        <input class="visually-hidden" type="range" name="clip" id="clip-field">
         <div class="custom-range form-upload__custom-range">
           <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
         </div>        
-        <label class="visually-hidden" for="clip-field">Яркость фото</label>
-        <input class="visually-hidden" type="range" name="clip" id="clip-field">
         <div class="custom-range form-upload__custom-range">
           <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
-        </div>        
+        </div>
+        <label class="visually-hidden" for="upload-field">Загрузить фотографии</label>
+        <input class="visually-hidden" id="upload-field" type="file" name="upload" accept="image/*">        
         <button class="btn form-upload__btn" type="submit">Запостить</button>
         <button class="btn form-upload__btn form-upload__btn--disabled" type="submit">Отмена</button>
       </div>
