@@ -10,18 +10,18 @@
     <div class="nav-box container header__nav-box">
       <nav class="nav wrapper nav-box__nav">
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
-        <div class="logo nav__logo">
+        <a class="logo nav__logo" href="index.html">
           <strong class="visually-hidden">Логотип пинк</strong>
-        </div>
+        </a>
         <ul class="menu nav__menu">
           <li class="menu__item">
-            <a class="menu__link" href="#">Главная</a>
+            <a class="menu__link" href="index.html">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Фотографии</a>
+            <a class="menu__link" title="Вы уже здесь">Фотографии</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Конкурс</a>
+            <a class="menu__link" href="form.html">Конкурс</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Html Academy</a>
@@ -41,7 +41,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Анна (<time class="post__time" datetime="2020-04-11T16:20">5 минут назад</time>)
+            Анна &#40<time class="post__time" datetime="2020-04-11T16:20">5 минут назад</time>&#41
           </span>
             Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">215</span></span>
@@ -53,7 +53,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Левон (<time class="post__time" datetime="2020-04-11T16:20">5 часов назад</time>)
+            Левон &#40<time class="post__time" datetime="2020-04-11T16:20">5 часов назад</time>&#41
           </span>
             Вчера он на луну летал, сегодня в руки к нам попал.
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">356</span></span>
@@ -63,7 +63,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Антон (<time class="post__time" datetime="2020-04-11T16:20">12 часов назад</time>)
+            Антон &#40<time class="post__time" datetime="2020-04-11T16:20">12 часов назад</time>&#41
           </span>
             Соседи будут рады!
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">666</span></span>
@@ -73,7 +73,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Борис (<time class="post__time" datetime="2020-04-11T16:20">20 часов назад</time>)
+            Борис &#40<time class="post__time" datetime="2020-04-11T16:20">20 часов назад</time>&#41
           </span>
             Здесь могла быть ваша цитата о высоком и вечном.
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">215</span></span>
@@ -83,7 +83,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Сергей (<time class="post__time" datetime="2020-04-11T16:20">25 часов назад</time>)
+            Сергей &#40<time class="post__time" datetime="2020-04-11T16:20">25 часов назад</time>&#41
           </span>
             Самая кубанская в мире!
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">4</span></span>
@@ -93,7 +93,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Максим (<time class="post__time" datetime="2020-04-11T16:20">40 часов назад</time>)
+            Максим &#40<time class="post__time" datetime="2020-04-11T16:20">40 часов назад</time>&#41
           </span>
             Где снег-то?
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">150</span></span>
@@ -103,7 +103,7 @@
         <img class="post__img" src="">
         <figcaption class="post__caption">
           <span class="post__autor">
-            Надежда (<time class="post__time" datetime="2020-04-11T16:20">45 часов назад</time>)
+            Надежда &#40<time class="post__time" datetime="2020-04-11T16:20">45 часов назад</time>&#41
           </span>
             Всем GM и взаимные лайки!
             <span class="like-count post__like-count">Нравится: <span class="like-count__number">2560</span></span>
@@ -116,10 +116,19 @@
       <div class="form-upload__filter">
         <label class="visually-hidden" for="clip-field">Обрезать фото</label>
         <input class="visually-hidden" type="range" name="clip" id="clip-field">
+        <div class="custom-range form-upload__custom-range">
+          <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
+        </div>
         <label class="visually-hidden" for="clip-field">Заливка фото</label>
         <input class="visually-hidden" type="range" name="clip" id="clip-field">
+        <div class="custom-range form-upload__custom-range">
+          <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
+        </div>        
         <label class="visually-hidden" for="clip-field">Яркость фото</label>
         <input class="visually-hidden" type="range" name="clip" id="clip-field">
+        <div class="custom-range form-upload__custom-range">
+          <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
+        </div>        
         <button class="btn form-upload__btn" type="submit">Запостить</button>
         <button class="btn form-upload__btn form-upload__btn--disabled" type="submit">Отмена</button>
       </div>
@@ -128,9 +137,9 @@
   <footer class="footer container">
     <section class="copyright wrapper footer__copyright">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <div class="logo copyright__logo ">
+      <a class="logo copyright__logo" href="index.html">
         <strong class="visually-hidden">Логотип пинк</strong>
-      </div>
+      </a>
       <ul class="icon-list copyright__icon-list">
         <li class="icon-list__item">
           <a class="icon-list-link" href="#">
