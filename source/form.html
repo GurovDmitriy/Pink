@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Pink - Форма регистрации</title>
+</head>
+<body>
+  <header class="header container">
+    <h1 class="visually-hidden">Форма регистрации</h1>
+    <div class="nav-box container header__nav-box">
+      <nav class="nav wrapper nav-box__nav">
+        <h2 class="visually-hidden">Главная навигация по сайту</h2>
+        <a class="logo nav__logo" href="index.html">
+          <strong class="visually-hidden">Логотип пинк</strong>
+        </a>
+        <ul class="menu nav__menu">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" title="Вы уже здесь">Конкурс</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <span class="caption header__caption">Конкурс на самое безбашенное путешествие с Пинк</span>
+  </header>
+  <main class="main container">
+    <h2 class="caption-min main__caption wrapper">
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+    </h2>
+    <form class="form wrapper">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">
+          <span class="visually-hidden">Укажите как вас зовут</span>
+        </legend>
+        <label class="form__label" for="soname-field">Фамилия:</label>
+        <input class="form__input form__input-text" id="soname-field" type="text" name="soname" placeholder="Укажите Фамилию&lowast;" required>
+        <label class="form__label" for="name-field">Имя:</label>
+        <input class="form__input form__input-text" id="name-field" type="text" name="name" placeholder="Введите ваше имя&lowast;" required>
+        <label lass="form__label" for="patronymic-field">Отчество:</label>
+        <input class="form__input form__input-text" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">               
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">
+          С каким приложением путешевствовали?
+        </legend>
+        <input class="form__input form__input-radio" id="ios-field" type="radio" name="app" value="ios" >
+        <label class="form__label" for="ios-field">Pink для iOS</label>
+        <input class="form__input form__input-radio" id="android-field" type="radio" name="app" value="android">
+        <label class="form__label" for="android-field">Pink для Android</label>
+        <input class="form__input form__input-radio" type="radio" name="app" value="windows" id="windows-field">
+        <label class="form__label" for="windows-field">Windows Phone</label>   
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Контактная информация</legend>
+        <input class="form__tel" id="tel-field" type="tel" name="tel" placeholder="Номер, пожалуйста">
+        <label class="form__label" for="tel-field">Номер телефона</label>
+        <input class="form__email" id="email-field" type="email" name="email" placeholder="Введите почту&lowast;" required>
+        <label class="form__label" for="email-field">Адрес почты</label> 
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <input class="form__input form__input-checkbox" id="a-field" type="checkbox" name="a" value="a" checked>
+        <label class="form__label" for="a-field">Сделал селфи с акулой</label>
+        <input class="form__input form__input-checkbox" id="b-field" type="checkbox" name="b" value="b" checked>
+        <label class="form__label" for="b-field">Обгорел на пляже</label>
+        <input class="form__input form__input-checkbox" id="c-field" type="checkbox" name="c" value="c">
+        <label class="form__label" for="c-field">Видел Чака Норриса</label>
+        <input class="form__input form__input-checkbox" id="d-field" type="checkbox" name="d" value="d">
+        <label class="form__label" for="d-field">Накупил сувениров</label>
+        <input class="form__input form__input-checkbox" id="e-field" type="checkbox" name="e" value="e" checked>
+        <label class="form__label" for="e-field">Удержал башню</label>
+        <input class="form__input form__input-checkbox" id="f-field" type="checkbox" name="f" value="f">
+        <label class="form__label" for="f-field">Разгромил отель</label>                           
+      </fieldset>
+      <fieldset class="form-fieldset">
+        <legend class="form__legend">Опишите свои эмоции</legend>
+        <label class="visually-hidden" for="comment-field">Оставьте комментарии</label>
+        <textarea class="form__comment" id="comment-field">Можно прям в красках, не стесняйтесь в выражениях
+        </textarea>
+      </fieldset>
+      <div class="form__submit-box">
+        <button class="btn form__submit-btn">Отправить форму</button>
+        <span class="form__footnote">
+          <span class="form__footnote-star">&lowast;</span>— обязательные для заполнения поля
+        </span>
+      </div>
+    </form>
+  </main>
+  <footer class="footer container">
+    <section class="copyright wrapper footer__copyright">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <a class="logo copyright__logo" href="index.html">
+        <strong class="visually-hidden">Логотип пинк</strong>
+      </a>
+      <ul class="icon-list copyright__icon-list">
+        <li class="icon-list__item">
+          <a class="icon-list-link" href="#">
+            <span class="visually-hidden">Твиттер</span></a>
+        </li>
+        <li class="icon-list__item">
+          <a class="icon-list-link" href="#">
+            <span class="visually-hidden">Фэйсбук</span>
+          </a>
+        </li>
+        <li class="icon-list__item">
+          <a class="icon-list-link" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <strong class="copyright__text">Разработано<a class="copyright__link" href="#">
+        <span class="visually-hidden">HtmlAcademy</span></a>
+      </strong>
+    </section>
+  </footer>
+</body>
+</html>
