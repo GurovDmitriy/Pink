@@ -6,8 +6,10 @@
 </head>
 <body>
   <header class="header container">
+    <h1 class="visually-hidden">Фотографии пользователей</h1>
     <div class="nav-box container header__nav-box">
       <nav class="nav wrapper nav-box__nav">
+        <h2 class="visually-hidden">Главная навигация по сайту</h2>
         <div class="logo nav__logo">
           <strong class="visually-hidden">Логотип пинк</strong>
         </div>
@@ -27,9 +29,101 @@
         </ul>
       </nav>
     </div>
-    <h1 class="caption header__caption">Фотографии пользователей</h1>
+    <span class="caption header__caption">Фотографии пользователей</span>
   </header>
   <main class="main container">
+    <h2 class="caption-min main__caption wrapper">
+      Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+    </h2>
+    <div class="panorama">
+      <a class="btn panorama__btn" href="#">Панорама дня</a>
+      <figure class="post panorama__post">
+        <img class="post__img" src="">
+        <figcaption class="post__caption">
+          <span class="post__autor">
+            Анна (<time class="post__time" datetime="2020-04-11T16:20">5 минут назад</time>)
+          </span>
+            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            <span class="like-count post__like-count">Нравится: <span class="like-count__number">215</span></span>
+        </figcaption>
+      </figure>
+    </div>
+    <section class="gallery wrapper">
+      <figure class="post gallery__post">
+        <img class="post__img" src="">
+        <figcaption class="post__caption">
+          <span class="post__autor">
+            Левон (<time class="post__time" datetime="2020-04-11T16:20">5 часов назад</time>)
+          </span>
+            Вчера он на луну летал, сегодня в руки к нам попал.
+            <span class="like-count post__like-count">Нравится: <span class="like-count__number">356</span></span>
+        </figcaption>
+      </figure>
+      <figure class="post gallery__post">
+        <img class="post__img" src="">
+        <figcaption class="post__caption">
+          <span class="post__autor">
+            Антон (<time class="post__time" datetime="2020-04-11T16:20">12 часов назад</time>)
+          </span>
+            Соседи будут рады!
+            <span class="like-count post__like-count">Нравится: <span class="like-count__number">666</span></span>
+        </figcaption>
+      </figure>
+      <figure class="post gallery__post">
+        <img class="post__img" src="">
+        <figcaption class="post__caption">
+          <span class="post__autor">
+            Борис (<time class="post__time" datetime="2020-04-11T16:20">20 часов назад</time>)
+          </span>
+            Здесь могла быть ваша цитата о высоком и вечном.
+            <span class="like-count post__like-count">Нравится: <span class="like-count__number">215</span></span>
+        </figcaption>
+      </figure>  
+      <figure class="post gallery__post">
+        <img class="post__img" src="">
+        <figcaption class="post__caption">
+          <span class="post__autor">
+            Сергей (<time class="post__time" datetime="2020-04-11T16:20">25 часов назад</time>)
+          </span>
+            Самая кубанская в мире!
+            <span class="like-count post__like-count">Нравится: <span class="like-count__number">4</span></span>
+        </figcaption>
+      </figure>
+      <figure class="post gallery__post">
+        <img class="post__img" src="">
+        <figcaption class="post__caption">
+          <span class="post__autor">
+            Максим (<time class="post__time" datetime="2020-04-11T16:20">40 часов назад</time>)
+          </span>
+            Где снег-то?
+            <span class="like-count post__like-count">Нравится: <span class="like-count__number">150</span></span>
+        </figcaption>
+      </figure>
+      <figure class="post gallery__post">
+        <img class="post__img" src="">
+        <figcaption class="post__caption">
+          <span class="post__autor">
+            Надежда (<time class="post__time" datetime="2020-04-11T16:20">45 часов назад</time>)
+          </span>
+            Всем GM и взаимные лайки!
+            <span class="like-count post__like-count">Нравится: <span class="like-count__number">2560</span></span>
+        </figcaption>
+      </figure>                   
+    </section>
+    <h2 class="caption-min wrapper upload-photo__caption ">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+    <form class="form-upload wrapper">
+      <img class="form-upload__img" src="">
+      <div class="form-upload__filter">
+        <label class="visually-hidden" for="clip-field">Обрезать фото</label>
+        <input class="visually-hidden" type="range" name="clip" id="clip-field">
+        <label class="visually-hidden" for="clip-field">Заливка фото</label>
+        <input class="visually-hidden" type="range" name="clip" id="clip-field">
+        <label class="visually-hidden" for="clip-field">Яркость фото</label>
+        <input class="visually-hidden" type="range" name="clip" id="clip-field">
+        <button class="btn form-upload__btn" type="submit">Запостить</button>
+        <button class="btn form-upload__btn form-upload__btn--disabled" type="submit">Отмена</button>
+      </div>
+    </form>
   </main>
   <footer class="footer container">
     <section class="copyright wrapper footer__copyright">
