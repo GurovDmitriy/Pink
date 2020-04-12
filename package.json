@@ -1,0 +1,25 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "pink",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GurovDmitriy/Pink.git"
+  },
+  "author": "Gurov Dmitriy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GurovDmitriy/Pink/issues"
+  },
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^5.1.0"
+  }
+}
