@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -5,6 +11,16 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: @color-text;
 }
 
 .visually-hidden {
