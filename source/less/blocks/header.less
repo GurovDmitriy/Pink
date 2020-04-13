@@ -1,0 +1,47 @@
+.header {
+  .container();
+
+  background-color: @color-blue;
+
+  &__nav-box {
+    padding-bottom: 390px;
+
+    background-image: url("../image/bgheader-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 320px;
+    margin: 0 auto;
+
+    background-color: rgba(28, 38, 49, 0.3);
+  }
+
+  &__nav--open {
+    background-color: @color-blue;
+  }
+
+  &__logo {
+    display: block;
+    width: 75px;
+    height: 22px;
+    padding: 24px 20px;
+  }
+
+  &__nav-btn {
+    padding: 24px 20px;
+  }
+
+  &__menu {
+    width: 100%;
+  }
+
+  &__download {
+    .wrapper();
+  }
+}

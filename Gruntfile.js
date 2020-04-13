@@ -59,7 +59,7 @@ module.exports = function(grunt) {
     },
     watch: {
       style: {
-        files: ["source/less/**/*.less"],
+        files: ["source/less/**/*"],
         tasks: ["less"]
       }
     },
@@ -70,7 +70,11 @@ module.exports = function(grunt) {
         },
         options: {
           server: "source/",
-          watchTask: true
+          watchTask: true,
+          notify: false,
+          open: true,
+          cors: true,
+          ui: false
         }
       }
     }
