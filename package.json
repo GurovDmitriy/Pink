@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "pink",
   "main": "Gruntfile.js",
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GurovDmitriy/Pink.git"
@@ -18,8 +15,17 @@
   "devDependencies": {
     "grunt": "^1.1.0",
     "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^4.0.0",
     "grunt-contrib-less": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
+    "grunt-csso": "^2.2.4",
+    "grunt-cwebp": "^2.1.1",
+    "grunt-svgstore": "^2.0.0",
     "load-grunt-tasks": "^5.1.0"
+  },
+  "homepage": "https://github.com/GurovDmitriy/Pink#readme",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
