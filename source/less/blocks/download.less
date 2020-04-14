@@ -3,7 +3,7 @@
 .download__caption {
   display: none;
 
-  @media (min-width: 660px) {
+  @media (min-width: @tablet-width) {
     display: block;
     margin-bottom: 40px;
 
@@ -13,7 +13,7 @@
     text-align: center;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: @desktop-width) {
     margin-bottom: 60px;
 
     font-size: 50px;
@@ -24,11 +24,11 @@
 .download__btn {
   margin-bottom: 28px;
 
-  @media (min-width: 660px) {
+  @media (min-width: @tablet-width) {
     margin-bottom: 40px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: @desktop-width) {
     margin-bottom: 60px;
 
     font-size: 21px;
@@ -42,11 +42,11 @@
   margin-left: auto;
   margin-bottom: 28px;
 
-  @media (min-width: 660px) {
+  @media (min-width: @tablet-width) {
     margin-bottom: 40px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: @desktop-width) {
     margin-bottom: 60px;
   }
 }
@@ -58,4 +58,4 @@
   font-weight: lighter;
   text-align: center;
   color: @color-white;
-  }
+}

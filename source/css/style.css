@@ -344,8 +344,14 @@ template {
 /* Цвет розовый по умолчанию для фонов текста и элементов */
 /* Цвет белый по умолчанию для фонов текста и элементов */
 /* Цвет синий по умолчанию для фонов текста и элементов */
-/* Блок на всю ширину */
-/* Блок центровщик */
+/* Ширины вьюпортов */
+/* Ширины контента для миксинов и элементов центровки */
+/* Отступы для оберток и элементов */
+/* Отступы до краев для элементов в промежуточных состояниях */
+/* Блок до брейкпоинта */
+/* Блок центровщик контента */
+/* Отступы до краев для элементов */
+/* Отступы до краев для элементов в промежуточных состояниях */
 html,
 body {
   margin: 0;
@@ -435,7 +441,10 @@ body {
 }
 .menu__link {
   display: block;
-  padding: 19px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
@@ -526,14 +535,26 @@ body {
 }
 /* Блоки в порядки разметки */
 .header {
-  width: 100%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #283645;
 }
 @media (min-width: 660px) {
   .header {
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url("https://via.placeholder.com/1200x729/DBAD6D");
     background-repeat: no-repeat;
     background-position: center bottom;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .header__nav-box {
@@ -558,18 +579,13 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 320px;
-  margin: 0 auto;
   background-color: rgba(28, 38, 49, 0.3);
-}
-@media (min-width: 660px) {
-  .header__nav {
-    width: 660px;
-  }
 }
 @media (min-width: 1200px) {
   .header__nav {
     width: 940px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 35px;
     padding-bottom: 35px;
     background-color: transparent;
@@ -578,9 +594,17 @@ body {
 .header__nav--open {
   background-color: #283645;
 }
+@media (min-width: 1200px) {
+  .header__nav--open {
+    background-color: transparent;
+  }
+}
 .header__logo {
   display: block;
-  padding: 24px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 @media (min-width: 660px) {
   .header__logo {
@@ -594,7 +618,10 @@ body {
   }
 }
 .header__nav-btn {
-  padding: 10px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media (min-width: 1200px) {
   .header__nav-btn {
@@ -622,19 +649,16 @@ body {
 }
 @media (min-width: 660px) {
   .header__download-box {
-    width: 280px;
+    width: 620px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media (min-width: 660px) and (min-width: 660px) {
-  .header__download-box {
-    width: 620px;
-  }
-}
-@media (min-width: 660px) and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .header__download-box {
     width: 940px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .header__download {
@@ -643,16 +667,6 @@ body {
   margin-right: auto;
   padding-top: 28px;
   padding-bottom: 28px;
-}
-@media (min-width: 660px) {
-  .header__download {
-    width: 620px;
-  }
-}
-@media (min-width: 1200px) {
-  .header__download {
-    width: 940px;
-  }
 }
 @media (min-width: 660px) {
   .header__download {
