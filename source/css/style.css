@@ -382,7 +382,7 @@ body {
 .btn-burger {
   display: flex;
   width: 90px;
-  height: 70px;
+  height: 50px;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -452,21 +452,37 @@ body {
   line-height: 0;
   text-decoration: none;
 }
-.download {
-  padding-top: 28px;
-  padding-bottom: 28px;
-}
 .download__caption {
   display: none;
 }
+@media (min-width: 660px) {
+  .download__caption {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: lighter;
+    text-align: center;
+  }
+}
 .download__btn {
   margin-bottom: 28px;
+}
+@media (min-width: 660px) {
+  .download__btn {
+    margin-bottom: 40px;
+  }
 }
 .download__list-icon {
   width: 210px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 28px;
+}
+@media (min-width: 660px) {
+  .download__list-icon {
+    margin-bottom: 40px;
+  }
 }
 .download__text {
   display: block;
@@ -479,32 +495,48 @@ body {
   width: 100%;
   background-color: #283645;
 }
+@media (min-width: 660px) {
+  .header {
+    background-image: url("https://via.placeholder.com/1200x729/DBAD6D");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
 .header__nav-box {
   padding-bottom: 390px;
-  background-image: url("https://via.placeholder.com/320x462/d22856");
+  background-image: url("https://via.placeholder.com/320x462/DBAD6D");
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+@media (min-width: 660px) {
+  .header__nav-box {
+    padding-bottom: 0;
+    background: none;
+  }
 }
 .header__nav {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   width: 320px;
   margin: 0 auto;
   background-color: rgba(28, 38, 49, 0.3);
+}
+@media (min-width: 660px) {
+  .header__nav {
+    width: 660px;
+  }
 }
 .header__nav--open {
   background-color: #283645;
 }
 .header__logo {
   display: block;
-  width: 115px;
-  height: 70px;
   padding: 24px 20px;
 }
 .header__nav-btn {
-  padding: 24px 20px;
+  padding: 10px 20px;
 }
 .header__menu {
   display: none;
@@ -513,8 +545,49 @@ body {
 .header__menu--open {
   display: block;
 }
+@media (min-width: 660px) {
+  .header__download-box {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 660px) and (min-width: 660px) {
+  .header__download-box {
+    width: 620px;
+  }
+}
 .header__download {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+@media (min-width: 660px) {
+  .header__download {
+    width: 620px;
+  }
+}
+@media (min-width: 660px) {
+  .header__download {
+    width: 300px;
+    margin-left: 0;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+.logo {
+  display: block;
+  width: 75px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+@media (min-width: 660px) {
+  .logo {
+    width: 147px;
+    height: 40px;
+  }
 }
