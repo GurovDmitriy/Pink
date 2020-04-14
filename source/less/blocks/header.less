@@ -21,6 +21,10 @@
     padding-bottom: 0;
     background: none;
   }
+
+  @media (min-width: 1200px) {
+    background-color: rgba(28, 38, 49, 0.3);
+  }
 }
 
 .header__nav {
@@ -36,6 +40,14 @@
   @media (min-width: 660px) {
     width: 660px;
   }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    background-color: transparent;
+  }
 }
 
 .header__nav--open {
@@ -45,19 +57,42 @@
 .header__logo {
   display: block;
   padding: 24px 20px;
+
+  @media (min-width: 660px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .header__nav-btn {
   padding: 10px 20px;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .header__menu {
   display: none;
   width: 100%;
+
+  @media (min-width: 1200px) {
+      display: grid;
+      width: 660px;
+    }
 }
 
 .header__menu--open {
   display: block;
+
+  @media (min-width: 1200px) {
+      display: grid;
+      width: 660px;
+    }
 }
 
 .header__download-box {
@@ -76,5 +111,10 @@
     margin-left: 0;
     padding-top: 110px;
     padding-bottom: 110px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
