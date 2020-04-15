@@ -1,0 +1,22 @@
+.menu {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+.menu__link {
+  display: block;
+  .padding-mobile();
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  @media (min-width: @desktop-width) {
+    padding: 11px;
+  }
+}
+
