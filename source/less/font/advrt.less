@@ -1,11 +1,23 @@
 .advrt__caption {
   @media (min-width: @tablet-width) {
-    .caption-3-s();
+    .caption-x3();
+    color: @color-black;
   }
+
+  @media (min-width: @desktop-width) {
+    .caption-x1();
+  }  
 }
 
-.adwrt__text {
-  @media (min-width: @tablet-width) {
-    .text-2();
+.advrt__text {
+    @media (min-width: @tablet-width) {
+    .text-x1();
+  }  
+}
+
+.advrt__link {
+    @media (min-width: @tablet-width) {
+    .text-x1();
+    color: @color-pink;
   }
 }

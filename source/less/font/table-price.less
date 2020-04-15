@@ -1,17 +1,37 @@
 .table-price__th {
-  .caption-3-s();
+  .text-x3();
   text-align: center;
   text-transform: uppercase;
   color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    .text-x2();
+  }
+
+  @media (min-width: @desktop-width) {
+    .text-x3();
+  }  
 }
 
 .table-price__price {
-  .caption-2-s();
+  .text-x4();
+  font-weight: lighter;
   text-transform: uppercase;
   color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    .text-x3();
+  }
+
+  @media (min-width: @desktop-width) {
+    .text-x4();
+  }  
 }
 
 .table-price__td {
-  .caption-3-s();
-  font-weight: normal;
+  .text-x1();
+
+  @media (min-width: @desktop-width) {
+    .text-x3();
+  }  
 }
