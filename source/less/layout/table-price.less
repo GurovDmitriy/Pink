@@ -7,6 +7,11 @@
     min-width: 620px;
     .wrapper-tablet();
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1000px;
+    .wrapper-desktop();
+  }  
 }
 
 .table-price__th,
@@ -17,6 +22,10 @@
   @media (min-width: @tablet-width) {
     width: 155px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 250px;
+  }   
 }
 
 .table-price__price {
