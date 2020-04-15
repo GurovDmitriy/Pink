@@ -2,6 +2,11 @@
   min-width: 1000px;
 
   border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    min-width: 620px;
+    .wrapper-tablet();
+  }
 }
 
 .table-price__th,
@@ -10,6 +15,10 @@
   padding: 7px;
 
   border: 2px solid @color-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 155px;
+  }
 }
 
 .table-price__th {

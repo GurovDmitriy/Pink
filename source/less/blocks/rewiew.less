@@ -19,6 +19,10 @@
 .rewiew__text {
   .text-1();  
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .text-2();
+  }
 }
 
 .rewiew__autor {
@@ -27,8 +31,16 @@
 
   font-style: normal;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }  
 }
 
 .rewiew__autor-info {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
