@@ -1,10 +1,18 @@
 .main {
   .container-mobile();
+
+  @media (min-width: @tablet-width) {
+    .container-tablet();
+  }
 }
 
 .main__promo {
   .wrapper-mobile();
   padding-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+  }
 }
 
 .main__promo-caption {
@@ -14,14 +22,39 @@
   .caption-2-s();
 
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+
+    .caption-2-l();
+  }  
+}
+
+.main__pictures-list {
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+
+    background-image: url("https://via.placeholder.com/268x547/d22856");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
 }
 
 .main__advrt-box {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    .container-tablet();
+  }
 }
 
 .main__rewiew {
   .wrapper-mobile();
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+  }
 }
 
 .main__table-box {

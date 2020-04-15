@@ -543,10 +543,23 @@ body {
   padding: 0;
   list-style: none;
 }
+@media (min-width: 660px) {
+  .pictures-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
 .pictures-list__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 660px) {
+  .pictures-list__item {
+    align-items: flex-start;
+    width: 295px;
+  }
 }
 .pictures-list__img {
   order: 1;
@@ -554,6 +567,11 @@ body {
 }
 .pictures-list__img-3 {
   display: block;
+}
+@media (min-width: 660px) {
+  .pictures-list__img-3 {
+    display: none;
+  }
 }
 .pictures-list__caption {
   margin-top: 0;
@@ -563,6 +581,11 @@ body {
   font-weight: bold;
   text-align: center;
 }
+@media (min-width: 660px) {
+  .pictures-list__caption {
+    text-align: left;
+  }
+}
 .pictures-list__text {
   margin-top: 0;
   margin-bottom: 10px;
@@ -570,15 +593,34 @@ body {
   line-height: 30px;
   text-align: center;
 }
+@media (min-width: 660px) {
+  .pictures-list__text {
+    text-align: left;
+  }
+}
 .table-price {
   min-width: 1000px;
   border-collapse: collapse;
+}
+@media (min-width: 660px) {
+  .table-price {
+    min-width: 620px;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .table-price__th,
 .table-price__td {
   width: 250px;
   padding: 7px;
   border: 2px solid #e5e5e5;
+}
+@media (min-width: 660px) {
+  .table-price__th,
+  .table-price__td {
+    width: 155px;
+  }
 }
 .table-price__th {
   margin-top: 0;
@@ -634,6 +676,14 @@ body {
   line-height: 30px;
   text-align: center;
 }
+@media (min-width: 660px) {
+  .rewiew__text {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 .rewiew__autor {
   order: -1;
   margin-top: 0;
@@ -644,8 +694,55 @@ body {
   font-style: normal;
   text-align: center;
 }
+@media (min-width: 660px) {
+  .rewiew__autor {
+    order: 1;
+  }
+}
 .rewiew__autor-info {
   display: none;
+}
+@media (min-width: 660px) {
+  .rewiew__autor-info {
+    display: block;
+  }
+}
+@media (min-width: 660px) {
+  .advrt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 660px) {
+  .advrt__descript {
+    width: 295px;
+    margin-left: auto;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+@media (min-width: 660px) {
+  .advrt__caption {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 660px) {
+  .adwrt__text {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 /* Блоки в порядки разметки */
 .header {
@@ -815,11 +912,25 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 660px) {
+  .main {
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .main__promo {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 28px;
+}
+@media (min-width: 660px) {
+  .main__promo {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .main__promo-caption {
   width: 210px;
@@ -832,13 +943,48 @@ body {
   font-weight: lighter;
   text-align: center;
 }
+@media (min-width: 660px) {
+  .main__promo-caption {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: lighter;
+  }
+}
+@media (min-width: 660px) {
+  .main__pictures-list {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://via.placeholder.com/268x547/d22856");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+}
 .main__advrt-box {
   display: none;
+}
+@media (min-width: 660px) {
+  .main__advrt-box {
+    display: block;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .main__rewiew {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 660px) {
+  .main__rewiew {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .main__table-box {
   display: flex;

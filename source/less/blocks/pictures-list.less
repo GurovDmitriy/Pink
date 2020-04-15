@@ -3,12 +3,23 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }  
 }
 
 .pictures-list__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    align-items: flex-start;
+    width: 295px;
+  }
 }
 
 .pictures-list__img {
@@ -18,14 +29,26 @@
 
 .pictures-list__img-3 {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .pictures-list__caption {
   .caption-3-s();
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }  
 }
 
 .pictures-list__text {
   .text-1();  
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }  
 }
