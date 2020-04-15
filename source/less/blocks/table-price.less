@@ -1,0 +1,39 @@
+.table-price {
+  min-width: 1000px;
+
+  border-collapse: collapse;
+}
+
+.table-price__th,
+.table-price__td {
+  width: 250px;
+  padding: 7px;
+
+  border: 2px solid @color-grey;
+}
+
+.table-price__th {
+  .caption-3-s();
+  text-align: center;
+  text-transform: uppercase;
+  color: @color-white;
+
+  background-color: @color-blue;
+
+  &:first-child {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.table-price__price {
+  .caption-2-s();
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: @color-white;
+}
+
+.table-price__td {
+  .caption-3-s();
+  font-weight: normal;
+}

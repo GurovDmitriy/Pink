@@ -344,6 +344,7 @@ template {
 /* Цвет розовый по умолчанию для фонов текста и элементов */
 /* Цвет белый по умолчанию для фонов текста и элементов */
 /* Цвет синий по умолчанию для фонов текста и элементов */
+/* Цвет серый для рамок и элементов */
 /* Ширины вьюпортов */
 /* Ширины контента для миксинов и элементов центровки */
 /* Отступы для оберток и элементов */
@@ -352,6 +353,8 @@ template {
 /* Блок центровщик контента */
 /* Отступы до краев для элементов */
 /* Отступы до краев для элементов в промежуточных состояниях */
+/* Текст */
+/* Заголовки */
 html,
 body {
   margin: 0;
@@ -369,8 +372,10 @@ html {
 body {
   min-width: 320px;
   font-family: "Open Sans", sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 14px;
-  line-height: 1.2em;
+  line-height: 24px;
   font-weight: normal;
   color: #283645;
 }
@@ -532,6 +537,115 @@ body {
   font-weight: lighter;
   text-align: center;
   color: #ffffff;
+}
+.pictures-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pictures-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pictures-list__img {
+  order: 1;
+  display: none;
+}
+.pictures-list__img-3 {
+  display: block;
+}
+.pictures-list__caption {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.pictures-list__text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.table-price {
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+.table-price__th,
+.table-price__td {
+  width: 250px;
+  padding: 7px;
+  border: 2px solid #e5e5e5;
+}
+.table-price__th {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #283645;
+}
+.table-price__th:first-child {
+  border: none;
+  background-color: transparent;
+}
+.table-price__price {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.table-price__td {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  font-weight: normal;
+}
+.rewiew {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.rewiew__item {
+  display: none;
+  flex-direction: column;
+  margin: 0;
+}
+.rewiew__item--show-js {
+  display: flex;
+}
+.rewiew__text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.rewiew__autor {
+  order: -1;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+.rewiew__autor-info {
+  display: none;
 }
 /* Блоки в порядки разметки */
 .header {
@@ -695,4 +809,42 @@ body {
     width: 147px;
     height: 40px;
   }
+}
+.main {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__promo {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 28px;
+}
+.main__promo-caption {
+  width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+  text-align: center;
+}
+.main__advrt-box {
+  display: none;
+}
+.main__rewiew {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__table-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
 }
