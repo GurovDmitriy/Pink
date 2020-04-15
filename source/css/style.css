@@ -936,21 +936,10 @@ body {
   width: 210px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: lighter;
-  text-align: center;
 }
 @media (min-width: 660px) {
   .main__promo-caption {
     width: 100%;
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: lighter;
   }
 }
 @media (min-width: 660px) {
@@ -958,9 +947,6 @@ body {
     width: 620px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("https://via.placeholder.com/268x547/d22856");
-    background-repeat: no-repeat;
-    background-position: left bottom;
   }
 }
 .main__advrt-box {
@@ -993,4 +979,31 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   overflow: hidden;
+}
+/* Сетка */
+/* Шрифты */
+.main__promo-caption {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+  text-align: center;
+}
+@media (min-width: 660px) {
+  .main__promo-caption {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: lighter;
+  }
+}
+/* Декор */
+@media (min-width: 660px) {
+  .main__pictures-list {
+    background-image: url("https://via.placeholder.com/268x547/d22856");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
 }

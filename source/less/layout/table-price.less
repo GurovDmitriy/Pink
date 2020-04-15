@@ -1,0 +1,24 @@
+.table-price {
+  min-width: 1000px;
+
+  border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    min-width: 620px;
+    .wrapper-tablet();
+  }
+}
+
+.table-price__th,
+.table-price__td {
+  width: 250px;
+  padding: 7px;
+
+  @media (min-width: @tablet-width) {
+    width: 155px;
+  }
+}
+
+.table-price__price {
+  margin-bottom: 0;
+}
