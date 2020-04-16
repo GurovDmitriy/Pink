@@ -1,0 +1,36 @@
+.contacts {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.contacts__item {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(2) {
+
+    @media (min-width: @tablet-width) {
+      order: 1;
+      width: 210px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: 0;
+      width: 210px;
+    }    
+  }
+}
+
+.contacts__caption {
+  display: block;
+}
