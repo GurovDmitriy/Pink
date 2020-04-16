@@ -1,12 +1,24 @@
 .logo {
+  position: relative;
+  
+  display: block;
+}
+
+.logo__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
   display: block;
   width: 75px;
   height: 22px;
   margin: 0;
   padding: 0;
 
+  transform: translate(-50%, -50%);
+  
   @media (min-width: @tablet-width) {
     width: 147px;
     height: 40px;
-  }
+  }  
 }

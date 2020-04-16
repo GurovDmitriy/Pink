@@ -18,10 +18,16 @@
 
 .rewiew__autor {
   order: -1;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     order: 1;
-  }  
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+
+  }
 }
 
 .rewiew__autor-info {
@@ -29,5 +35,14 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+}
+
+.rewiew__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
   }
 }

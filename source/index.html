@@ -14,8 +14,8 @@
     <div class="header__nav-box">
       <nav class="header__nav">
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
-        <a class="header__logo" title="Вы уже здесь">
-          <img class="logo" src="https://via.placeholder.com/75x22/d22856">
+        <a class="logo header__logo" title="Вы уже здесь">
+          <img class="logo__img" src="https://via.placeholder.com/75x22/d22856">
           <strong class="visually-hidden">Логотип пинк</strong>
         </a>
         <button class="btn-burger header__nav-btn">
@@ -42,21 +42,21 @@
       <div class="download header__download">
         <strong class="caption download__caption">Взгляните на жизнь иначе!</strong>
         <a class="btn download__btn" href="#">Скачать приложение</a>
-        <ul class="icon-list download__list-icon">
+        <ul class="icon-list download__icon-list">
           <li class="icon-list__item">
             <a class="icon-list__link" href="#">
-              <img src="https://via.placeholder.com/47x50/d22856">
+              <img class="icon-list__icon" src="https://via.placeholder.com/47x50/d22856">
               <span class="visually-hidden">Скачать для Apple</span></a>
           </li>
           <li class="icon-list__item">
             <a class="icon-list__link" href="#">
-              <img src="https://via.placeholder.com/47x50/d22856">
+              <img class="icon-list__icon" src="https://via.placeholder.com/47x50/d22856">
               <span class="visually-hidden">Скачать для Android</span>
             </a>
           </li>
           <li class="icon-list__item">
             <a class="icon-list__link" href="#">
-              <img src="https://via.placeholder.com/47x50/d22856">
+              <img class="icon-list__icon" src="https://via.placeholder.com/47x50/d22856">
               <span class="visually-hidden">Скачать для Windows</span>
             </a>
           </li>
@@ -67,28 +67,37 @@
   </header>
   <main class="main">
     <section class="main__promo">
-      <h2 class="main__promo-caption">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-      <ul class="pictures-list main__pictures-list">
+      <h2 class="main__promo-caption">Устали от серости мегаполиса?</h2>
+      <span class="main__promo-caption main__promo-caption-2">Нам есть, что вам предложить!</span>
+      <div class="main__pictures-list-box">
+        <ul class="pictures-list main__pictures-list">
         <li class="pictures-list__item">
-          <img src="https://via.placeholder.com/157x320/d22856" alt="" class="pictures-list__img pictures-list__img-1">
+          <div class="pictures-list__img-box pictures-list__img-box-1">
+            <img src="https://via.placeholder.com/157x320/d22856" alt="" class="pictures-list__img">
+          </div>
           <h3 class="pictures-list__caption">Поднимает настроение</h3>
           <p class="pictures-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
         <li class="pictures-list__item">
-          <img src="https://via.placeholder.com/157x320/d22856" alt="" class="pictures-list__img pictures-list__img-2">
+          <div class="pictures-list__img-box pictures-list__img-box-2">
+            <img src="https://via.placeholder.com/157x320/d22856" alt="" class="pictures-list__img">
+          </div>
           <h3 class="pictures-list__caption">Меняет мир вокруг</h3>
            <p class="pictures-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
         <li class="pictures-list__item">
-          <img src="https://via.placeholder.com/157x320/d22856" alt="" class="pictures-list__img pictures-list__img-3">
+          <div class="pictures-list__img-box pictures-list__img-box-3">
+            <img src="https://via.placeholder.com/157x320/d22856" alt="" class="pictures-list__img">
+          </div>
           <h3 class="pictures-list__caption">Заводит новых друзей</h3>
           <p class="pictures-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
-      </ul>
+        </ul>       
+      </div>
       <div class="main__advrt-box">
         <div class="advrt main__advrt">
           <div class="advrt__time">
-            <img src="https://via.placeholder.com/238x276/d22856">
+            <img class="advrt__time-img" src="https://via.placeholder.com/298x345/a9a9a9">
           </div>
           <div class="advrt__descript">
             <h3 class="advrt__caption">Эффект на 24 часа!</h3>
@@ -96,28 +105,44 @@
             <a class="advrt__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
-      </div>
+      </div>      
     </section>
-    <section class="rewiew main__rewiew">
+    <section class="main__rewiew-box">
       <h2 class="visually-hidden">Отзывы о нас</h2>
-      <blockquote class="rewiew__item rewiew__item--show-js">
-        <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        <cite class="rewiew__autor">
-          Николай Петров
-          <span class="rewiew__autor-info">25 лет, водитель трамвая</span>
-        </cite>
-      </blockquote>
-      <blockquote class="rewiew__item">
-        <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        <cite class="rewiew__autor">
-          Николай Петров
-          <span class="rewiew__autor-info">25 лет, водитель трамвая</span>
-        </cite>
-      </blockquote>
+      <div class="rewiew main__rewiew">
+        <blockquote class="rewiew__item rewiew__item--show-js">
+          <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <cite class="rewiew__autor">
+            Гуров Дмитрий
+            <span class="rewiew__autor-info">29 лет, свободный человек</span>
+          </cite>
+        </blockquote>
+        <blockquote class="rewiew__item">
+          <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <cite class="rewiew__autor">
+            Николай Петров
+            <span class="rewiew__autor-info">25 лет, водитель трамвая</span>
+          </cite>
+        </blockquote>
+        <blockquote class="rewiew__item">
+          <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <cite class="rewiew__autor">
+            Василий Сидоров
+            <span class="rewiew__autor-info">25 лет, водитель трамвая</span>
+          </cite>
+        </blockquote>        
+      </div>
+      <div class="btn-box main__rewiew-btn-box">
+        <button class="btn-box__btn btn-box__btn--active-js"><span class="visually-hidden">В начало</span></button>
+        <button class="btn-box__btn"><span class="visually-hidden">Середина</span></button>
+        <button class="btn-box__btn"><span class="visually-hidden">Конец</span></button>
+      </div>
+      <button class="btn-mark btn-mark-1 main__rewiew-btn-mark-1"><span class="visually-hidden">Назад</span></button>
+      <button class="btn-mark btn-mark-2 main__rewiew-btn-mark-2"><span class="visually-hidden">Вперед</span></button>
     </section>
     <div class="main__table-box">
       <h2 class="visually-hidden">Таблица c тарифами приложения Pink</h2>
-      <table class="table-price wrapper main__table-price">
+      <table class="table-price main__table-price main__table-price--left-2x-js">
         <caption class="visually-hidden">Таблица тарифов приложения Pink</caption>
         <tr class="table-price__tr">
           <th class="table-price__th"></th>
@@ -168,7 +193,7 @@
     <section class="copyright footer__copyright">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <a class="logo copyright__logo" title="Вы уже здесь">
-        <img class="logo" src="https://via.placeholder.com/75x22/d22856">
+        <img class="logo__img" src="https://via.placeholder.com/75x22/d22856">
         <strong class="visually-hidden">Логотип пинк</strong>
       </a>
       <ul class="icon-list copyright__icon-list">
