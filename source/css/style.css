@@ -591,6 +591,48 @@ body {
     line-height: 30px;
   }
 }
+.footer__caption {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: lighter;
+  text-align: center;
+}
+@media (min-width: 660px) {
+  .footer__caption {
+    font-size: 40px;
+    line-height: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__caption {
+    font-size: 50px;
+    line-height: 80px;
+  }
+}
+.contacts__item {
+  text-align: center;
+}
+.contacts__caption {
+  font-weight: bold;
+  color: #000000;
+}
+.contacts__link {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: lighter;
+  word-wrap: break-word;
+  color: #d22856;
+}
+.copyright__text {
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (min-width: 1200px) {
+  .copyright__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 /* Сетка */
 /* Реиспользуемые блоки */
 .btn-burger {
@@ -646,6 +688,26 @@ body {
 .icon-list__link {
   display: block;
   min-height: 50px;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 660px) {
+  .copyright {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.copyright__logo {
+  margin-bottom: 50px;
+}
+.copyright__icon-list {
+  width: 210px;
+  margin-bottom: 50px;
 }
 /* Блоки в порядке разметки */
 .header {
@@ -1094,6 +1156,144 @@ body {
 }
 .table-price__price {
   margin-bottom: 0;
+}
+.footer {
+  padding-top: 30px;
+}
+@media (min-width: 660px) {
+  .footer {
+    padding-top: 23px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 36px;
+  }
+}
+.footer__caption {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+@media (min-width: 660px) {
+  .footer__caption {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__caption {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 460px;
+    margin-bottom: 21px;
+  }
+}
+.footer__contacts {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 660px) {
+  .footer__contacts {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__contacts {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.footer__map {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 230px;
+}
+@media (min-width: 660px) {
+  .footer__map {
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 367px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__map {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 460px;
+  }
+}
+.footer__copyright {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media (min-width: 660px) {
+  .footer__copyright {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__copyright {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media (min-width: 660px) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.contacts__item {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media (min-width: 660px) {
+  .contacts__item {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 660px) {
+  .contacts__item:nth-child(2) {
+    order: 1;
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__item:nth-child(2) {
+    order: 0;
+    width: 210px;
+  }
+}
+.contacts__caption {
+  display: block;
 }
 /* Декор */
 .header {
