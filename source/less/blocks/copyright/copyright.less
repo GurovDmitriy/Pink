@@ -6,16 +6,26 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
   }
 }
 
 .copyright__logo {
   margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 147px;
+    height: 70px;
+    margin-bottom: 0;
+  }  
 }
 
 .copyright__icon-list {
   width: 210px;
   margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }

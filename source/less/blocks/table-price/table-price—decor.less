@@ -1,5 +1,6 @@
 .table-price__th,
 .table-price__td {
+  background-color: @color-white;
   border: 2px solid @color-grey;
 }
 
@@ -9,5 +10,28 @@
   &:first-child {
     border: none;
     background-color: transparent;
+  }
+}
+
+.table-price__td {
+  &::before {
+    border: 2px solid green;
+    border-top: none;
+    border-right: none;
+  }
+}
+
+.table-price__td--disabled {
+  &::after,
+  &::before {
+    background-color: red;
+    border: none;
+  } 
+}
+
+.table-price__th--hit {
+  &::before {
+    background-color: @color-pink;
+    color: @color-white;
   }
 }

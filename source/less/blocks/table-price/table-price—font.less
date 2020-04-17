@@ -30,8 +30,21 @@
 
 .table-price__td {
   .text-x1();
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }  
 
   @media (min-width: @desktop-width) {
     .text-x3();
   }  
+}
+
+.table-price__th--hit {
+  &::before {
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: lighter;
+  }
 }
