@@ -22,7 +22,15 @@
 @mobile-padding: 20px;
 @tablet-padding: 20px;
 @desktop-padding: 60px;
-/* Отступы до краев для элементов в промежуточных состояниях */
-@mobile-tablet-padding: 0px;
-@tablet-desktop-padding: 0px;
-@desktop-out-padding: 0px;
+/* Ширины брейкпоинтов для промежуточных состояний */
+@mobile-tablet-width: @mobile-width + 20px;
+@tablet-desktop-width: @tablet-width + 40px;
+@desktop-out-width: @desktop-width + 60px;
+/* Ширины контента для промежуточных состояний */
+@mobile-tablet-content-width: 80%;
+@tablet-desktop-content-width: 90%;
+@desktop-out-content-width: 80%;
+
+@mobile-tablet-padding: 10%;
+@tablet-desktop-padding: 5%;
+@desktop-out-padding: 10%;
