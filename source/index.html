@@ -14,14 +14,16 @@
     <div class="header__nav-box">
       <nav class="header__nav">
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
-        <a class="logo header__logo" title="Вы уже здесь">
-          <img class="logo__img" src="https://via.placeholder.com/75x22/d22856">
-          <strong class="visually-hidden">Логотип пинк</strong>
-        </a>
-        <button class="burger header__burger">
-          <span class="visually-hidden">Открыть/Закрыть</span>
-          <span class="burger__bar"></span>
-        </button>
+        <div class="header__logo-box">
+          <a class="logo header__logo" title="Вы уже здесь">
+            <img class="logo__img" src="https://via.placeholder.com/75x22/d22856">
+            <strong class="visually-hidden">Логотип пинк</strong>
+          </a>
+          <button class="burger header__burger">
+            <span class="visually-hidden">Открыть/Закрыть</span>
+            <span class="burger__bar"></span>
+          </button>
+        </div>
         <ul class="menu header__menu">
           <li class="menu__item">
             <a class="menu__link" title="Вы уже здесь">Главная</a>
@@ -67,9 +69,9 @@
   </header>
   <main class="main">
     <section class="main__promo">
-      <h2 class="main__promo-caption">Устали от серости мегаполиса?</h2>
-      <span class="main__promo-caption main__promo-caption-2">Нам есть, что вам предложить!</span>
-      <div class="main__pictures-list-box">
+      <h2 class="main__caption">Устали от серости мегаполиса?</h2>
+      <span class="main__caption main__caption-2">Нам есть, что вам предложить!</span>
+      <div class="main__pictures-box">
         <ul class="pictures-list main__pictures-list">
         <li class="pictures-list__item">
           <div class="pictures-list__img-box pictures-list__img-box-1">
@@ -107,68 +109,75 @@
         </div>
       </div>      
     </section>
-    <section class="main__rewiew-box">
+    <section class="main__review-box">
       <h2 class="visually-hidden">Отзывы о нас</h2>
-      <div class="rewiew main__rewiew">
-        <blockquote class="rewiew__item rewiew__item--show-js">
-          <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          <cite class="rewiew__autor">
+      <div class="review main__review">
+        <blockquote class="review__item review__item--show-js">
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <cite class="review__autor">
             Гуров Дмитрий
-            <span class="rewiew__autor-info">29 лет, свободный человек</span>
+            <span class="review__autor-info">29 лет, свободный человек</span>
           </cite>
         </blockquote>
-        <blockquote class="rewiew__item">
-          <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          <cite class="rewiew__autor">
+        <blockquote class="review__item">
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <cite class="review__autor">
             Николай Петров
-            <span class="rewiew__autor-info">25 лет, водитель трамвая</span>
+            <span class="review__autor-info">25 лет, водитель трамвая</span>
           </cite>
         </blockquote>
-        <blockquote class="rewiew__item">
-          <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          <cite class="rewiew__autor">
+        <blockquote class="review__item">
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <cite class="review__autor">
             Василий Сидоров
-            <span class="rewiew__autor-info">25 лет, водитель трамвая</span>
+            <span class="review__autor-info">25 лет, водитель трамвая</span>
           </cite>
-        </blockquote>        
+        </blockquote>
+        <div class="btn-box review__btn-box">
+          <button class="btn-box__btn btn-box__btn--active-js"><span class="visually-hidden">В начало</span></button>
+          <button class="btn-box__btn"><span class="visually-hidden">Середина</span></button>
+          <button class="btn-box__btn"><span class="visually-hidden">Конец</span></button>
+        </div>
+        <button class="btn-mark btn-mark-1 review__btn-mark-1"><span class="visually-hidden">Назад</span></button>
+        <button class="btn-mark btn-mark-2 review__btn-mark-2"><span class="visually-hidden">Вперед</span></button>
+      </div>   
+    </section>
+    <div class="main__table-shell">
+      <div class="main__table-box">
+        <h2 class="visually-hidden">Таблица c тарифами приложения Pink</h2>
+        <table class="table-price main__table-price main__table-price--left-2x-js">
+          <caption class="visually-hidden">Таблица тарифов приложения Pink</caption>
+          <tr class="table-price__tr">
+            <th class="table-price__th"></th>
+            <th class="table-price__th">База<span class="table-price__price">1,99 USD</span></th>
+            <th class="table-price__th table-price__th--hit">Стандарт<span class="table-price__price">3,99 USD</span></th>
+            <th class="table-price__th">Анлим<span class="table-price__price">9,99 USD</span></th>
+          </tr>
+          <tr class="table-price__tr">
+            <td class="table-price__td">Розовый фильтр</td>
+            <td class="table-price__td"><span class="table-price__label">Розовый фильтр</span></td>
+            <td class="table-price__td"><span class="table-price__label">Розовый фильтр</span></td>
+            <td class="table-price__td"><span class="table-price__label">Розовый фильтр</span></td>
+          </tr>
+          <tr class="table-price__tr">
+            <td class="table-price__td">Смайлики</td>
+            <td class="table-price__td table-price__td--disabled"><span class="table-price__label">Смайлики</span></td>
+            <td class="table-price__td"><span class="table-price__label">Смайлики</span></td>
+            <td class="table-price__td"><span class="table-price__label">Смайлики</span></td>
+          </tr>
+          <tr class="table-price__tr">
+            <td class="table-price__td">Комментарии</td>
+            <td class="table-price__td table-price__td--disabled"><span class="table-price__label">Комментарии</span></td>
+            <td class="table-price__td table-price__td--disabled"><span class="table-price__label">Комментарии</span></td>
+            <td class="table-price__td"><span class="table-price__label">Комментарии</span></td>
+          </tr>
+        </table>
       </div>
-      <div class="btn-box main__rewiew-btn-box">
+      <div class="btn-box main__btn-box">
         <button class="btn-box__btn btn-box__btn--active-js"><span class="visually-hidden">В начало</span></button>
         <button class="btn-box__btn"><span class="visually-hidden">Середина</span></button>
         <button class="btn-box__btn"><span class="visually-hidden">Конец</span></button>
-      </div>
-      <button class="btn-mark btn-mark-1 main__rewiew-btn-mark-1"><span class="visually-hidden">Назад</span></button>
-      <button class="btn-mark btn-mark-2 main__rewiew-btn-mark-2"><span class="visually-hidden">Вперед</span></button>
-    </section>
-    <div class="main__table-box">
-      <h2 class="visually-hidden">Таблица c тарифами приложения Pink</h2>
-      <table class="table-price main__table-price main__table-price--left-2x-js">
-        <caption class="visually-hidden">Таблица тарифов приложения Pink</caption>
-        <tr class="table-price__tr">
-          <th class="table-price__th"></th>
-          <th class="table-price__th">База<span class="table-price__price">1,99 USD</span></th>
-          <th class="table-price__th">Стандарт<span class="table-price__price">3,99 USD</span></th>
-          <th class="table-price__th">Анлим<span class="table-price__price">9,99 USD</span></th>
-        </tr>
-        <tr class="table-price__tr">
-          <td class="table-price__td">Розовый фильтр</td>
-          <td class="table-price__td"><span class="visually-hidden">Включает</span></td>
-          <td class="table-price__td"><span class="visually-hidden">Включает</span></td>
-          <td class="table-price__td"><span class="visually-hidden">Включает</span></td>
-        </tr>
-        <tr class="table-price__tr">
-          <td class="table-price__td">Смайлики</td>
-          <td class="table-price__td"><span class="visually-hidden">Не включает</span></td>
-          <td class="table-price__td"><span class="visually-hidden">Включает</span></td>
-          <td class="table-price__td"><span class="visually-hidden">Включает</span></td>
-        </tr>
-        <tr class="table-price__tr">
-          <td class="table-price__td">Комментарии</td>
-          <td class="table-price__td"><span class="visually-hidden">Не включает</span></td>
-          <td class="table-price__td"><span class="visually-hidden">Не включает</span></td>
-          <td class="table-price__td"><span class="visually-hidden">Включает</span></td>
-        </tr>
-      </table>
+      </div>      
     </div>
   </main>
   <footer class="footer">
@@ -188,7 +197,10 @@
           <a class="contacts__link" href="mailto:gurovdmitriy1991@gmail.com">gurovdmitriy1991@gmail.com</a>
         </p>
       </div>
-      <div class="footer__map"></div>
+      <div class="footer__map-box">
+        <div class="footer__map">
+        </div>
+      </div>
     </section>
     <section class="copyright footer__copyright">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>

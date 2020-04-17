@@ -3,24 +3,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .wrapper-tablet();
     padding-top: 60px;
     padding-bottom: 60px;    
-  }
-
-  @media (min-width: @desktop-width) {
-    .wrapper-desktop();
-  }
+  }    
 }
 
 .advrt__descript {
   @media (min-width: @tablet-width) {
     width: 295px;
-  }
+  }    
 
   @media (min-width: @desktop-width) {
     width: 525px;
   }
+
+  @media (min-width: @desktop-out-width) {
+    margin-right: auto;
+    margin-left: auto;
+  }   
 }
 
 .advrt__caption {

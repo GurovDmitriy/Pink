@@ -1,17 +1,5 @@
 .table-price {
-  min-width: 1000px;
-
-  border-collapse: collapse;
-
-  @media (min-width: @tablet-width) {
-    min-width: 620px;
-    .wrapper-tablet();
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 1000px;
-    .wrapper-desktop();
-  } 
+  border-collapse: collapse; 
 }
 
 .table-price__th,
@@ -29,5 +17,82 @@
 }
 
 .table-price__price {
-  margin-bottom: 0;
+  display: block;
+}
+
+.table-price__td {
+  position: relative;
+
+  &:not(:first-child)::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 90%;
+
+    display: block;
+    width: 24px;
+    height: 12px;
+
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  @media (min-width: @tablet-width) {
+    &:not(:first-child)::before {
+      left: 50%;
+    } 
+  }
+}
+
+.table-price__td--disabled {
+  &:not(:first-child)::after,
+  &:not(:first-child)::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 90%;
+
+    display: block;
+    width: 24px;
+    height: 2px;
+  }
+
+  &:not(:first-child)::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:not(:first-child)::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  } 
+
+  @media (min-width: @tablet-width) {
+    &:not(:first-child)::after,
+    &:not(:first-child)::before {
+      left: 50%;
+    }
+  } 
+}
+
+.table-price__label {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.table-price__th--hit {
+  position: relative;
+
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "Хит";
+    top: 10%;
+    left: -25px;
+
+    display: block;
+    width: 80px;
+    padding: 5px;
+
+    transform: rotate(-45deg);
+  }
 }
