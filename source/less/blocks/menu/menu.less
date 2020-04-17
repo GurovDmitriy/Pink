@@ -1,10 +1,12 @@
 .menu {
+  display: block;
   margin: 0;
   padding: 0;
 
+  list-style: none;
+
   @media (min-width: @desktop-width) {
-    display: grid;
-    gap: 30px;
+    grid-gap: 30px;
     grid-template-columns: auto auto auto auto;
   }
 }
