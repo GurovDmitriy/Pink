@@ -1,0 +1,28 @@
+.btn-like {
+  position: relative;
+  
+  display: block;
+  padding-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+}
+
+.btn-like__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 13px;
+  height: 12px;
+
+  transform: translate(0, -50%);
+
+  @media (min-width: @tablet-width) {
+    left: 100%;
+
+    transform: translate(-50%, -50%);
+  }  
+}
