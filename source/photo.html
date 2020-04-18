@@ -3,16 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink - Фотографии</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">   
 </head>
 <body>
-  <header class="header container">
+  <div style="display: none">
+  </div>  
+  <header class="header-photo header">
     <h1 class="visually-hidden">Фотографии пользователей</h1>
-    <div class="container header__nav-box">
-      <nav class="wrapper header__nav">
+    <div class="header-photo__nav-box header__nav-box">
+      <nav class="header__nav">
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
-        <a class="logo header__logo" href="index.html">
-          <strong class="visually-hidden">Логотип пинк</strong>
-        </a>
+        <div class="header__logo-box">
+          <a class="logo header__logo" title="Вы уже здесь">
+            <img class="logo__img" src="https://via.placeholder.com/75x22/d22856">
+            <strong class="visually-hidden">Логотип пинк</strong>
+          </a>
+          <button class="burger header__burger">
+            <span class="visually-hidden">Открыть/Закрыть</span>
+            <span class="burger__bar"></span>
+          </button>
+        </div>
         <ul class="menu header__menu">
           <li class="menu__item">
             <a class="menu__link" href="index.html">Главная</a>
@@ -29,85 +40,107 @@
         </ul>
       </nav>
     </div>
-    <span class="caption header__caption">Фотографии пользователей</span>
+    <h2 class="header-photo__caption header__caption">Фотографии пользователей</h2>
   </header>
-  <main class="main container">
-    <h2 class="caption-min main__caption-gallery wrapper">
+  <main class="main-photo">
+    <h2 class="main-photo__caption">
       Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
     </h2>
-    <div class="main__panorama">
-      <a class="btn main__panorama-btn" href="#">Панорама дня</a>
-      <figure class="post main__post">
-        <img class="post__img" src="">
-        <figcaption class="post__caption">
-          <span class="post__autor">
-            Анна <time class="post__time" datetime="2020-04-11T16:20">&#40;5 минут назад&#41;</time>
+    <div class="panorama">
+      <figure class="post panorama__post">
+        <img class="post__img panorama__img" src="https://via.placeholder.com/320x137/d22856">
+        <a class="btn-classic panorama__btn" href="#">Панорама дня</a>
+        <figcaption class="post__caption panorama__caption">
+          <span class="post__autor panorama__autor">Анна <time class="post__time" datetime="2020-04-11T16:20">&#40;5 минут назад&#41;</time>
           </span>
+          <span class="post__text">
             Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-            <span class="like-count post__like-count">Нравится: <span class="like-count__number">215</span></span>
+          </span>
+          <button class="btn-like panorama__btn-like">
+            <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
+            <span class="btn-like__text">Нравится: </span><span class="btn-like__number">215</span>
+          </button>
         </figcaption>
-      </figure>
+      </figure>      
     </div>
-    <section class="wrapper main__gallery">
+    <section class="gallery">
       <h2 class="visually-hidden">Галлерея</h2>
-      <figure class="post main-gallery-post">
-        <img class="post__img" src="">
-        <figcaption class="post__caption">
+      <figure class="post gallery__post">
+        <img class="post__img" src="https://via.placeholder.com/280x180/d22856https://via.placeholder.com/280x180/d22856">
+        <figcaption class="post__caption gallery__caption">
           <span class="post__autor">
             Левон <time class="post__time" datetime="2020-04-11T16:20">&#40;5 часов назад&#41;</time>
           </span>
             Вчера он на луну летал, сегодня в руки к нам попал.
-            <span class="like-count post__like-count">Нравится: <span class="like-count__number">356</span></span>
+          <button class="btn-like gallery__btn-like">
+            <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
+            <span class="btn-like__text">Нравится: </span><span class="btn-like__number">356</span>
+          </button>
         </figcaption>
       </figure>
-      <figure class="post main-gallery-post">
-        <img class="post__img" src="">
-        <figcaption class="post__caption">
+      <figure class="post gallery__post">
+        <img class="post__img" src="https://via.placeholder.com/280x180/d22856">
+        <figcaption class="post__caption gallery__caption">
           <span class="post__autor">
             Антон <time class="post__time" datetime="2020-04-11T16:20">&#40;12 часов назад&#41;</time>
           </span>
             Соседи будут рады!
-            <span class="like-count post__like-count">Нравится: <span class="like-count__number">666</span></span>
+          <button class="btn-like gallery__btn-like">
+            <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
+            <span class="btn-like__text">Нравится: </span><span class="btn-like__number">666</span>
+          </button>
         </figcaption>
       </figure>
-      <figure class="post main-gallery-post">
-        <img class="post__img" src="">
-        <figcaption class="post__caption">
+      <figure class="post gallery__post">
+        <img class="post__img" src="https://via.placeholder.com/280x180/d22856">
+        <figcaption class="post__caption gallery__caption">
           <span class="post__autor">
             Борис <time class="post__time" datetime="2020-04-11T16:20">&#40;20 часов назад&#41;</time>
           </span>
             Здесь могла быть ваша цитата о высоком и вечном.
-            <span class="like-count post__like-count">Нравится: <span class="like-count__number">215</span></span>
+          <button class="btn-like gallery__btn-like">
+            <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
+            <span class="btn-like__text">Нравится: </span><span class="btn-like__number">215</span>
+          </button>
         </figcaption>
       </figure>  
-      <figure class="post main-gallery-post">
-        <img class="post__img" src="">
-        <figcaption class="post__caption">
+      <figure class="post gallery__post">
+        <img class="post__img" src="https://via.placeholder.com/280x180/d22856">
+        <figcaption class="post__caption gallery__caption">
           <span class="post__autor">
             Сергей <time class="post__time" datetime="2020-04-11T16:20">&#40;25 часов назад&#41;</time>
           </span>
             Самая кубанская в мире!
-            <span class="like-count post__like-count">Нравится: <span class="like-count__number">4</span></span>
+          <button class="btn-like gallery__btn-like">
+            <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
+            <span class="btn-like__text">Нравится: </span><span class="btn-like__number">4</span>
+          </button>
         </figcaption>
       </figure>
-      <figure class="post main-gallery-post">
-        <img class="post__img" src="">
-        <figcaption class="post__caption">
+      <figure class="post gallery__post">
+        <img class="post__img" src="https://via.placeholder.com/280x180/d22856">
+        <figcaption class="post__caption gallery__caption">
           <span class="post__autor">
             Максим <time class="post__time" datetime="2020-04-11T16:20">&#40;40 часов назад&#41;</time>
           </span>
             Где снег-то?
-            <span class="like-count post__like-count">Нравится: <span class="like-count__number">150</span></span>
+          <button class="btn-like gallery__btn-like">
+            <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
+            <span class="btn-like__text">Нравится: </span><span class="btn-like__number">150</span>
+          </button>
         </figcaption>
       </figure>
-      <figure class="post main-gallery-post">
-        <img class="post__img" src="">
-        <figcaption class="post__caption">
+      <figure class="post gallery__post">
+        <img class="post__img" src="https://via.placeholder.com/280x180/d22856">
+        <figcaption class="post__caption gallery__caption">
           <span class="post__autor">
             Надежда <time class="post__time" datetime="2020-04-11T16:20">&#40;45 часов назад&#41;</time>
           </span>
             Всем GM и взаимные лайки!
-            <span class="like-count post__like-count">Нравится: <span class="like-count__number">2560</span></span>
+          <button class="btn-like gallery__btn-like">
+            <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
+            <span class="btn-like__text">Нравится: </span><span class="btn-like__number">2560</span>
+          </button>
         </figcaption>
       </figure>                   
     </section>
@@ -133,31 +166,39 @@
       </div>
     </form>
   </main>
-  <footer class="footer container">
-    <section class="wrapper footer__copyright">
+  <footer class="footer">
+    <section class="copyright footer__copyright">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a class="logo footer__logo" title="Вы уже здесь">
+      <a class="logo copyright__logo" title="Вы уже здесь">
+        <img class="logo__img" src="https://via.placeholder.com/75x22/d22856">
         <strong class="visually-hidden">Логотип пинк</strong>
       </a>
-      <ul class="icon-list footer__icon-list">
+      <ul class="icon-list copyright__icon-list">
         <li class="icon-list__item">
           <a class="icon-list-link" href="#">
+            <img src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Твиттер</span></a>
         </li>
         <li class="icon-list__item">
           <a class="icon-list-link" href="#">
+            <img src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Фэйсбук</span>
           </a>
         </li>
         <li class="icon-list__item">
           <a class="icon-list-link" href="#">
+            <img src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
-      <strong class="footer__copyright-text">Разработано<a class="footer__copyright-link" href="#">
-        <span class="visually-hidden">HtmlAcademy</span></a>
-      </strong>
+      <div class="copyright__autor">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="#">
+          <img src="https://via.placeholder.com/27x24/d22856">
+          <span class="visually-hidden">HtmlAcademy</span>
+        </a>
+      </div>
     </section>
   </footer>
 </body>

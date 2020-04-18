@@ -3,25 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink - Форма регистрации</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
 </head>
 <body>
+  <div style="display: none">
+  </div>  
   <header class="header container">
     <h1 class="visually-hidden">Форма регистрации</h1>
-    <div class="container header__nav-box">
-      <nav class="wrapper header__nav">
+    <div class="header__nav-box">
+      <nav class="header__nav">
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
-        <a class="logo header__logo" href="index.html">
-          <strong class="visually-hidden">Логотип пинк</strong>
-        </a>
+        <div class="header__logo-box">
+          <a class="logo header__logo" title="Вы уже здесь">
+            <img class="logo__img" src="https://via.placeholder.com/75x22/d22856">
+            <strong class="visually-hidden">Логотип пинк</strong>
+          </a>
+          <button class="burger header__burger">
+            <span class="visually-hidden">Открыть/Закрыть</span>
+            <span class="burger__bar"></span>
+          </button>
+        </div>
         <ul class="menu header__menu">
           <li class="menu__item">
-            <a class="menu__link" href="index.html">Главная</a>
+            <a class="menu__link" title="Вы уже здесь">Главная</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="photo.html">Фотографии</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" title="Вы уже здесь">Конкурс</a>
+            <a class="menu__link" href="form.html">Конкурс</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Html Academy</a>
@@ -29,7 +40,7 @@
         </ul>
       </nav>
     </div>
-    <span class="caption header__caption">Конкурс на самое безбашенное путешествие с Пинк</span>
+    <h2 class="header__caption">Конкурс на самое безбашенное путешествие с Пинк</h2>
   </header>
   <main class="main container">
     <h2 class="caption-min wrapper main__caption">
@@ -109,30 +120,38 @@
     </div>
   </main>
   <footer class="footer container">
-    <section class="wrapper footer__copyright">
+    <section class="copyright footer__copyright">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a class="logo footer__logo" title="Вы уже здесь">
+      <a class="logo copyright__logo" title="Вы уже здесь">
+        <img class="logo__img" src="https://via.placeholder.com/75x22/d22856">
         <strong class="visually-hidden">Логотип пинк</strong>
       </a>
-      <ul class="icon-list footer__icon-list">
+      <ul class="icon-list copyright__icon-list">
         <li class="icon-list__item">
           <a class="icon-list-link" href="#">
+            <img src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Твиттер</span></a>
         </li>
         <li class="icon-list__item">
           <a class="icon-list-link" href="#">
+            <img src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Фэйсбук</span>
           </a>
         </li>
         <li class="icon-list__item">
           <a class="icon-list-link" href="#">
+            <img src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
-      <strong class="footer__copyright-text">Разработано<a class="footer__copyright-link" href="#">
-        <span class="visually-hidden">HtmlAcademy</span></a>
-      </strong>
+      <div class="copyright__autor">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="#">
+          <img src="https://via.placeholder.com/27x24/d22856">
+          <span class="visually-hidden">HtmlAcademy</span>
+        </a>
+      </div>
     </section>
   </footer>
 </body>

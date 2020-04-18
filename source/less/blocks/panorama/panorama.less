@@ -1,0 +1,60 @@
+.panorama__post {
+  position: relative;
+
+  .container-mobile();
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    .container-tablet();
+  }
+
+  @media (min-width: @desktop-width) {
+    .container-desktop();
+  }    
+}
+
+.panorama__img {
+  display: block;
+  width: 320px;
+  height: 137px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 506px;
+  }   
+}
+
+.panorama__caption {
+  .wrapper-mobile();
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    .wrapper-tablet();
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper-desktop();
+  }
+}
+
+.panorama__autor {
+  order: -2;
+}
+
+.panorama__btn-like {
+  @media (min-width: @tablet-width) {
+    order: -1; 
+  }
+}
+
+.panorama__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
