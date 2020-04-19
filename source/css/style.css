@@ -563,6 +563,77 @@ body {
   background-color: #d22856;
   border: none;
 }
+/* custom-range */
+@media (min-width: 660px) {
+  .custom-range {
+    position: relative;
+  }
+}
+.custom-range__bar {
+  padding-right: 60px;
+}
+.custom-range__status-bar {
+  position: relative;
+  height: 2px;
+}
+.custom-range__status-bar::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  transform: translate(0, -50%);
+}
+.custom-range__icon {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 660px) {
+  .custom-range__icon {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+.custom-range:first-child .custom-range__icon {
+  position: absolute;
+  left: 0;
+  transform: translate(0, -50%);
+}
+@media (min-width: 660px) {
+  .custom-range:first-child .custom-range__icon {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+.custom-range:nth-child(3) .custom-range__icon {
+  position: absolute;
+  left: 100%;
+  transform: translate(-100%, -50%);
+}
+@media (min-width: 660px) {
+  .custom-range:nth-child(3) .custom-range__icon {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+.custom-range__bar {
+  background-color: #000000;
+}
+.custom-range__status-bar {
+  background-color: #d22856;
+}
+.custom-range__status-bar::after {
+  background-color: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+}
 /* logo */
 .logo {
   position: relative;
@@ -1776,6 +1847,99 @@ body {
     line-height: 30px;
   }
 }
+/* upload */
+@media (min-width: 660px) {
+  .upload {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+}
+.upload__img {
+  display: block;
+  width: 280px;
+  height: 374px;
+}
+@media (min-width: 660px) {
+  .upload__img {
+    width: 300px;
+    height: 400px;
+  }
+}
+.upload__filter {
+  position: relative;
+  height: 200px;
+  padding-top: 100px;
+  overflow: hidden;
+}
+@media (min-width: 660px) {
+  .upload__filter {
+    width: 260px;
+    height: auto;
+    padding-top: 0;
+    overflow: none;
+  }
+}
+@media (min-width: 1200px) {
+  .upload__filter {
+    width: 410px;
+  }
+}
+.upload__custom-range {
+  padding: 50px 0;
+}
+@media (min-width: 660px) {
+  .upload__custom-range {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 20px;
+  }
+}
+.upload__btn-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+@media (min-width: 660px) {
+  .upload__btn-box {
+    width: 260px;
+  }
+}
+@media (min-width: 1200px) {
+  .upload__btn-box {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 410px;
+  }
+}
+.upload__btn {
+  margin-bottom: 20px;
+}
+.upload__btn:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .upload__btn {
+    width: 183px;
+    margin-bottom: 0;
+  }
+}
+.upload__btn-box {
+  border-top: 2px solid gray;
+}
+.upload__btn {
+  background-color: transparent;
+  border-color: #d22856;
+  color: #d22856;
+}
+.upload__btn--disabled {
+  border-color: gray;
+  color: gray;
+}
 /* header-photo */
 .header-photo {
   padding-bottom: 60px;
@@ -1829,6 +1993,28 @@ body {
     width: 570px;
   }
 }
+.main__upload {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 660px) {
+  .main__upload {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .main__upload {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 514px;
+    padding: 57px 20px;
+  }
+}
 .main-photo__caption {
   font-size: 14px;
   line-height: 22px;
@@ -1843,6 +2029,17 @@ body {
 }
 .post__caption {
   background-color: darkgrey;
+}
+.main-photo__upload-box {
+  background-color: lightgrey;
+}
+@media (min-width: 1200px) {
+  .main-photo__upload-box {
+    background-color: transparent;
+  }
+}
+.main__upload {
+  background-color: lightgrey;
 }
 /* post */
 .post {

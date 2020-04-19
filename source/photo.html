@@ -144,27 +144,34 @@
         </figcaption>
       </figure>                   
     </section>
-    <h2 class="caption-min wrapper main__upload-caption">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-    <form class="form-upload wrapper main__form-upload">
-      <div class="form-upload__photo">
-        <img class="form-upload__img" src="">
-      </div>
-      <div class="form-upload__filter">
-        <div class="custom-range form-upload__custom-range">
-          <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
+    <h2 class="main-photo__caption">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+    <div class="main-photo__upload-box">
+      <form class="upload main__upload">
+        <div class="upload__photo">
+          <img class="upload__img" src="https://via.placeholder.com/280x374/d22856">
         </div>
-        <div class="custom-range form-upload__custom-range">
-          <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
-        </div>        
-        <div class="custom-range form-upload__custom-range">
-          <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
+        <div class="upload__filter">
+          <div class="custom-range upload__custom-range upload__custom-range--show">
+            <img class="custom-range__icon" src="https://via.placeholder.com/44x44/d22856">
+            <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
+          </div>
+          <div class="custom-range upload__custom-range">
+            <img class="custom-range__icon" src="https://via.placeholder.com/48x43/d22856">
+            <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
+          </div>        
+          <div class="custom-range upload__custom-range">
+            <img class="custom-range__icon" src="https://via.placeholder.com/32x32/d22856">
+            <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
+          </div>
         </div>
-        <label class="visually-hidden" for="upload-field">Загрузить фотографии</label>
-        <input class="visually-hidden" id="upload-field" type="file" name="upload" accept="image/*">        
-        <button class="btn form-upload__btn" type="submit">Запостить</button>
-        <button class="btn form-upload__btn form-upload__btn--disabled" type="submit">Отмена</button>
-      </div>
-    </form>
+        <div class="upload__btn-box">
+          <label class="visually-hidden" for="upload-field">Загрузить фотографии</label>
+          <input class="visually-hidden" id="upload-field" type="file" name="upload" accept="image/*">        
+          <button class="btn upload__btn" type="submit">Запостить</button>
+          <button class="btn upload__btn upload__btn--disabled" type="submit">Отмена</button>          
+        </div>
+      </form>
+    </div>
   </main>
   <footer class="footer">
     <section class="copyright footer__copyright">
