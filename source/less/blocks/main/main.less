@@ -1,5 +1,5 @@
 .main__promo {
-  padding-top: 28px; 
+  padding-top: 38px; 
 }
 
 .main__caption {
@@ -20,9 +20,15 @@
 }
 
 .main__caption-2 {
+  padding-bottom: 0;
+
   @media (min-width: @desktop-width) {
     width: 420px;
   }
+}
+
+.main__pictures-box {
+  padding-top: 90px;
 }
 
 .main__pictures-list {
@@ -68,43 +74,11 @@
   }  
 }
 
-.review__btn-box {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-
-  width: 70px;
-  margin-right: auto;
-  margin-left: auto;
-
-  transform: translate(-50%, -50%);
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }  
-}
-
 .review__btn-mark-1,
 .review__btn-mark-2 {
   @media (max-width: @desktop-width) {
     display: none;
   }
-}
-
-.review__btn-mark-1 {
-  position: absolute;
-  left: -5%;
-  bottom: 50%;
-
-  transform: translate(-50%, 50%) rotate(45deg);  
-}
-
-.review__btn-mark-2 {
-  position: absolute;
-  left: 105%;
-  bottom: 50%;
-
-  transform: translate(-50%, 50%) rotate(-45deg);
 }
 
 .main__table-shell {
@@ -113,10 +87,10 @@
 
 .main__btn-box {
   position: absolute;
-  bottom: 0;
+  bottom: 45px;
   left: 50%;
 
-  width: 70px;
+  width: 58px;
 
   transform: translate(-50%, -50%);
 
@@ -128,8 +102,8 @@
 .main__table-box {
   .container-mobile();
 
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 131px;
+  padding-bottom: 101px;
 
   overflow: hidden;
 

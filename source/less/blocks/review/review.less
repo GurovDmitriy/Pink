@@ -2,8 +2,8 @@
   display: flex;
   align-items: flex-start;
 
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 42px;
+  padding-bottom: 47px;
 }
 
 .review__item {
@@ -18,7 +18,7 @@
 
 .review__autor {
   order: -1;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
     order: 1;
@@ -45,4 +45,36 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
   }
+}
+
+.review__btn-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 58px;
+  margin-right: auto;
+  margin-left: auto;
+
+  transform: translate(-50%, -50%);
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }  
+}
+
+.review__btn-mark-1 {
+  position: absolute;
+  left: -5%;
+  bottom: 50%;
+
+  transform: translate(-50%, 50%) rotate(45deg);  
+}
+
+.review__btn-mark-2 {
+  position: absolute;
+  left: 105%;
+  bottom: 50%;
+
+  transform: translate(-50%, 50%) rotate(-45deg);
 }
