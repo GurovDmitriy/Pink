@@ -1,34 +1,26 @@
-.form__fieldset-box {
-  background-color: darkgrey;  
-}
-
-.form__fieldset {
+.form__fieldset-name,
+.form__fieldset-app,
+.form__fieldset-contacts,
+.form__fieldset-progress,
+.form__fieldset-comment {
   border: none;
 }
 
-.form__label-radio::before {
-  border: 2px solid @color-black;
-  border-radius: 50%;
-}
 
-.form__label-radio::after {
-  background-color: @color-pink;
-  border-radius: 50%;
-}
-
-.form__label-checkbox::before {
-  border: 2px solid @color-black; 
-}
-
-.form__label-checkbox::after {
-  border-left: 2px solid @color-pink;
-  border-bottom: 2px solid @color-pink;
-}
-
-.form__submit-btn {
-  background-color: @color-green; 
+.form__fieldset-app,
+.form__fieldset-contacts,
+.form__fieldset-progress,
+.form__fieldset-comment {
+  @media (min-width: @tablet-width) {
+    border: 2px solid black;
+  }
 }
 
 .form__footnote-star {
   color: @color-pink;
 }
+
+.form__fieldset-box--grey-bg {
+  background-color: darkgrey;  
+}
+
