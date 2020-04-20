@@ -1,5 +1,9 @@
 .main__promo {
-  padding-top: 38px; 
+  padding-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 49px;
+  }
 }
 
 .main__caption {
@@ -12,6 +16,7 @@
 
   @media (min-width: @tablet-width) {
     .wrapper-tablet();
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,6 +27,10 @@
 .main__caption-2 {
   padding-bottom: 0;
 
+  @media (min-width: @tablet-width) {
+    width: 570px;
+  }  
+
   @media (min-width: @desktop-width) {
     width: 420px;
   }
@@ -29,6 +38,10 @@
 
 .main__pictures-box {
   padding-top: 90px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 51px;
+  }  
 }
 
 .main__pictures-list {
@@ -110,6 +123,8 @@
   @media (min-width: @tablet-width) {
     max-width: 620px;
     .wrapper-tablet();
+    padding-top: 108px;
+    padding-bottom: 70px;    
   } 
 
   @media (min-width: @desktop-width) {
