@@ -1,118 +1,171 @@
 .form {
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: @desktop-width) {
+    .wrapper-desktop();
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-.form__fieldset {
-  display: flex;
-  flex-direction: column;
-  .wrapper-mobile;
+.form__fieldset-name,
+.form__fieldset-app,
+.form__fieldset-contacts,
+.form__fieldset-progress,
+.form__fieldset-comment {
+  .wrapper-mobile();
   padding: 40px 0;
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper-desktop();
+  }  
 }
 
-.form__legend {
-  display: none;
+.form__fieldset-name,
+.form__fieldset-app {
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
 }
 
-.form__legend-app {
-  display: block;
+.form__fieldset-name-inner,
+.form__fieldset-app-inner,
+.form__fieldset-contacts-inner,
+.form__fieldset-progress-inner,
+.form__legend-comment-inner {
+  display: flex;
+  flex-direction: column; 
 }
 
-.form__legend-progress {
-  display: block;
+.form__fieldset-contacts-inner {
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.form__legend-comment {
-  display: block;
+.form__input-tel-box,
+.form__input-email-box {
+  @media (min-width: @desktop-width) {
+    width: 370px;
+  }
 }
 
-.form__label-text,
+.form__input-tel-box {
+  @media (min-width: @desktop-width) {
+    order: -2;
+  }
+}
+
+.form__input-email-box {
+  @media (min-width: @desktop-width) {
+   order: -1; 
+  }
+}
+
 .form__label-tel,
 .form__label-email {
-  padding: 10px;
+  @media (min-width: @desktop-width) {
+    width: 370px;
+  }
+}
+
+.form__fieldset-progress-inner {
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.form__label-checkbox {
+  @media (min-width: @desktop-width) {
+    width: 280px;
+  }
+}
+
+.form__fieldset-name-inner {
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.input-text {
+  @media (min-width: @tablet-width) {
+    width: 525px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }  
+}
+
+.form__legend-name,
+.form__legend-contacts {
+  display: none;
 }
 
 .form__input-text,
 .form__input-tel,
 .form__input-email {
   width: 100%;
-  padding: 13px 20px;
+}
+
+.form__label-checkbox,
+.form__label-radio {
   margin-bottom: 10px;
 
   &:last-of-type {
     margin-bottom: 0;
-  }
+  } 
 }
 
-.form__label-radio,
-.form__label-checkbox {
-  position: relative;
-
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-right: 20px;
-  padding-left: 55px;
-  margin-bottom: 10px;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }  
-}
-
-.form__label-radio::after,
-.form__label-radio::before,
-.form__label-checkbox::after,
-.form__label-checkbox::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 0;
-  
+.form__input-radio:checked + .label-radio::after {
   display: block;
-
-  transform: translate(0, -50%);
 }
 
-.form__label-radio::before,
-.form__label-checkbox::before {
-  width: 36px;
-  height: 36px;
+.form__input-checkbox:checked + .label-checkbox::after {
+  display: block;
 }
 
-.form__label-radio::after {
-  display: none;
-  width: 12px;
-  height: 12px;
-
-  transform: translate(100%, -50%);  
-}
-
-.form__label-checkbox::after {
-  display: none;
-  width: 20px;
-  height: 10px;
-
-  transform: translate(8px, -50%) rotate(-45deg);  
-}
-
-.form__textarea-comment {
+.form__comment {
   width: 100%;
-  padding: 20px;
   height: 200px;
 }
 
-.form__input-checkbox:checked + .form__label-checkbox::after {
-  display: block;
-}
-
-.form__input-radio:checked + .form__label-radio::after {
-  display: block;
+.form__submit-box {
+  display: flex;
+  flex-direction: column;
+  .wrapper-mobile();
 }
 
 .form__submit-box {
-  .wrapper-mobile();
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .wrapper-tablet();
+  }
 }
 
 .form__submit-btn {
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 }
