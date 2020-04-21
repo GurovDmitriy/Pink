@@ -1,5 +1,5 @@
 .main-photo {
-  padding-top: 50px;
+  padding-top: 45px;
 
   @media (min-width: @tablet-width) {
     padding-top: 70px;
@@ -8,7 +8,13 @@
 
 .main-photo__caption {
   .wrapper-mobile();
+  margin-top: 0;
+  margin-bottom: 49px;
   width: 242px;
+
+  &:last-of-type {
+    margin-bottom: 70px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 440px;
@@ -17,6 +23,15 @@
   @media (min-width: @desktop-width) {
     width: 570px;
   }  
+}
+
+.main-photo__gallery {
+  margin-bottom: 45px;
+}
+
+.main-photo__upload-box {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .main__upload {
