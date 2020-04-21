@@ -3,7 +3,11 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;   
-  }    
+  }
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+  }   
 }
 
 .advrt__descript {
@@ -25,6 +29,7 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    margin-bottom: 24px;
   }  
 }
 
@@ -67,5 +72,12 @@
   left: 50%;
   z-index: -1;
 
+  width: 238px;
+  height: 276px;
+
   transform: translate(-50%, -50%);
+
+  @media (min-width: @desktop-width) {
+    height: 296px;
+  }
 }
