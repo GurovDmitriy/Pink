@@ -1,35 +1,23 @@
 .table-price__th {
-  .text-x3();
+  .text-x7();
   text-align: center;
   text-transform: uppercase;
   color: @color-white;
 
   @media (min-width: @tablet-width) {
-    .text-x2();
-  }
-
-  @media (min-width: @desktop-width) {
-    .text-x3();
-  }  
+  .text-x4();
+  } 
 }
 
 .table-price__price {
-  .text-x4();
+  .text-x10();
   font-weight: lighter;
   text-transform: uppercase;
-  color: @color-white;
-
-  @media (min-width: @tablet-width) {
-    .text-x3();
-  }
-
-  @media (min-width: @desktop-width) {
-    .text-x4();
-  }  
+  color: @color-white; 
 }
 
 .table-price__td {
-  .text-x1();
+  .text-x3();
   text-transform: uppercase;
 
   @media (min-width: @desktop-width) {
@@ -37,14 +25,13 @@
   }  
 
   @media (min-width: @desktop-width) {
-    .text-x3();
+  .text-x7();
   }  
 }
 
 .table-price__th--hit {
   &::before {
-    font-size: 10px;
-    line-height: 12px;
+    .text-x3();
     font-weight: lighter;
   }
 }

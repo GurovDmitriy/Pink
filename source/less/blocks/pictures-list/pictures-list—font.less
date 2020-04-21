@@ -3,17 +3,22 @@
 }
 
 .pictures-list__caption {
-  .caption-x1();
+  .text-x7();
   text-align: center;
   color: @color-black;
 
   @media (min-width: @tablet-width) {
     text-align: left;
-  }  
+  } 
+
+  @media (min-width: @desktop-width) {
+    .text-x10();
+    text-align: center;
+  }    
 }
 
 .pictures-list__text {
-  .text-x1();
+  .text-x2();
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -21,6 +26,7 @@
   } 
 
   @media (min-width: @desktop-width) {
+    .text-x7();
     text-align: center;
   }   
 }
