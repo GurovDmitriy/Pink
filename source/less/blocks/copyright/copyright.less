@@ -12,6 +12,8 @@
 }
 
 .copyright__logo {
+  width: 75px;
+  height: 22px;
   margin-bottom: 50px;
 
   @media (min-width: @tablet-width) {
@@ -21,11 +23,33 @@
   }  
 }
 
-.copyright__icon-list {
+.copyright__social-list {
   width: 175px;
   margin-bottom: 50px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
+}
+
+.copyright__link {
+  position: relative;
+
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 42px;
+}
+
+.copyright__link-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  transform: translate(0, -50%);
 }
