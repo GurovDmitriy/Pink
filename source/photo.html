@@ -63,7 +63,7 @@
         </figcaption>
       </figure>      
     </div>
-    <section class="gallery">
+    <section class="gallery main-photo__gallery">
       <h2 class="visually-hidden">Галлерея</h2>
       <figure class="post gallery__post">
         <img class="post__img" src="https://via.placeholder.com/280x180/d22856https://via.placeholder.com/280x180/d22856">
@@ -71,7 +71,7 @@
           <span class="post__autor">
             Левон <time class="post__time" datetime="2020-04-11T16:20">&#40;5 часов назад&#41;</time>
           </span>
-            Вчера он на луну летал, сегодня в руки к нам попал.
+            <span class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</span>
           <button class="btn-like gallery__btn-like">
             <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
             <span class="btn-like__text">Нравится: </span><span class="btn-like__number">356</span>
@@ -84,7 +84,7 @@
           <span class="post__autor">
             Антон <time class="post__time" datetime="2020-04-11T16:20">&#40;12 часов назад&#41;</time>
           </span>
-            Соседи будут рады!
+            <span class="post__text">Соседи будут рады!</span>
           <button class="btn-like gallery__btn-like">
             <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
             <span class="btn-like__text">Нравится: </span><span class="btn-like__number">666</span>
@@ -97,7 +97,7 @@
           <span class="post__autor">
             Борис <time class="post__time" datetime="2020-04-11T16:20">&#40;20 часов назад&#41;</time>
           </span>
-            Здесь могла быть ваша цитата о высоком и вечном.
+            <span class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</span>
           <button class="btn-like gallery__btn-like">
             <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
             <span class="btn-like__text">Нравится: </span><span class="btn-like__number">215</span>
@@ -110,7 +110,7 @@
           <span class="post__autor">
             Сергей <time class="post__time" datetime="2020-04-11T16:20">&#40;25 часов назад&#41;</time>
           </span>
-            Самая кубанская в мире!
+            <span class="post__text">Самая кубанская в мире!</span>
           <button class="btn-like gallery__btn-like">
             <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
             <span class="btn-like__text">Нравится: </span><span class="btn-like__number">4</span>
@@ -123,7 +123,7 @@
           <span class="post__autor">
             Максим <time class="post__time" datetime="2020-04-11T16:20">&#40;40 часов назад&#41;</time>
           </span>
-            Где снег-то?
+            <span class="post__text">Где снег-то?</span>
           <button class="btn-like gallery__btn-like">
             <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
             <span class="btn-like__text">Нравится: </span><span class="btn-like__number">150</span>
@@ -136,7 +136,7 @@
           <span class="post__autor">
             Надежда <time class="post__time" datetime="2020-04-11T16:20">&#40;45 часов назад&#41;</time>
           </span>
-            Всем GM и взаимные лайки!
+            <span class="post__text">Всем GM и взаимные лайки!</span>
           <button class="btn-like gallery__btn-like">
             <img class="btn-like__icon" src="https://via.placeholder.com/13x12/d22856">
             <span class="btn-like__text">Нравится: </span><span class="btn-like__number">2560</span>
@@ -173,39 +173,37 @@
       </form>
     </div>
   </main>
-  <footer class="footer">
-    <section class="copyright footer__copyright">
+  <footer class="footer footer-photo">
+    <section class="copyright footer__copyright footer-photo__copyright">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <a class="logo copyright__logo" title="Вы уже здесь">
-        <img class="logo__img" src="https://via.placeholder.com/75x22/d22856">
+        <img class="logo__img copyright__logo" src="https://via.placeholder.com/147x40/d22856">
         <strong class="visually-hidden">Логотип пинк</strong>
       </a>
-      <ul class="icon-list copyright__icon-list">
-        <li class="icon-list__item">
-          <a class="icon-list-link" href="#">
-            <img src="https://via.placeholder.com/18x18/d22856">
+      <ul class="social-list copyright__social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img class="social-list__icon" src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Твиттер</span></a>
         </li>
-        <li class="icon-list__item">
-          <a class="icon-list-link" href="#">
-            <img src="https://via.placeholder.com/18x18/d22856">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img class="social-list__icon" src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Фэйсбук</span>
           </a>
         </li>
-        <li class="icon-list__item">
-          <a class="icon-list-link" href="#">
-            <img src="https://via.placeholder.com/18x18/d22856">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img class="social-list__icon" src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
-      <div class="copyright__autor">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="#">
-          <img src="https://via.placeholder.com/27x24/d22856">
-          <span class="visually-hidden">HtmlAcademy</span>
-        </a>
-      </div>
+      <a class="copyright__link" href="#">
+        Разработано
+        <img class="copyright__link-icon" src="https://via.placeholder.com/27x24/d22856">
+        <span class="visually-hidden">HtmlAcademy</span>
+      </a>
     </section>
   </footer>
 </body>
