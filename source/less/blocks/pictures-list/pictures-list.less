@@ -1,14 +1,12 @@
 .pictures-list {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0;
+  padding: 0;  
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding-top: 68px;
-    padding-bottom: 46px;
+    align-items: flex-end;   
   } 
 
   @media (min-width: @desktop-width) {
@@ -35,7 +33,8 @@
 
   @media (min-width: @tablet-width) {
     align-items: flex-start;
-    width: 295px;
+    width: 310px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: @desktop-width) {
@@ -97,4 +96,8 @@
 
 .pictures-list__item:last-child .pictures-list__text {
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }  
 }

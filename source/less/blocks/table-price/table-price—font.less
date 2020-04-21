@@ -13,19 +13,24 @@
   .text-x10();
   font-weight: lighter;
   text-transform: uppercase;
-  color: @color-white; 
+  color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    .text-x7();
+  }
 }
 
 .table-price__td {
   .text-x3();
   text-transform: uppercase;
 
-  @media (min-width: @desktop-width) {
-    text-align: left;
-  }  
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+  }    
 
   @media (min-width: @desktop-width) {
-  .text-x7();
+    .text-x7();
+    text-align: left;
   }  
 }
 

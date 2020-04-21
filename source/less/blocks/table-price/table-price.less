@@ -17,13 +17,17 @@
 
 .table-price__th {
   padding: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px;
+  }  
 }
 
 .table-price__td {
   padding: 15px;
 
   @media (min-width: @tablet-width) {
-    padding: 10px;
+    padding: 7px;
   }
 }
 
@@ -105,5 +109,9 @@
     padding: 3px;
 
     transform: rotate(-45deg);
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+    }
   }
 }
