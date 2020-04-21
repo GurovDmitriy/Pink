@@ -2,6 +2,10 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 110px;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 123px;
+  }  
 }
 
 .header__nav-box {
@@ -11,6 +15,10 @@
     padding-bottom: 0;
     margin-bottom: 93px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 108px;
+  }  
 }
 
 .header__nav {
@@ -25,6 +33,7 @@
 
   @media (min-width: @desktop-width) {
     .wrapper-desktop();
+    min-height: 0; 
     padding-top: 35px;
     padding-bottom: 35px;
   }
@@ -78,7 +87,7 @@
   }
 }
 
-.header__menu--active-js {
+.header__menu--open-js {
   display: block;
 
   @media (min-width: @desktop-width) {
@@ -108,11 +117,6 @@
   @media (min-width: @tablet-width) {
     width: 300px;
     margin-left: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 94px;
-    padding-bottom: 113px;
   }
 }
 
