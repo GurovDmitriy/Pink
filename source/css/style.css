@@ -612,6 +612,54 @@ body {
     transform: translate(0, -50%);
   }
 }
+.custom-range:nth-child(1) .custom-range__icon {
+  width: 44px;
+  height: 44px;
+}
+@media (min-width: 660px) {
+  .custom-range:nth-child(1) .custom-range__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .custom-range:nth-child(1) .custom-range__icon {
+    width: 44px;
+    height: 44px;
+  }
+}
+.custom-range:nth-child(2) .custom-range__icon {
+  width: 48px;
+  height: 43px;
+}
+@media (min-width: 660px) {
+  .custom-range:nth-child(2) .custom-range__icon {
+    width: 24px;
+    height: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .custom-range:nth-child(2) .custom-range__icon {
+    width: 48px;
+    height: 43px;
+  }
+}
+.custom-range:nth-child(3) .custom-range__icon {
+  width: 32px;
+  height: 32px;
+}
+@media (min-width: 660px) {
+  .custom-range:nth-child(3) .custom-range__icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .custom-range:nth-child(3) .custom-range__icon {
+    width: 32px;
+    height: 32px;
+  }
+}
 .custom-range:first-child .custom-range__icon {
   position: absolute;
   left: 36px;
@@ -2192,8 +2240,13 @@ body {
   .upload__custom-range {
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 100px;
+    padding-left: 50px;
     padding-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .upload__custom-range {
+    padding-left: 80px;
   }
 }
 .upload__btn-box {
@@ -2240,7 +2293,12 @@ body {
 }
 @media (min-width: 660px) {
   .header-photo {
-    padding-bottom: 130px;
+    padding-bottom: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-photo {
+    padding-bottom: 101px;
   }
 }
 .header-photo__nav-box {
@@ -2250,6 +2308,11 @@ body {
 @media (min-width: 660px) {
   .header-photo__nav-box {
     margin-bottom: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-photo__nav-box {
+    margin-bottom: 63px;
   }
 }
 .header-photo__caption {
@@ -2262,13 +2325,19 @@ body {
     width: 350px;
   }
 }
+@media (min-width: 660px) {
+  .header-photo__caption {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
 /* main-photo */
 .main-photo {
   padding-top: 45px;
 }
 @media (min-width: 660px) {
   .main-photo {
-    padding-top: 70px;
+    padding-top: 91px;
   }
 }
 .main-photo__caption {
@@ -2285,19 +2354,37 @@ body {
 @media (min-width: 660px) {
   .main-photo__caption {
     width: 440px;
+    margin-bottom: 76px;
   }
 }
 @media (min-width: 1200px) {
   .main-photo__caption {
     width: 570px;
+    margin-bottom: 88px;
   }
 }
 .main-photo__gallery {
   margin-bottom: 45px;
 }
+@media (min-width: 660px) {
+  .main-photo__gallery {
+    margin-bottom: 66px;
+  }
+}
+@media (min-width: 660px) {
+  .main-photo__gallery {
+    margin-bottom: 72px;
+  }
+}
 .main-photo__upload-box {
   padding-top: 20px;
   padding-bottom: 40px;
+}
+@media (min-width: 660px) {
+  .main-photo__upload-box {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 }
 .main__upload {
   width: 280px;
@@ -2318,7 +2405,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: 514px;
-    padding: 57px 20px;
+    padding: 57px 80px;
   }
 }
 .main-photo__caption {
@@ -2326,6 +2413,12 @@ body {
   line-height: 30px;
   font-weight: lighter;
   text-align: center;
+}
+@media (min-width: 660px) {
+  .main-photo__caption {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 .post__caption {
   background-color: darkgrey;
@@ -2371,6 +2464,11 @@ body {
   justify-content: space-between;
   padding: 19px;
 }
+@media (min-width: 660px) {
+  .post__caption {
+    padding: 24px;
+  }
+}
 .post__autor {
   display: block;
 }
@@ -2393,12 +2491,19 @@ body {
   text-transform: uppercase;
 }
 /* panorama */
+.panorama {
+  margin-bottom: 20px;
+}
+@media (min-width: 660px) {
+  .panorama {
+    margin-bottom: 41px;
+  }
+}
 .panorama__post {
   position: relative;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
 }
 @media (min-width: 660px) {
   .panorama__post {
@@ -2464,6 +2569,17 @@ body {
   top: 0;
   right: 19px;
   width: 140px;
+}
+@media (min-width: 660px) {
+  .panorama__btn {
+    top: 57px;
+  }
+}
+@media (min-width: 660px) {
+  .panorama__btn {
+    top: 53px;
+    right: 129px;
+  }
 }
 /* gallery */
 @media (min-width: 660px) {

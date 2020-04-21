@@ -1,8 +1,15 @@
+.panorama {
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 41px;
+  }    
+}
+
 .panorama__post {
   position: relative;
 
   .container-mobile();
-  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     .container-tablet();
@@ -58,5 +65,14 @@
   right: 19px;
 
   width: 140px;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 53px;
+    right: 129px;
+  }  
 }
 
