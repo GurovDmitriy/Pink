@@ -1,35 +1,48 @@
 .advrt__caption {
   @media (min-width: @tablet-width) {
-    .caption-x3();
-    font-size: 32px;
+
+
     color: @color-black;
   }
 
   @media (min-width: @desktop-width) {
-    .caption-x1();
+    
   }  
 }
 
 .advrt__text {
     @media (min-width: @tablet-width) {
-    .text-x1();
+
+  }  
+
+  @media (min-width: @desktop-width) {
+
   }  
 }
 
 .advrt__link {
     @media (min-width: @tablet-width) {
-    .text-x1();
+
     color: @color-pink;
   }
+
+  @media (min-width: @desktop-width) {
+
+  }   
 }
 
 .advrt__time {
   @media (min-width: @tablet-width) {
     &::after {
-      font-size: 90px;
-      line-height: 120px;
+
       font-weight: bold;
       color: @color-pink;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+
+    }
+  }  
 }

@@ -1,16 +1,20 @@
 .main__promo {
-  padding-top: 38px;
+  padding-top: 40px;
 
   @media (min-width: @tablet-width) {
     padding-top: 49px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 66px;
+  }  
 }
 
 .main__caption {
   display: block;
   width: 210px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   margin-left: auto;
   margin-right: auto;
 
@@ -25,7 +29,7 @@
 }
 
 .main__caption-2 {
-  padding-bottom: 0;
+  margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
     width: 570px;
@@ -37,10 +41,14 @@
 }
 
 .main__pictures-box {
-  padding-top: 90px;
+  padding-top: 108px;
 
   @media (min-width: @tablet-width) {
     padding-top: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 74px;
   }  
 }
 
@@ -53,6 +61,7 @@
 
   @media (min-width: @desktop-width) {
     .wrapper-desktop();
+    width: 890px;
   }   
 }
 
@@ -76,7 +85,10 @@
 
 .main__review-box {
   position: relative;
+
   .wrapper-mobile();
+  padding-top: 43px;
+  padding-bottom: 47px;
 
   @media (min-width: @tablet-width) {
     .wrapper-tablet();
@@ -96,6 +108,9 @@
 
 .main__table-shell {
   position: relative;
+
+  padding-top: 130px;
+  padding-bottom: 97px;
 }
 
 .main__btn-box {
@@ -115,9 +130,6 @@
 .main__table-box {
   .container-mobile();
 
-  padding-top: 131px;
-  padding-bottom: 101px;
-
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
@@ -134,19 +146,19 @@
 }
 
 .main__table-price {
-  width: 1000px;
+  width: 1160px;
   margin-left: auto;
   margin-right: auto;
   
   @media (max-width: @tablet-width) {
     &--left-1x-js {
-      transform: translateX(-215px);
+      transform: translateX(-275px);
     }
     &--left-2x-js {
-      transform: translateX(-465px);
+      transform: translateX(-565px);
     }
     &--left-3x-js {
-      transform: translateX(-680px);
+      transform: translateX(-840px);
     }   
   }
      
