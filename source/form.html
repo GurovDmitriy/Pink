@@ -54,16 +54,16 @@
           </legend>
           <div class="form__fieldset-name-inner">
             <label class="form__label-text" for="soname-field">Фамилия:</label>
-            <div class="input-text">
-              <input class="input-text__input form__input-text" id="soname-field" type="text" name="soname" placeholder="Укажите Фамилию&lowast;" required>              
+            <div class="input-text form__input-text">
+              <input class="input-text__input" id="soname-field" type="text" name="soname" placeholder="Укажите Фамилию&lowast;" required>              
             </div>
             <label class="form__label-text" for="name-field">Имя:</label>
-            <div class="input-text">
-              <input class="input-text__input form__input-text" id="name-field" type="text" name="name" placeholder="Введите ваше имя&lowast;" required>              
+            <div class="input-text form__input-text">
+              <input class="input-text__input" id="name-field" type="text" name="name" placeholder="Введите ваше имя&lowast;" required>              
             </div>
             <label class="form__label-text" for="patronymic-field">Отчество:</label>
-            <div class="input-text">
-              <input class="input-text__input form__input-text" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+            <div class="input-text form__input-text">
+              <input class="input-text__input" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
             </div>              
           </div>
         </fieldset>        
@@ -87,13 +87,13 @@
         <fieldset class="form__fieldset-contacts">
           <legend class="form__legend-contacts">Контактная информация</legend>
           <div class="form__fieldset-contacts-inner">
-            <div class="input-tel form__input-tel-box">
-              <input class="input-tel__input form__input-tel" id="tel-field" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            <div class="input-tel form__input-tel">
+              <input class="input-tel__input" id="tel-field" type="tel" name="tel" placeholder="Номер, пожалуйста">
               <img class="input-tel__icon" src="https://via.placeholder.com/20x19/d22856">
             </div>
             <label class="form__label-tel" for="tel-field">Номер телефона</label>
-            <div class="input-email form__input-email-box">
-              <input class="input-email__input form__input-email" id="email-field" type="email" name="email" placeholder="Введите почту&lowast;" required>
+            <div class="input-email form__input-email">
+              <input class="input-email__input" id="email-field" type="email" name="email" placeholder="Введите почту&lowast;" required>
               <img class="input-email__icon" src="https://via.placeholder.com/18x13/d22856">
             </div>
             <label class="form__label-email" for="email-field">Адрес почты</label>             
@@ -155,35 +155,33 @@
     <section class="copyright footer__copyright">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <a class="logo copyright__logo" title="Вы уже здесь">
-        <img class="logo__img" src="https://via.placeholder.com/75x22/d22856">
+        <img class="logo__img copyright__logo" src="https://via.placeholder.com/147x40/d22856">
         <strong class="visually-hidden">Логотип пинк</strong>
       </a>
-      <ul class="icon-list copyright__icon-list">
-        <li class="icon-list__item">
-          <a class="icon-list-link" href="#">
-            <img src="https://via.placeholder.com/18x18/d22856">
+      <ul class="social-list copyright__social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img class="social-list__icon" src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Твиттер</span></a>
         </li>
-        <li class="icon-list__item">
-          <a class="icon-list-link" href="#">
-            <img src="https://via.placeholder.com/18x18/d22856">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img class="social-list__icon" src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Фэйсбук</span>
           </a>
         </li>
-        <li class="icon-list__item">
-          <a class="icon-list-link" href="#">
-            <img src="https://via.placeholder.com/18x18/d22856">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img class="social-list__icon" src="https://via.placeholder.com/18x18/d22856">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
-      <div class="copyright__autor">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="#">
-          <img src="https://via.placeholder.com/27x24/d22856">
-          <span class="visually-hidden">HtmlAcademy</span>
-        </a>
-      </div>
+      <a class="copyright__link" href="#">
+        Разработано
+        <img class="copyright__link-icon" src="https://via.placeholder.com/27x24/d22856">
+        <span class="visually-hidden">HtmlAcademy</span>
+      </a>
     </section>
   </footer>
 </body>
