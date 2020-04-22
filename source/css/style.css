@@ -2708,7 +2708,7 @@ body {
   padding-top: 13px;
   padding-bottom: 13px;
   padding-right: 20px;
-  padding-left: 55px;
+  padding-left: 65px;
 }
 .label-checkbox::after,
 .label-checkbox::before {
@@ -2729,6 +2729,10 @@ body {
   height: 10px;
   transform: translate(8px, -50%) rotate(-45deg);
 }
+.label-checkbox {
+  font-size: 18px;
+  line-height: 30px;
+}
 .label-checkbox::before {
   border: 2px solid #000000;
 }
@@ -2738,7 +2742,8 @@ body {
 }
 /* input-text */
 .input-text__input {
-  padding: 13px 20px;
+  width: 100%;
+  padding: 18px 20px;
 }
 /* input-email */
 .input-email {
@@ -2746,7 +2751,8 @@ body {
   padding-right: 60px;
 }
 .input-email__input {
-  padding: 13px 20px;
+  width: 100%;
+  padding: 18px 20px;
 }
 .input-email__icon {
   position: absolute;
@@ -2766,7 +2772,8 @@ body {
   padding-right: 60px;
 }
 .input-tel__input {
-  padding: 13px 20px;
+  width: 100%;
+  padding: 18px 20px;
 }
 .input-tel__icon {
   position: absolute;
@@ -2788,8 +2795,6 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 @media (min-width: 1200px) {
   .form {
@@ -2802,6 +2807,31 @@ body {
     justify-content: space-between;
   }
 }
+.form__fieldset-box:nth-child(1) {
+  order: -5;
+}
+.form__fieldset-box:nth-child(2) {
+  order: -2;
+}
+.form__fieldset-box:nth-child(3) {
+  order: -3;
+}
+.form__fieldset-box:nth-child(4) {
+  order: -4;
+}
+.form__fieldset-box:nth-child(5) {
+  order: -1;
+}
+.form__fieldset-box {
+  margin-bottom: 44px;
+}
+.form__fieldset-box:last-child {
+  margin-bottom: 0;
+}
+.form__fieldset-box--grey-bg {
+  padding-top: 35px;
+  padding-bottom: 34px;
+}
 .form__fieldset-name,
 .form__fieldset-app,
 .form__fieldset-contacts,
@@ -2810,7 +2840,7 @@ body {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 0;
+  padding: 0;
 }
 @media (min-width: 660px) {
   .form__fieldset-name,
@@ -2840,6 +2870,10 @@ body {
     width: 430px;
   }
 }
+.form__legend-name,
+.form__legend-contacts {
+  display: none;
+}
 .form__fieldset-name-inner,
 .form__fieldset-app-inner,
 .form__fieldset-contacts-inner,
@@ -2855,27 +2889,8 @@ body {
     justify-content: space-between;
   }
 }
-@media (min-width: 1200px) {
-  .form__input-tel-box,
-  .form__input-email-box {
-    width: 370px;
-  }
-}
-@media (min-width: 1200px) {
-  .form__input-tel-box {
-    order: -2;
-  }
-}
-@media (min-width: 1200px) {
-  .form__input-email-box {
-    order: -1;
-  }
-}
-@media (min-width: 1200px) {
-  .form__label-tel,
-  .form__label-email {
-    width: 370px;
-  }
+.form__fieldset-progress-inner {
+  padding-top: 33px;
 }
 @media (min-width: 1200px) {
   .form__fieldset-progress-inner {
@@ -2885,10 +2900,9 @@ body {
     justify-content: space-between;
   }
 }
-@media (min-width: 1200px) {
-  .form__label-checkbox {
-    width: 280px;
-  }
+.form__fieldset-app-inner,
+.form__fieldset-comment-inner {
+  padding-top: 33px;
 }
 @media (min-width: 660px) {
   .form__fieldset-name-inner {
@@ -2896,6 +2910,47 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+  }
+}
+.form__label-text,
+.form__label-tel,
+.form__label-email {
+  padding-left: 20px;
+  margin-bottom: 6px;
+}
+@media (min-width: 1200px) {
+  .form__label-tel,
+  .form__label-email {
+    width: 370px;
+  }
+}
+@media (min-width: 1200px) {
+  .form__label-checkbox {
+    width: 280px;
+  }
+}
+.form__label-checkbox,
+.form__label-radio {
+  margin-bottom: 26px;
+}
+.form__label-checkbox:last-of-type,
+.form__label-radio:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .form__input-tel,
+  .form__input-email {
+    width: 370px;
+  }
+}
+@media (min-width: 1200px) {
+  .form__input-tel {
+    order: -2;
+  }
+}
+@media (min-width: 1200px) {
+  .form__input-email {
+    order: -1;
   }
 }
 @media (min-width: 660px) {
@@ -2908,21 +2963,18 @@ body {
     width: 100%;
   }
 }
-.form__legend-name,
-.form__legend-contacts {
-  display: none;
+.form__input-text {
+  margin-bottom: 19px;
 }
-.form__input-text,
-.form__input-tel,
-.form__input-email {
-  width: 100%;
+.form__input-text:last-of-type {
+  margin-bottom: 0;
 }
-.form__label-checkbox,
-.form__label-radio {
-  margin-bottom: 10px;
+.form__label-tel,
+.form__label-email {
+  margin-bottom: 19px;
 }
-.form__label-checkbox:last-of-type,
-.form__label-radio:last-of-type {
+.form__label-tel:last-of-type,
+.form__label-email:last-of-type {
   margin-bottom: 0;
 }
 .form__input-radio:checked + .label-radio::after {
@@ -2965,6 +3017,8 @@ body {
 .form__legend-contacts,
 .form__legend-progress,
 .form__legend-comment {
+  font-size: 14px;
+  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: #d22856;
@@ -2972,11 +3026,15 @@ body {
 .form__label-text,
 .form__label-tel,
 .form__label-email {
+  font-size: 14px;
+  line-height: 30px;
   font-weight: lighter;
   text-transform: uppercase;
   color: #d22856;
 }
 .form__footnote {
+  font-size: 14px;
+  line-height: 30px;
   text-transform: uppercase;
 }
 .form__fieldset-name,
@@ -3001,15 +3059,17 @@ body {
   background-color: darkgrey;
 }
 /* header-form */
+.header-form {
+  padding-bottom: 80px;
+}
 .header-form__caption {
   display: block;
   width: 230px;
   margin: 0 auto;
-  padding-bottom: 50px;
 }
 @media (min-width: 660px) {
   .header-form__caption {
-    width: 470px;
+    width: 490px;
   }
 }
 @media (min-width: 1200px) {
@@ -3018,17 +3078,26 @@ body {
   }
 }
 .header-form__caption {
+  font-size: 24px;
+  line-height: 30px;
   font-weight: lighter;
   text-align: center;
   color: #ffffff;
 }
+@media (min-width: 660px) {
+  .header-form__caption {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
 /* main-form */
 .main-form {
-  padding-top: 50px;
+  padding-top: 45px;
 }
 .main-form__caption {
   width: 271px;
   margin: 0 auto;
+  margin-bottom: 4px;
 }
 @media (min-width: 660px) {
   .main-form__caption {
@@ -3041,16 +3110,20 @@ body {
   }
 }
 .main-form__modal {
+  display: none;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
 .main__modal-complete {
+  display: none;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
 .main-form__caption {
+  font-size: 14px;
+  line-height: 30px;
   text-align: center;
   font-weight: lighter;
 }
