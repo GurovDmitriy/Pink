@@ -2813,14 +2813,16 @@ body {
 .form__fieldset-box:nth-child(2) {
   order: -2;
 }
+@media (min-width: 660px) {
+  .form__fieldset-box:nth-child(2) {
+    order: -4;
+  }
+}
 .form__fieldset-box:nth-child(3) {
   order: -3;
 }
 .form__fieldset-box:nth-child(4) {
-  order: -4;
-}
-.form__fieldset-box:nth-child(5) {
-  order: -1;
+  order: -2;
 }
 .form__fieldset-box {
   margin-bottom: 44px;
@@ -2828,9 +2830,20 @@ body {
 .form__fieldset-box:last-child {
   margin-bottom: 0;
 }
+@media (min-width: 660px) {
+  .form__fieldset-box {
+    margin-bottom: 57px;
+  }
+}
 .form__fieldset-box--grey-bg {
   padding-top: 35px;
   padding-bottom: 34px;
+}
+@media (min-width: 660px) {
+  .form__fieldset-box--grey-bg {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 .form__fieldset-name,
 .form__fieldset-app,
@@ -2874,6 +2887,11 @@ body {
 .form__legend-contacts {
   display: none;
 }
+@media (min-width: 660px) {
+  .form__legend-contacts {
+    display: block;
+  }
+}
 .form__fieldset-name-inner,
 .form__fieldset-app-inner,
 .form__fieldset-contacts-inner,
@@ -2905,11 +2923,46 @@ body {
   padding-top: 33px;
 }
 @media (min-width: 660px) {
+  .form__fieldset-app-inner,
+  .form__fieldset-comment-inner {
+    padding-top: 41px;
+    padding-bottom: 53px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 660px) {
+  .form__fieldset-contacts-inner {
+    padding-top: 41px;
+    padding-bottom: 36px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 660px) {
+  .form__fieldset-progress-inner {
+    padding-top: 36px;
+    padding-bottom: 37px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 660px) {
+  .form__legend-comment-inner {
+    padding-top: 39px;
+    padding-bottom: 44px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 660px) {
   .form__fieldset-name-inner {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    align-content: space-between;
     justify-content: space-between;
+    min-height: 291px;
   }
 }
 .form__label-text,
@@ -2918,24 +2971,46 @@ body {
   padding-left: 20px;
   margin-bottom: 6px;
 }
+@media (min-width: 660px) {
+  .form__label-text,
+  .form__label-tel,
+  .form__label-email {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 1200px) {
   .form__label-tel,
   .form__label-email {
     width: 370px;
   }
 }
+.form__label-tablet,
+.form__label-radio {
+  margin-bottom: 26px;
+}
+.form__label-tablet:last-of-type,
+.form__label-radio:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 660px) {
+  .form__label-tablet,
+  .form__label-radio {
+    margin-bottom: 31px;
+  }
+}
+@media (min-width: 660px) {
+  .form__label-checkbox {
+    margin-bottom: 26px;
+  }
+  .form__label-checkbox:last-of-type {
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 1200px) {
   .form__label-checkbox {
     width: 280px;
   }
-}
-.form__label-checkbox,
-.form__label-radio {
-  margin-bottom: 26px;
-}
-.form__label-checkbox:last-of-type,
-.form__label-radio:last-of-type {
-  margin-bottom: 0;
 }
 @media (min-width: 1200px) {
   .form__input-tel,
@@ -2969,6 +3044,11 @@ body {
 .form__input-text:last-of-type {
   margin-bottom: 0;
 }
+@media (min-width: 660px) {
+  .form__input-text {
+    margin-bottom: 0;
+  }
+}
 .form__label-tel,
 .form__label-email {
   margin-bottom: 19px;
@@ -2976,6 +3056,12 @@ body {
 .form__label-tel:last-of-type,
 .form__label-email:last-of-type {
   margin-bottom: 0;
+}
+@media (min-width: 660px) {
+  .form__label-tel,
+  .form__label-email {
+    margin-bottom: 41px;
+  }
 }
 .form__input-radio:checked + .label-radio::after {
   display: block;
@@ -3058,7 +3144,15 @@ body {
 .form__fieldset-box--grey-bg {
   background-color: darkgrey;
 }
+@media (min-width: 660px) {
+  .form__fieldset-box--grey-bg {
+    background-color: transparent;
+  }
+}
 /* header-form */
+.header-form {
+  padding-bottom: 50px;
+}
 @media (min-width: 660px) {
   .header-form {
     padding-bottom: 80px;
@@ -3096,6 +3190,11 @@ body {
 .main-form {
   padding-top: 45px;
 }
+@media (min-width: 660px) {
+  .main-form {
+    padding-top: 93px;
+  }
+}
 .main-form__caption {
   width: 271px;
   margin: 0 auto;
@@ -3103,6 +3202,7 @@ body {
 }
 @media (min-width: 660px) {
   .main-form__caption {
+    margin-bottom: 72px;
     width: 490px;
   }
 }
