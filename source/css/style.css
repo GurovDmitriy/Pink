@@ -3059,8 +3059,10 @@ body {
   background-color: darkgrey;
 }
 /* header-form */
-.header-form {
-  padding-bottom: 80px;
+@media (min-width: 660px) {
+  .header-form {
+    padding-bottom: 80px;
+  }
 }
 .header-form__caption {
   display: block;
@@ -3129,6 +3131,8 @@ body {
 }
 @media (min-width: 660px) {
   .main-form__caption {
+    font-size: 18px;
+    line-height: 30px;
     font-weight: normal;
   }
 }
