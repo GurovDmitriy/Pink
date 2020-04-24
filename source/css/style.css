@@ -306,37 +306,37 @@ template {
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/woff2/opensans-regular.woff2") format("woff2"), url("../../fonts/woff/opensans-regular.woff") format("woff"), url("../../fonts/ttf/OpenSans-Regular.ttf") format("ttf");
+  src: url("../fonts/woff2/opensans-regular.woff2") format("woff2"), url("../fonts/woff/opensans-regular.woff") format("woff"), url("../fonts/ttf/OpenSans-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/woff2/opensans-light.woff2") format("woff2"), url("../../fonts/woff/opensans-light.woff") format("woff"), url("../../fonts/ttf/OpenSans-Light.ttf") format("ttf");
+  src: url("../fonts/woff2/opensans-light.woff2") format("woff2"), url("../fonts/woff/opensans-light.woff") format("woff"), url("../fonts/ttf/OpenSans-Light.ttf") format("ttf");
   font-weight: lighter;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/woff2/opensans-bold.woff2") format("woff2"), url("../../fonts/woff/opensans-bold.woff") format("woff"), url("../../fonts/ttf/OpenSans-Bold.ttf") format("ttf");
+  src: url("../fonts/woff2/opensans-bold.woff2") format("woff2"), url("../fonts/woff/opensans-bold.woff") format("woff"), url("../fonts/ttf/OpenSans-Bold.ttf") format("ttf");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/woff2/opensans-italic.woff2") format("woff2"), url("../../fonts/woff/opensans-italic.woff") format("woff"), url("../../fonts/ttf/OpenSans-Italic.ttf") format("ttf");
+  src: url("../fonts/woff2/opensans-italic.woff2") format("woff2"), url("../fonts/woff/opensans-italic.woff") format("woff"), url("../fonts/ttf/OpenSans-Italic.ttf") format("ttf");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/woff2/opensans-lightitalic.woff2") format("woff2"), url("../../fonts/woff/opensans-lightitalic.woff") format("woff"), url("../../fonts/ttf/OpenSans-LightItalic.ttf") format("ttf");
+  src: url("../fonts/woff2/opensans-lightitalic.woff2") format("woff2"), url("../fonts/woff/opensans-lightitalic.woff") format("woff"), url("../fonts/ttf/OpenSans-LightItalic.ttf") format("ttf");
   font-weight: lighter;
   font-style: italic;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/woff2/opensans-bolditalic.woff2") format("woff2"), url("../../fonts/woff/opensans-bolditalic.woff") format("woff"), url("../../fonts/ttf/OpenSans-BoldItalic.ttf") format("ttf");
+  src: url("../fonts/woff2/opensans-bolditalic.woff2") format("woff2"), url("../fonts/woff/opensans-bolditalic.woff") format("woff"), url("../fonts/ttf/OpenSans-BoldItalic.ttf") format("ttf");
   font-weight: bold;
   font-style: italic;
 }
@@ -489,12 +489,12 @@ body {
   height: 8px;
 }
 .btn-box__btn {
-  background-color: green;
+  background-color: #d4d4d4;
   border: none;
   border-radius: 50%;
 }
-.btn-box__btn--active-js {
-  border: 2px solid black;
+.btn-box__btn--active {
+  border: 2px solid #000000;
 }
 /* btn-mark */
 .btn-mark {
@@ -505,13 +505,13 @@ body {
 }
 .btn-mark-1 {
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid #d4d4d4;
   border-right: none;
   border-top: none;
 }
 .btn-mark-2 {
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid #d4d4d4;
   border-left: none;
   border-top: none;
 }
@@ -903,6 +903,7 @@ height: 50px;  */
   }
 }
 .pictures-list__img-box {
+  position: relative;
   order: 1;
   display: none;
   height: 289px;
@@ -929,11 +930,30 @@ height: 50px;  */
     display: block;
   }
 }
+.pictures-list__img {
+  width: 157px;
+  height: 320px;
+}
 @media (min-width: 1200px) {
   .pictures-list__img {
     width: 186px;
     height: 382px;
   }
+}
+.pictures-list__img-filter {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .pictures-list__img-filter {
+    display: block;
+    width: 165px;
+    height: 294px;
+  }
+}
+.pictures-list__img-filter {
+  position: absolute;
+  top: 44px;
+  left: 11px;
 }
 .pictures-list__caption {
   margin-top: 0;
@@ -1274,7 +1294,7 @@ height: 50px;  */
 .table-price__th,
 .table-price__td {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #f2f2f2;
 }
 .table-price__th {
   background-color: #283645;
@@ -1515,7 +1535,7 @@ height: 50px;  */
 }
 @media (min-width: 660px) {
   .no-webp .header {
-    background-image: url("../../../image/min/bgheader-tablet-min.jpg");
+    background-image: url("../image/min/bgheader-tablet-min.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 660px auto;
@@ -1523,33 +1543,33 @@ height: 50px;  */
 }
 @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .no-webp .header {
-    background-image: url("../../../image/min/bgheader-tablet@2x-min.jpg");
+    background-image: url("../image/min/bgheader-tablet@2x-min.jpg");
   }
 }
 @media (min-width: 660px) and (min-resolution: 244dpi), (min-width: 660px) and (min-resolution: 2.5dppx) {
   .no-webp .header {
-    background-image: url("../../../image/min/bgheader-tablet@3x-min.jpg");
+    background-image: url("../image/min/bgheader-tablet@3x-min.jpg");
   }
 }
 @media (min-width: 1200px) {
   .no-webp .header {
-    background-image: url("../../../image/min/back-desktop-min.jpg");
+    background-image: url("../image/min/back-desktop-min.jpg");
     background-size: 1200px auto;
   }
 }
 @media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .header {
-    background-image: url("../../../image/min/back-desktop@2x-min.jpg");
+    background-image: url("../image/min/back-desktop@2x-min.jpg");
   }
 }
 @media (min-width: 1200px) and (min-resolution: 244dpi), (min-width: 1200px) and (min-resolution: 2.5dppx) {
   .no-webp .header {
-    background-image: url("../../../image/min/back-desktop@3x-min.jpg");
+    background-image: url("../image/min/back-desktop@3x-min.jpg");
   }
 }
 @media (min-width: 660px) {
   .webp .header {
-    background-image: url("../../../image/min/bgheader-tablet.webp");
+    background-image: url("../image/min/bgheader-tablet.webp");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 660px auto;
@@ -1557,44 +1577,44 @@ height: 50px;  */
 }
 @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .webp .header {
-    background-image: url("../../../image/min/bgheader-tablet@2x.webp");
+    background-image: url("../image/min/bgheader-tablet@2x.webp");
   }
 }
 @media (min-width: 660px) and (min-resolution: 244dpi), (min-width: 660px) and (min-resolution: 2.5dppx) {
   .webp .header {
-    background-image: url("../../../image/min/bgheader-tablet@3x.webp");
+    background-image: url("../image/min/bgheader-tablet@3x.webp");
   }
 }
 @media (min-width: 1200px) {
   .webp .header {
-    background-image: url("../../../image/min/back-desktop.webp");
+    background-image: url("../image/min/back-desktop.webp");
     background-size: 1200px auto;
   }
 }
 @media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .webp .header {
-    background-image: url("../../../image/min/back-desktop@2x.webp");
+    background-image: url("../image/min/back-desktop@2x.webp");
   }
 }
 @media (min-width: 1200px) and (min-resolution: 244dpi), (min-width: 1200px) and (min-resolution: 2.5dppx) {
   .webp .header {
-    background-image: url("../../../image/min/back-desktop@3x.webp");
+    background-image: url("../image/min/back-desktop@3x.webp");
   }
 }
 .no-webp .header__nav-box {
-  background-image: url("../../../image/min/bgheader-mobile-min.jpg");
+  background-image: url("../image/min/bgheader-mobile-min.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 320px auto;
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .no-webp .header__nav-box {
-    background-image: url("../../../image/min/bgheader-mobile@2x-min.jpg");
+    background-image: url("../image/min/bgheader-mobile@2x-min.jpg");
   }
 }
 @media (min-resolution: 244dpi), (min-resolution: 2.5dppx) {
   .no-webp .header__nav-box {
-    background-image: url("../../../image/min/bgheader-mobile@3x-min.jpg");
+    background-image: url("../image/min/bgheader-mobile@3x-min.jpg");
   }
 }
 @media (min-width: 660px) {
@@ -1608,19 +1628,19 @@ height: 50px;  */
   }
 }
 .webp .header__nav-box {
-  background-image: url("../../../image/min/bgheader-mobile.webp");
+  background-image: url("../image/min/bgheader-mobile.webp");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 320px auto;
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .webp .header__nav-box {
-    background-image: url("../../../image/min/bgheader-mobile@2x.webp");
+    background-image: url("../image/min/bgheader-mobile@2x.webp");
   }
 }
 @media (min-resolution: 244dpi), (min-resolution: 2.5dppx) {
   .webp .header__nav-box {
-    background-image: url("../../../image/min/bgheader-mobile@3x.webp");
+    background-image: url("../image/min/bgheader-mobile@3x.webp");
   }
 }
 @media (min-width: 660px) {
@@ -1648,7 +1668,7 @@ height: 50px;  */
 }
 @media (min-width: 1200px) {
   .no-webp .header__download-box {
-    background-image: url("../../../image/min/filterheader-desktop-min.png"), url("../../../image/min/iphonehand-desktop-min.png");
+    background-image: url("../image/min/filterheader-desktop-min.png"), url("../image/min/iphonehand-desktop-min.png");
     background-repeat: no-repeat, no-repeat;
     background-position: 515px 161px, center bottom;
     background-size: 230px auto, 1050px auto;
@@ -1656,17 +1676,17 @@ height: 50px;  */
 }
 @media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .header__download-box {
-    background-image: url("../../../image/min/filterheader-desktop-min@2x.png"), url("../../../image/min/iphone-hand-min@2x.png");
+    background-image: url("../image/min/filterheader-desktop-min@2x.png"), url("../image/min/iphone-hand-min@2x.png");
   }
 }
 @media (min-width: 1200px) and (min-resolution: 244dpi), (min-width: 1200px) and (min-resolution: 2.5dppx) {
   .no-webp .header__download-box {
-    background-image: url("../../../image/min/filterheader-desktop-min@3x.png"), url("../../../image/min/iphonehand-desktop-min@3x.png");
+    background-image: url("../image/min/filterheader-desktop-min@3x.png"), url("../image/min/iphonehand-desktop-min@3x.png");
   }
 }
 @media (min-width: 1200px) {
   .webp .header__download-box {
-    background-image: url("../../../image/min/filterheader-desktop.webp"), url("../../../image/min/iphonehand-desktop.webp");
+    background-image: url("../image/min/filterheader-desktop.webp"), url("../image/min/iphonehand-desktop.webp");
     background-repeat: no-repeat, no-repeat;
     background-position: 515px 161px, center bottom;
     background-size: 230px auto, 1050px auto;
@@ -1674,12 +1694,12 @@ height: 50px;  */
 }
 @media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .webp .header__download-box {
-    background-image: url("../../../image/min/filterheader-desktop@2x.webp"), url("../../../image/min/iphone-hand@2x.webp");
+    background-image: url("../image/min/filterheader-desktop@2x.webp"), url("../image/min/iphone-hand@2x.webp");
   }
 }
 @media (min-width: 1200px) and (min-resolution: 244dpi), (min-width: 1200px) and (min-resolution: 2.5dppx) {
   .webp .header__download-box {
-    background-image: url("../../../image/min/filterheader-desktop@3x.webp"), url("../../../image/min/iphonehand-desktop@3x.webp");
+    background-image: url("../image/min/filterheader-desktop@3x.webp"), url("../image/min/iphonehand-desktop@3x.webp");
   }
 }
 .header__nav--open {
@@ -1936,27 +1956,63 @@ height: 50px;  */
   }
 }
 .main__pictures-box {
-  background-color: darkgrey;
+  background-color: #f2f2f2;
+  background-image: linear-gradient(174deg, #ffffff 20%, #f2f2f2 20%);
 }
 @media (min-width: 660px) {
-  .main__pictures-list {
-    background-image: url("https://via.placeholder.com/268x547/d22856");
+  .no-webp .main__pictures-list {
+    background-image: url("../image/min/Iphonescreen-tablet-min.png");
     background-repeat: no-repeat;
     background-position: 0 50px;
+    background-size: 268px auto;
+  }
+}
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .no-webp .main__pictures-list {
+    background-image: url("../image/min/Iphonescreen-tablet-min@2x.png");
+  }
+}
+@media (min-width: 660px) and (min-resolution: 244dpi), (min-width: 660px) and (min-resolution: 2.5dppx) {
+  .no-webp .main__pictures-list {
+    background-image: url("../image/min/Iphonescreen-tablet-min@3x.png");
   }
 }
 @media (min-width: 1200px) {
-  .main__pictures-list {
+  .no-webp .main__pictures-list {
+    background: none;
+  }
+}
+@media (min-width: 660px) {
+  .webp .main__pictures-list {
+    background-image: url("../image/min/Iphonescreen-tablet.webp");
+    background-repeat: no-repeat;
+    background-position: 0 50px;
+    background-size: 268px auto;
+  }
+}
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .webp .main__pictures-list {
+    background-image: url("../image/min/Iphonescreen-tablet@2x.webp");
+  }
+}
+@media (min-width: 660px) and (min-resolution: 244dpi), (min-width: 660px) and (min-resolution: 2.5dppx) {
+  .webp .main__pictures-list {
+    background-image: url("../image/min/Iphonescreen-tablet@3x.webp");
+  }
+}
+@media (min-width: 1200px) {
+  .webp .main__pictures-list {
     background: none;
   }
 }
 @media (min-width: 1200px) {
   .main__advrt-box {
-    background-color: darkgrey;
+    background-color: #f2f2f2;
   }
 }
 .main__table-shell {
-  background-color: darkgray;
+  background-color: #f2f2f2;
+  background-image: linear-gradient(174deg, #ffffff 20%, #f2f2f2 20%);
 }
 /* advrt */
 @media (min-width: 660px) {
@@ -1983,7 +2039,7 @@ height: 50px;  */
 }
 @media (min-width: 660px) {
   .advrt__caption {
-    width: 167px;
+    width: 174px;
     margin-top: 0;
     margin-bottom: 10px;
   }
@@ -2007,8 +2063,11 @@ height: 50px;  */
     width: 200px;
     height: 200px;
   }
+}
+@media (min-width: 660px) {
   .advrt__time::after {
     position: absolute;
+    z-index: 1;
     content: "24";
     top: 50%;
     left: 50%;
@@ -2016,24 +2075,40 @@ height: 50px;  */
     transform: translate(-50%, -50%);
   }
 }
+@media (min-width: 660px) {
+  .advrt__time::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+  }
+}
 @media (min-width: 1200px) {
-  .advrt__time {
+  .advrt__time::before {
     width: 253px;
     height: 253px;
   }
 }
-.advrt__time-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  width: 238px;
-  height: 276px;
-  transform: translate(-50%, -50%);
+@media (min-width: 660px) {
+  .advrt__time-img {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    width: 238px;
+    height: 276px;
+    transform: translate(-50%, -50%);
+  }
 }
 @media (min-width: 1200px) {
   .advrt__time-img {
-    height: 296px;
+    top: 38%;
+    width: 298px;
+    height: 345px;
   }
 }
 @media (min-width: 660px) {
@@ -2089,15 +2164,13 @@ height: 50px;  */
   }
 }
 @media (min-width: 660px) {
-  .main__advrt-box {
-    background-color: lightgrey;
-  }
-}
-@media (min-width: 660px) {
-  .advrt__time {
-    border: 16px solid #d22856;
+  .advrt__time::before {
+    border: 17px solid #d22856;
     border-radius: 50%;
   }
+}
+.advrt__time-img {
+  fill: #d4d4d4;
 }
 /* footer */
 .footer {

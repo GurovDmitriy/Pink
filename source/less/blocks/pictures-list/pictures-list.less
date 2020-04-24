@@ -44,6 +44,8 @@
 }
 
 .pictures-list__img-box {
+  position: relative;
+
   order: 1;
   display: none;
   height: 289px;
@@ -71,10 +73,29 @@
 }
 
 .pictures-list__img {
+  width: 157px;
+  height: 320px;
+
   @media (min-width: @desktop-width) {
     width: 186px;
     height: 382px;
   }
+}
+
+.pictures-list__img-filter {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 165px;
+    height: 294px;
+  }
+}
+
+.pictures-list__img-filter {
+  position: absolute;
+  top: 44px;
+  left: 11px;
 }
 
 .pictures-list__caption {

@@ -22,7 +22,7 @@
 
 .advrt__caption {
   @media (min-width: @tablet-width) {
-    width: 167px;
+    width: 174px;
     margin-top: 0;
     margin-bottom: 10px;
   }
@@ -47,37 +47,62 @@
     display: block;
     width: 200px;
     height: 200px;
+  }
 
-    &::after {
+  &::after {
+    @media (min-width: @tablet-width) {
       position: absolute;
+      z-index: 1;
       content: "24";
       top: 50%;
       left: 50%;
 
       display: block;
 
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);      
     }
   }
 
-  @media (min-width: @desktop-width) {
-    width: 253px;
-    height: 253px;
-  }  
+  &::before {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      top: 50%;
+      left: 50%;
+
+      display: block;
+      width: 200px;
+      height: 200px; 
+
+      transform: translate(-50%, -50%);         
+    }
+  } 
+
+  &::before {
+    @media (min-width: @desktop-width) {
+      width: 253px;
+      height: 253px; 
+    }    
+  }
 }
 
 .advrt__time-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 41%;
+    left: 50%;
 
-  width: 238px;
-  height: 276px;
+    width: 238px;
+    height: 276px;
 
-  transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);    
+  }
 
   @media (min-width: @desktop-width) {
-    height: 296px;
-  }
+    top: 38%;
+
+    width: 298px;
+    height: 345px;
+  } 
 }
