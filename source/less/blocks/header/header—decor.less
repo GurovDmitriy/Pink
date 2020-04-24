@@ -1,29 +1,127 @@
 .header {
-  background-color: darkgrey;
+  background-color: @color-blue-x2;
 }
 
-.header__nav-box {
-  background-color: darkgrey;
+.no-webp .header {
+  @media (min-width: @tablet-width) {
+    background-image: url("../../../image/min/bgheader-tablet-min.jpg");  
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 660px auto;
+
+    @media (min-resolution: @x2retina-dpi),
+           (min-resolution: @x2retina-dppx) {
+      background-image: url("../../../image/min/bgheader-tablet@2x-min.jpg");    
+    }
+
+    @media (min-resolution: @x3retina-dpi),
+           (min-resolution: @x3retina-dppx) {
+      background-image: url("../../../image/min/bgheader-tablet@3x-min.jpg");    
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../../image/min/back-desktop-min.jpg");
+    background-size: 1200px auto;
+
+    @media (min-resolution: @x2retina-dpi),
+           (min-resolution: @x2retina-dppx) {
+      background-image: url("../../../image/min/back-desktop@2x-min.jpg");    
+    }
+
+    @media (min-resolution: @x3retina-dpi),
+           (min-resolution: @x3retina-dppx) {
+      background-image: url("../../../image/min/back-desktop@3x-min.jpg");    
+    }
+  }
+}
+
+.webp .header {
+  @media (min-width: @tablet-width) {
+    background-image: url("../../../image/min/bgheader-tablet.webp");  
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 660px auto;
+
+    @media (min-resolution: @x2retina-dpi),
+           (min-resolution: @x2retina-dppx) {
+      background-image: url("../../../image/min/bgheader-tablet@2x.webp");    
+    }
+
+    @media (min-resolution: @x3retina-dpi),
+           (min-resolution: @x3retina-dppx) {
+      background-image: url("../../../image/min/bgheader-tablet@3x.webp");    
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../../image/min/back-desktop.webp");
+    background-size: 1200px auto;
+
+    @media (min-resolution: @x2retina-dpi),
+           (min-resolution: @x2retina-dppx) {
+      background-image: url("../../../image/min/back-desktop@2x.webp");    
+    }
+
+    @media (min-resolution: @x3retina-dpi),
+           (min-resolution: @x3retina-dppx) {
+      background-image: url("../../../image/min/back-desktop@3x.webp");    
+    }
+  }
+}
+
+.no-webp .header__nav-box {
+  background-image: url("../../../image/min/bgheader-mobile-min.jpg");  
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 320px auto;
+
+  @media (min-resolution: @x2retina-dpi),
+         (min-resolution: @x2retina-dppx) {
+    background-image: url("../../../image/min/bgheader-mobile@2x-min.jpg");    
+  }
+
+  @media (min-resolution: @x3retina-dpi),
+         (min-resolution: @x3retina-dppx) {
+    background-image: url("../../../image/min/bgheader-mobile@3x-min.jpg");    
+  }
 
   @media (min-width: @tablet-width) {
     background: none;
   }
 
   @media (min-width: @desktop-width) {
-    background-color: lightgrey;
+    background-color: @color-blue-x1;
+  }       
+}
+
+.webp .header__nav-box {
+  background-image: url("../../../image/min/bgheader-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 320px auto;
+
+  @media (min-resolution: @x2retina-dpi),
+         (min-resolution: @x2retina-dppx) {
+    background-image: url("../../../image/min/bgheader-mobile@2x.webp");    
   }
+
+  @media (min-resolution: @x3retina-dpi),
+         (min-resolution: @x3retina-dppx) {
+    background-image: url("../../../image/min/bgheader-mobile@3x.webp");    
+  }
+
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @color-blue-x1;
+  }      
 }
 
 .header__nav {
-  background-color: lightgrey;
-
-  @media (min-width: @desktop-width) {
-    background-color: transparent;
-  }
-}
-
-.header__nav--open-js {
-  background-color: darkgreen;
+  background-color: @color-blue-x1;
 
   @media (min-width: @desktop-width) {
     background-color: transparent;
@@ -31,9 +129,53 @@
 }
 
 .header__download-box {
-  background-color: darkgreen;
-
   @media (min-width: @tablet-width) {
     background-color: transparent;
+  }
+}
+
+.no-webp .header__download-box {
+  @media (min-width: @desktop-width) {
+    background-image: url("../../../image/min/filterheader-desktop-min.png"),
+                      url("../../../image/min/iphonehand-desktop-min.png");
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: 515px 161px, center bottom;
+    background-size: 230px auto, 1050px auto;
+
+    @media (min-resolution: @x2retina-dpi),
+           (min-resolution: @x2retina-dppx) {
+      background-image: url("../../../image/min/filterheader-desktop-min@2x.png"),
+                        url("../../../image/min/iphone-hand-min@2x.png");    
+    }
+
+    @media (min-resolution: @x3retina-dpi),
+           (min-resolution: @x3retina-dppx) {
+      background-image: url("../../../image/min/filterheader-desktop-min@3x.png"),
+                        url("../../../image/min/iphonehand-desktop-min@3x.png");    
+    }
+  }
+}
+
+.webp .header__download-box {
+  @media (min-width: @desktop-width) {
+    background-image: url("../../../image/min/filterheader-desktop.webp"),
+                      url("../../../image/min/iphonehand-desktop.webp");
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: 515px 161px, center bottom;
+    background-size: 230px auto, 1050px auto;
+
+    @media (min-resolution: @x2retina-dpi),
+           (min-resolution: @x2retina-dppx) {
+      background-image: url("../../../image/min/filterheader-desktop@2x.webp"),
+                        url("../../../image/min/iphone-hand@2x.webp");    
+    }
+
+    @media (min-resolution: @x3retina-dpi),
+           (min-resolution: @x3retina-dppx) {
+      background-image: url("../../../image/min/filterheader-desktop@3x.webp"),
+                        url("../../../image/min/iphonehand-desktop@3x.webp");    
+    }
   }
 }

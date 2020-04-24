@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       },
       sprite: {
         files: {
-          "source/image/min/sprite.svg": ["source/image/*-icon.svg"]
+          "source/image/min/sprite.svg": ["source/image/origin/*-icon.svg"]
         }
       }
     },
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: "source/image/",
+          cwd: "source/image/origin/",
           src: ["**/*.{png,jpg,gif}"],
           dest: "source/image/min/"
         }]
@@ -34,9 +34,9 @@ module.exports = function(grunt) {
           },
           files: [{
             expand: true,
-            cwd: "source/image/",
+            cwd: "source/image/origin/",
             src: ["**/*.{png,jpg,gif}"],
-            dest: "source/image/min/"
+            dest: "source/image/"
             }]
           }
         },
