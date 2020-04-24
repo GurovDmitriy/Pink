@@ -12,6 +12,10 @@
 @color-grey: #e5e5e5;
 /* Цвет зеленый для рамок и элементов */
 @color-green: #2aab6d;
+/* Цвет фона закрытого меню */
+@color-blue-x1: rgba(40, 40, 40, 0.3);
+
+@color-blue-x2: #1d2631;
 /* Ширины вьюпортов */
 @mobile-width: 320px;
 @tablet-width: 660px;
@@ -20,3 +24,20 @@
 @mobile-content: 280px;
 @tablet-content: 620px;
 @desktop-content: 940px;
+/* Переменные для плотности экранов */
+@x2retina-dpi: 144dpi;
+@x2retina-dppx: 1.5dppx;
+@x3retina-dpi: 244dpi;
+@x3retina-dppx: 2.5dppx;
+
+
+/* .no-webp .box { color: red; }
+.webp .box { color: green; }
+JS
+Modernizr.on('webp', function(result) {
+  if (result) {
+    // supported
+  } else {
+    // not-supported
+  }
+}); */
