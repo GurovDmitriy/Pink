@@ -48,6 +48,8 @@
 }
 
 .footer__map {
+  position: relative;
+
   .container-mobile();
   height: 200px;
 
@@ -58,6 +60,35 @@
 
   @media (min-width: @desktop-width) {
     .container-desktop();
+    height: 502px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 36px;
+    height: 36px;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.footer__map-frame {
+  width: @mobile-width;
+  height: 200px;
+  z-index: 10;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
     height: 502px;
   }
 }

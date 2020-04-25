@@ -1,3 +1,123 @@
 .footer__map-box {
-  background-color: darkgray;
+  background-color: @footer-map-bg;
+}
+
+.no-webp .footer__map {
+  background-image: url("../image/min/maptriangle.svg"),
+                    url("../image/min/map-mobile-min.png");
+  background-repeat: no-repeat;
+  background-position: center top, center bottom;
+  background-size: 320px auto;
+  
+  @media (min-resolution: @x2retina-dpi),
+         (min-resolution: @x2retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-mobile-min@2x.png");
+  }
+  
+  @media (min-resolution: @x3retina-dpi),
+         (min-resolution: @x3retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-mobile-min@3x.png");  
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-tablet-min.png");
+    background-size: 660px auto; 
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: @x2retina-dpi),
+         (min-width: @tablet-width) and (min-resolution: @x2retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-tablet-min@2x.png"); 
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: @x3retina-dpi),
+         (min-width: @tablet-width) and (min-resolution: @x3retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-tablet-min@3x.png");   
+  }    
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../../../image/min/map-min.png");
+    background-size: 1200px auto;
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: @x2retina-dpi),
+         (min-width: @desktop-width) and (min-resolution: @x2retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-min@2x.png"); 
+  }
+    
+  @media (min-width: @desktop-width) and (min-resolution: @x3retina-dpi),
+         (min-width: @desktop-width) and (min-resolution: @x3retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-min@3x.png");   
+  } 
+}
+
+.webp .footer__map {
+  background-image: url("../image/min/maptriangle.svg"),
+                    url("../image/min/map-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: center top, center bottom;
+  background-size: 320px auto;
+  
+  @media (min-resolution: @x2retina-dpi),
+         (min-resolution: @x2retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-mobile@2x.webp"); 
+  }
+  
+  @media (min-resolution: @x3retina-dpi),
+         (min-resolution: @x3retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-mobile@3x.webp");   
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-tablet.webp");
+    background-size: 660px auto;
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: @x2retina-dpi),
+         (min-width: @tablet-width) and (min-resolution: @x2retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-tablet@2x.webp");
+  }
+    
+  @media (min-width: @tablet-width) and (min-resolution: @x3retina-dpi),
+         (min-width: @tablet-width) and (min-resolution: @x3retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map-tablet@3x.webp");      
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../../../image/min/map.webp");
+    background-size: 1200px auto;
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: @x2retina-dpi),
+         (min-width: @desktop-width) and (min-resolution: @x2retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map@2x.webp");
+  }
+    
+  @media (min-width: @desktop-width) and (min-resolution: @x3retina-dpi),
+         (min-width: @desktop-width) and (min-resolution: @x3retina-dppx) {
+    background-image: url("../image/min/maptriangle.svg"),
+                      url("../image/min/map@3x.webp");
+  } 
+}
+
+.footer__map {
+  &::after {
+    background-color: @color-pink;
+    border: 9px solid @color-white;
+    border-radius: 50%;
+  }
 }

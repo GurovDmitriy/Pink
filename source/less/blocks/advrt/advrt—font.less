@@ -30,18 +30,14 @@
   }   
 }
 
-.advrt__time {
+.advrt__time::after {
   @media (min-width: @tablet-width) {
-    &::after {
-      .text-x13();
-      font-weight: bold;
-      color: @color-pink;
-    }
+    .text-x13();
+    font-weight: bold;
+    color: @color-pink;
   }
 
   @media (min-width: @desktop-width) {
-    &::after {
-      .text-x14();
-    }
-  }  
+    .text-x14();
+  }
 }

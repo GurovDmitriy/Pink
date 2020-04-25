@@ -47,43 +47,41 @@
     display: block;
     width: 200px;
     height: 200px;
-  }
-
-  &::after {
-    @media (min-width: @tablet-width) {
-      position: absolute;
-      z-index: 1;
-      content: "24";
-      top: 50%;
-      left: 50%;
-
-      display: block;
-
-      transform: translate(-50%, -50%);      
-    }
-  }
-
-  &::before {
-    @media (min-width: @tablet-width) {
-      position: absolute;
-      z-index: 1;
-      content: "";
-      top: 50%;
-      left: 50%;
-
-      display: block;
-      width: 200px;
-      height: 200px; 
-
-      transform: translate(-50%, -50%);         
-    }
   } 
+}
 
-  &::before {
-    @media (min-width: @desktop-width) {
-      width: 253px;
-      height: 253px; 
-    }    
+.advrt__time::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: 1;
+    content: "24";
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    transform: translate(-50%, -50%);      
+  }
+}
+
+.advrt__time::before {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 200px;
+    height: 200px; 
+
+    transform: translate(-50%, -50%);         
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 253px;
+    height: 253px; 
   }
 }
 
