@@ -1,9 +1,5 @@
-.post__caption {
-  background-color: darkgrey;
-}
-
 .main-photo__upload-box {
-  background-color: lightgrey;
+  background-color: @color-grey;
 
   @media (min-width: @desktop-width) {
     background-color: transparent;
@@ -11,5 +7,7 @@
 }
 
 .main__upload {
-  background-color: lightgrey;
+  @media (min-width: @desktop-width) {
+    background-color: @color-grey;
+  }
 }
