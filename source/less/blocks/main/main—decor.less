@@ -1,23 +1,27 @@
 .main__pictures-box {
   background-color: @color-grey;
-  background-image: linear-gradient(174deg, #ffffff 20%, #f2f2f2 20%);
+  background-image: linear-gradient(175deg, #ffffff 10%, @color-grey 10%);
+
+  @media (min-width: @tablet-width) {
+    background-image: linear-gradient(175deg, #ffffff 20%, @color-grey 20%);
+  }
 }
 
 .no-webp .main__pictures-list {
   @media (min-width: @tablet-width) {
-    background-image: url("../image/min/Iphonescreen-tablet-min.png");
+    background-image: url("../../../image/min/Iphonescreen-tablet.png");
     background-repeat: no-repeat;
     background-position: 0 50px;
     background-size: 268px auto;
 
     @media (min-resolution: @x2retina-dpi),
            (min-resolution: @x2retina-dppx) {
-      background-image: url("../image/min/Iphonescreen-tablet-min@2x.png");    
+      background-image: url("../../../image/min/Iphonescreen-tablet@2x.png");    
     }
 
     @media (min-resolution: @x3retina-dpi),
            (min-resolution: @x3retina-dppx) {
-      background-image: url("../image/min/Iphonescreen-tablet-min@3x.png");    
+      background-image: url("../../../image/min/Iphonescreen-tablet@3x.png");    
     }
   }
 
@@ -28,19 +32,19 @@
 
 .webp .main__pictures-list {
   @media (min-width: @tablet-width) {
-    background-image: url("../image/min/Iphonescreen-tablet.webp");
+    background-image: url("../../../image/min/Iphonescreen-tablet.webp");
     background-repeat: no-repeat;
     background-position: 0 50px;
     background-size: 268px auto;
 
     @media (min-resolution: @x2retina-dpi),
            (min-resolution: @x2retina-dppx) {
-      background-image: url("../image/min/Iphonescreen-tablet@2x.webp");    
+      background-image: url("../../../image/min/Iphonescreen-tablet@2x.webp");    
     }
 
     @media (min-resolution: @x3retina-dpi),
            (min-resolution: @x3retina-dppx) {
-      background-image: url("../image/min/Iphonescreen-tablet@3x.webp");    
+      background-image: url("../../../image/min/Iphonescreen-tablet@3x.webp");    
     }
   }
 
@@ -58,6 +62,10 @@
 
 .main__table-shell {
   background-color: @color-grey;
-  background-image: linear-gradient(174deg, #ffffff 20%, #f2f2f2 20%);
+  background-image: linear-gradient(175deg, #ffffff 10%, @color-grey 10%);
+
+  @media (min-width: @tablet-width) {
+    background-image: linear-gradient(175deg, #ffffff 25%, @color-grey 25%);
+  }
 }
 
