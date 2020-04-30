@@ -3,14 +3,14 @@
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 455px 455px 455px;
-    grid-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: space-between;
     .wrapper-tablet();
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 555px 555px;
-    grid-column-gap: 20px;
+    grid-template-rows: 555px 555px;;
     grid-row-gap: 40px;
     .wrapper-desktop();
   }  
