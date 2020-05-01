@@ -6,7 +6,7 @@
     .wrapper-desktop();
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
   }
 }
@@ -47,16 +47,6 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 57px;
   }  
-}
-
-.form__fieldset-box--grey-bg {
-  padding-top: 35px;
-  padding-bottom: 34px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 0;
-    padding-bottom: 0;
-  }    
 }
 
 .form__fieldset-name,
@@ -110,7 +100,7 @@
     align-items: center;
     align-content: space-between;
     justify-content: space-between;
-    min-height: 291px;
+    min-height: 308px;
   }
 }
 
@@ -217,7 +207,6 @@
   }  
   
   @media (min-width: @desktop-width) {
-    width: 280px;
     margin-bottom: 0px;
   }
 }
