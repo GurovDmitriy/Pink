@@ -1,7 +1,14 @@
-.form__fieldset-box--grey-bg {
-  background-color: @color-grey; 
-
-  @media (min-width: @tablet-width) {
-    background-color: transparent;
-  }   
+.form {
+  input:hover,
+  .form__label-radio:hover::before,
+  .form__label-checkbox:hover::before {
+    border-color: @color-text;
+  }
+  input:focus,
+  .form__label-radio:focus::before,
+  .form__label-checkbox:focus::before,
+  .form__label-radio:active::before,
+  .form__label-checkbox:active::before {
+    border-color: @color-pink;
+  }
 }
