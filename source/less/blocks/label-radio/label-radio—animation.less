@@ -1,0 +1,18 @@
+@keyframes radio {
+  0% {
+    transform: translate(100%, -50%) scale(0);
+  }
+  50% {
+    transform: translate(100%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(100%, -50%) scale(1);
+  }
+}
+
+.form__input-radio:checked + .label-radio::after {
+  display: block;
+
+  animation-name: radio;
+  animation-duration: 1s;
+}

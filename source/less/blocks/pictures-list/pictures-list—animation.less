@@ -1,0 +1,31 @@
+@keyframes ifonemain {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);    
+  }
+}
+
+.pictures-list__img--active {
+  @media (min-width: @desktop-width) {
+    transform: translateY(100%);
+
+    animation-name: ifonemain;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0, 0, 0.28, 1.02);
+    animation-fill-mode: forwards;    
+  }
+}
+
+.pictures-list__img-filter--active {
+  @media (min-width: @desktop-width) {
+    transform: translateY(100%);
+
+    animation-name: ifonemain;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0, 0.63, 0.11, 1.21);
+    animation-fill-mode: forwards;    
+  }
+}

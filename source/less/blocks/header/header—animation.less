@@ -1,0 +1,21 @@
+@keyframes headerhand {
+  0% {
+    background-position: -500px 161px, -500px bottom;
+    opacity: 0;
+  }
+  100% {
+    background-position: 515px 161px, center bottom;
+    opacity: 1;
+  }
+}
+
+.header__download-box {
+  @media (min-width: @desktop-width) {
+  background-position: 515px 161px, center bottom;
+
+  animation-name: headerhand;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;  
+  }
+}
