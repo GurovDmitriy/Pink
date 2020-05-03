@@ -1,3 +1,9 @@
+.btn-round {
+  @media (min-width: @desktop-width) {
+    transition: background-color 0.4s, color 0.4s;
+  }
+}
+
 .btn-round:hover,
 .btn-round:focus {
   background-color: @color-white;
@@ -6,4 +12,8 @@
 
 .btn-round:active {
   color: rgba(210, 40, 86, 0.3);
+
+  @media (min-width: @desktop-width) {
+    transition: background-color 0s, color 0s;
+  }
 }
