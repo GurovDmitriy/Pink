@@ -1,7 +1,15 @@
 .modal {
   display: flex;
   flex-direction: column;
-  padding: 20px;  
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px;
+  }
 }
 
 .modal__caption {
