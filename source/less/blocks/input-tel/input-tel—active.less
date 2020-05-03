@@ -1,0 +1,13 @@
+.input-tel__icon {
+  @media (min-width: @desktop-width) {
+    transition: transform 0.4s;
+  }
+}
+
+.input-tel:hover .input-tel__icon,
+.input-tel__input:focus + .input-tel__icon {
+  @media (min-width: @desktop-width) {
+    transform: translate(0, -50%) rotate(360deg) scale(1.6);
+    transform-origin: 50% 50%;
+  }
+}
