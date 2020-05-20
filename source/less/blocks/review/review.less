@@ -6,9 +6,19 @@
 }
 
 .review__item {
-  display: none;
+  display: flex;
+  flex-shrink: 0;
   flex-direction: column;
+  width: 280px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
 }
 
 .review__autor {
@@ -18,10 +28,6 @@
   @media (min-width: @tablet-width) {
     order: 1;
     margin-bottom: 0;
-  }
-
-  @media (min-width: @tablet-width) {
-
   }
 }
 
@@ -55,7 +61,7 @@
 
   @media (min-width: @desktop-width) {
     display: none;
-  }  
+  }
 }
 
 .review__btn-mark-1,
@@ -70,7 +76,7 @@
   left: -5%;
   bottom: 50%;
 
-  transform: translate(-50%, 50%) rotate(45deg);  
+  transform: translate(-50%, 50%) rotate(45deg);
 }
 
 .review__btn-mark-2 {
