@@ -310,36 +310,42 @@ template {
   src: url("../fonts/woff2/opensans-regular.woff2") format("woff2"), url("../fonts/woff/opensans-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/woff2/opensans-light.woff2") format("woff2"), url("../fonts/woff/opensans-light.woff") format("woff");
   font-weight: lighter;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/woff2/opensans-bold.woff2") format("woff2"), url("../fonts/woff/opensans-bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/woff2/opensans-italic.woff2") format("woff2"), url("../fonts/woff/opensans-italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/woff2/opensans-lightitalic.woff2") format("woff2"), url("../fonts/woff/opensans-lightitalic.woff") format("woff");
   font-weight: lighter;
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/woff2/opensans-bolditalic.woff2") format("woff2"), url("../fonts/woff/opensans-bolditalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
+  font-display: swap;
 }
 /* Цвет текста по умолчанию для документа */
 /* Цвет розовый по умолчанию для фонов текста и элементов */
@@ -1282,9 +1288,21 @@ body {
   overflow: hidden;
 }
 .review__item {
-  display: none;
+  display: flex;
+  flex-shrink: 0;
   flex-direction: column;
+  width: 280px;
   margin: 0;
+}
+@media (min-width: 660px) {
+  .review__item {
+    width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .review__item {
+    width: 780px;
+  }
 }
 .review__autor {
   order: -1;
@@ -1384,9 +1402,6 @@ body {
     font-size: 18px;
     line-height: 30px;
   }
-}
-.review__item--show {
-  display: flex;
 }
 /* table-price */
 .table-price {
@@ -2019,10 +2034,10 @@ body {
     background-position: 515px 161px, center bottom;
     -webkit-animation-name: headerhand;
             animation-name: headerhand;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: cubic-bezier(0.16, 0.39, 0.63, 0.82);
+            animation-timing-function: cubic-bezier(0.16, 0.39, 0.63, 0.82);
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
@@ -2322,19 +2337,22 @@ body {
   }
 }
 @media (max-width: 660px) {
-  .main__table-price--left-1x {
+  .main__table-price--left-0x {
     transform: translateX(-275px);
   }
 }
 @media (max-width: 660px) {
-  .main__table-price--left-2x {
+  .main__table-price--left-1x {
     transform: translateX(-565px);
   }
 }
 @media (max-width: 660px) {
-  .main__table-price--left-3x {
+  .main__table-price--left-2x {
     transform: translateX(-840px);
   }
+}
+.main__table-price {
+  transition: transform 1s cubic-bezier(0.88, 0.02, 0.07, 0.97);
 }
 /* advrt */
 @media (min-width: 660px) {

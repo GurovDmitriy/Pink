@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         tasks: ['less'],
       },
       jsWatch: {
-        files: ['source/js/js-file/*.js'],
+        files: ['source/js/files/*.js'],
         tasks: ['concat'],
       },
     },
@@ -61,10 +61,10 @@ module.exports = function (grunt) {
 
     concat: {
       options: {
-        separator: '',
+        separator: '\n',
       },
       dist: {
-        src: ['source/js/files/*.js'],
+        src: ['source/js/files/strict.js', 'source/js/files/*.js'],
         dest: 'source/js/scripts.js',
       },
     },
@@ -144,7 +144,7 @@ module.exports = function (grunt) {
           cwd: 'source',
           src: [
             '*.html',
-            'fonts/**/*',
+            'fonts/**/*.{woff2}',
             'image/**/*',
             'css/style.css',
             'js/*.js',
