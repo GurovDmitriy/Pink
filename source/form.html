@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <title>Pink - Форма регистрации</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/woff2/opensans-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="js/picturefill.js" as="script">
+  <link rel="preload" href="js/modernizr-custom.js" as="script">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/modernizr-custom.js"></script>
   <script>
     // Picture element HTML5 shiv
-    document.createElement( "picture" );
+    document.createElement("picture");
   </script>
   <script src="js/picturefill.js" async></script>
 </head>
@@ -208,18 +213,18 @@
           <div class="form__fieldset-name-inner">
             <label class="form__label-text" for="soname-field">Фамилия:</label>
             <div class="input-text form__input-text">
-              <input class="input-text__input" id="soname-field" type="text" name="soname" placeholder="Укажите Фамилию&lowast;" required>              
+              <input class="input-text__input" id="soname-field" type="text" name="soname" placeholder="Укажите Фамилию&lowast;" required>
             </div>
             <label class="form__label-text" for="name-field">Имя:</label>
             <div class="input-text form__input-text">
-              <input class="input-text__input" id="name-field" type="text" name="name" placeholder="Введите ваше имя&lowast;" required>              
+              <input class="input-text__input" id="name-field" type="text" name="name" placeholder="Введите ваше имя&lowast;" required>
             </div>
             <label class="form__label-text" for="patronymic-field">Отчество:</label>
             <div class="input-text form__input-text">
               <input class="input-text__input" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
-            </div>              
+            </div>
           </div>
-        </fieldset>        
+        </fieldset>
       </div>
       <div class="form__fieldset-box form__fieldset-box--grey-bg">
         <fieldset class="form__fieldset-app">
@@ -232,9 +237,9 @@
             <input class="form__input-radio visually-hidden" id="android-field" type="radio" name="app" value="android">
             <label class="label-radio form__label-radio" for="android-field" tabindex="0">Pink для Android</label>
             <input class="form__input-radio visually-hidden" type="radio" name="app" value="windows" id="windows-field">
-            <label class="label-radio form__label-radio" for="windows-field" tabindex="0">Windows Phone</label>               
+            <label class="label-radio form__label-radio" for="windows-field" tabindex="0">Windows Phone</label>
           </div>
-        </fieldset>        
+        </fieldset>
       </div>
       <div class="form__fieldset-box">
         <fieldset class="form__fieldset-contacts">
@@ -255,7 +260,7 @@
             </div>
             <label class="form__label-email" for="email-field">Адрес почты</label>
           </div>
-        </fieldset>        
+        </fieldset>
       </div>
       <div class="form__fieldset-box form__fieldset-box--grey-bg">
         <fieldset class="form__fieldset-progress">
@@ -272,9 +277,9 @@
             <input class="form__input-checkbox visually-hidden" id="e-field" type="checkbox" name="e" value="e" checked>
             <label class="label-checkbox form__label-checkbox" for="e-field" tabindex="0">Удержал башню</label>
             <input class="form__input-checkbox visually-hidden" id="f-field" type="checkbox" name="f" value="f">
-            <label class="label-checkbox form__label-checkbox" for="f-field" tabindex="0">Разгромил отель</label>            
-          </div>                
-        </fieldset>        
+            <label class="label-checkbox form__label-checkbox" for="f-field" tabindex="0">Разгромил отель</label>
+          </div>
+        </fieldset>
       </div>
       <div class="form__fieldset-box">
         <fieldset class="form__fieldset-comment">
@@ -282,9 +287,9 @@
           <div class="form__fieldset-comment-inner">
             <label class="visually-hidden" for="comment-field">Оставьте комментарии</label>
             <textarea class="comment form__comment" id="comment-field">Можно прям в красках, не стесняйтесь в выражениях
-            </textarea>            
+            </textarea>
           </div>
-        </fieldset>        
+        </fieldset>
       </div>
       <div class="form__submit-box">
         <button type="submit" class="btn-large form__submit-btn">Отправить форму</button>
@@ -304,7 +309,7 @@
       <strong class="modal__caption">Ваша заявка отправлена</strong>
       <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       <div class="modal__btn-box">
-      <button class="btn-large modal__btn" type="button">Закрыть окно</button>        
+      <button class="btn-large modal__btn" type="button">Закрыть окно</button>
       </div>
     </div>
   </main>
@@ -341,7 +346,7 @@
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
-      </ul> 
+      </ul>
       <a class="copyright__link" href="https://github.com/GurovDmitriy" target="_blank">
         Гуров Дмитрий
         <svg class="copyright__link-icon" width="27" height="27">
@@ -350,5 +355,7 @@
       </a>
     </section>
   </footer>
+  <script src="js/scripts-default.js"></script>
+  <script src="js/scripts-form.js"></script>
 </body>
 </html>

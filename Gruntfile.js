@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         tasks: ['less'],
       },
       jsWatch: {
-        files: ['source/js/files/*.js'],
+        files: ['source/js/*/*.js'],
         tasks: ['concat'],
       },
     },
@@ -64,19 +64,35 @@ module.exports = function (grunt) {
         separator: '\n',
       },
       dist: {
-        src: ['source/js/files/strict.js', 'source/js/files/*.js'],
-        dest: 'source/js/scripts.js',
+        src: ['source/js/default/strict.js', 'source/js/default/*.js'],
+        dest: 'source/js/scripts-default.js',
+      },
+      dist2: {
+        src: ['source/js/index/strict.js', 'source/js/index/*.js'],
+        dest: 'source/js/scripts-index.js',
+      },
+      dist3: {
+        src: ['source/js/photo/strict.js', 'source/js/photo/*.js'],
+        dest: 'source/js/scripts-photo.js',
+      },
+      dist4: {
+        src: ['source/js/form/strict.js', 'source/js/form/*.js'],
+        dest: 'source/js/scripts-form.js',
       },
     },
 
     uglify: {
       options: {
         mangle: false,
+        expand: true,
       },
       jsMin: {
-        files: {
-          'build/js/scripts.js': ['build/js/scripts.js'],
-        },
+        files: [{
+          expand: true,
+          cwd: 'build/js',
+          src: '*.js',
+          dest: 'build/js'
+        }]
       },
     },
 
@@ -144,8 +160,8 @@ module.exports = function (grunt) {
           cwd: 'source',
           src: [
             '*.html',
-            'fonts/**/*.{woff2}',
-            'image/**/*',
+            'fonts/woff2/*',
+            'image/min/*',
             'css/style.css',
             'js/*.js',
           ],

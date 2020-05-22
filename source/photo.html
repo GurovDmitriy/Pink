@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <title>Pink - Фотографии</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/woff2/opensans-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="js/picturefill.js" as="script">
+  <link rel="preload" href="js/modernizr-custom.js" as="script">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/modernizr-custom.js"></script>
   <script>
     // Picture element HTML5 shiv
-    document.createElement( "picture" );
+    document.createElement("picture");
   </script>
   <script src="js/picturefill.js" async></script>
 </head>
@@ -251,7 +256,7 @@
             <span class="btn-like__text">Нравится: </span><span class="btn-like__number">215</span>
           </button>
         </figcaption>
-      </figure>      
+      </figure>
     </div>
     <section class="gallery main-photo__gallery">
       <h2 class="visually-hidden">Галлерея</h2>
@@ -404,7 +409,7 @@
             <span class="btn-like__text">Нравится: </span><span class="btn-like__number">215</span>
           </button>
         </figcaption>
-      </figure>  
+      </figure>
       <figure class="post gallery__post">
         <picture>
           <source type="image/webp"
@@ -554,7 +559,7 @@
             <span class="btn-like__text">Нравится: </span><span class="btn-like__number">2560</span>
           </button>
         </figcaption>
-      </figure>                   
+      </figure>
     </section>
     <h2 class="main-photo__caption">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
     <div class="main-photo__upload-box">
@@ -609,7 +614,7 @@
               <use xlink:href="#icon-fill"></use>
             </svg>
             <div class="custom-range__bar"><div class="custom-range__status-bar"></div></div>
-          </div>        
+          </div>
           <div class="custom-range upload__custom-range">
             <svg class="custom-range__icon" width="32" height="32" fill="#283645">
               <use xlink:href="#icon-saturate"></use>
@@ -619,9 +624,9 @@
         </div>
         <div class="upload__btn-box">
           <label class="visually-hidden" for="upload-field">Загрузить фотографии</label>
-          <input class="visually-hidden" id="upload-field" type="file" name="upload" accept="image/*">        
+          <input class="visually-hidden" id="upload-field" type="file" name="upload" accept="image/*">
           <button class="btn-round upload__btn" type="submit">Запостить</button>
-          <button class="btn-round upload__btn upload__btn-reset" type="button">Отмена</button>          
+          <button class="btn-round upload__btn upload__btn-reset" type="button">Отмена</button>
         </div>
       </form>
     </div>
@@ -668,5 +673,7 @@
       </a>
     </section>
   </footer>
+  <script src="js/scripts-default.js"></script>
+  <script src="js/scripts-photo.js"></script>
 </body>
 </html>
