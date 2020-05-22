@@ -1,21 +1,16 @@
 .burger:hover .burger__bar,
-.burger:hover .burger__bar::after,
-.burger:hover .burger__bar::before,
+.burger:hover::after,
+.burger:hover::before,
 .burger:focus .burger__bar,
-.burger:focus .burger__bar::after,
-.burger:focus .burger__bar::before {
+.burger:focus::after,
+.burger:focus::before {
   background-color: @color-pink;
 }
 
-.burger--active:hover .burger__bar,
-.burger--active:focus .burger__bar {
-  background-color: transparent;
-}
-
-.burger--active:hover .burger__bar::after,
-.burger--active:hover .burger__bar::before,
-.burger--active:focus .burger__bar::after,
-.burger--active:focus .burger__bar::before {
+.burger--active:hover::after,
+.burger--active:hover::before,
+.burger--active:focus::after,
+.burger--active:focus::before {
   background-color: @color-pink;
 }
 

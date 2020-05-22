@@ -9,13 +9,36 @@
   }
 }
 
+@keyframes headerMenu {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header__menu {
+  transform: translateY(-100%);
+  @media (min-width: @desktop-width) {
+    transform: translateY(0);
+  }
+}
+
+.header__menu--open {
+  animation-name: headerMenu;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
 .header__download-box {
   @media (min-width: @desktop-width) {
   background-position: 515px 161px, center bottom;
 
   animation-name: headerhand;
   animation-duration: 3s;
-  animation-timing-function: cubic-bezier(0.16, 0.39, 0.63, 0.82);
+  animation-timing-function: cubic-bezier(0, 0.49, 1, 0.37);
   animation-fill-mode: forwards;
   }
 }

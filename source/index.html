@@ -5,8 +5,8 @@
   <title>Pink - Главная</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="css/style.css" as="style">
-  <link rel="preload" href="fonts/woff2/opensans-regular.woff2" as="font">
-  <link rel="preload" href="fonts/woff2/opensans-light.woff2" as="font">
+  <link rel="preload" href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/woff2/opensans-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="js/picturefill.js" as="script">
   <link rel="preload" href="js/modernizr-custom.js" as="script">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -182,20 +182,22 @@
             <span class="burger__bar"></span>
           </button>
         </div>
-        <ul class="menu header__menu header__menu">
-          <li class="menu__item">
-            <a class="menu__link menu__link--active" title="Вы уже здесь">Главная</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">О макете Pink</a>
-          </li>
-        </ul>
+        <div class="header__menu-box">
+          <ul class="menu header__menu">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" title="Вы уже здесь">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О макете Pink</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
     <div class="header__download-box">
@@ -364,27 +366,29 @@
     <section class="main__review-box">
       <h2 class="visually-hidden">Отзывы о нас</h2>
       <div class="review main__review">
-        <blockquote class="review__item">
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          <cite class="review__autor">
-            Гуров Дмитрий
-            <span class="review__autor-info">29 лет, свободный человек</span>
-          </cite>
-        </blockquote>
-        <blockquote class="review__item">
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          <cite class="review__autor">
-            Гуров Дмитрий
-            <span class="review__autor-info">29 лет, свободный человек</span>
-          </cite>
-        </blockquote>
-        <blockquote class="review__item">
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          <cite class="review__autor">
-            Гуров Дмитрий
-            <span class="review__autor-info">29 лет, свободный человек</span>
-          </cite>
-        </blockquote>
+        <div class="review__inner-box review__inner-box--left-1x">
+          <blockquote class="review__item">
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <cite class="review__autor">
+              Гуров Дмитрий
+              <span class="review__autor-info">29 лет, свободный человек</span>
+            </cite>
+          </blockquote>
+          <blockquote class="review__item">
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <cite class="review__autor">
+              Гуров Дмитрий
+              <span class="review__autor-info">29 лет, свободный человек</span>
+            </cite>
+          </blockquote>
+          <blockquote class="review__item">
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <cite class="review__autor">
+              Гуров Дмитрий
+              <span class="review__autor-info">29 лет, свободный человек</span>
+            </cite>
+          </blockquote>
+        </div>
         <div class="btn-box review__btn-box">
           <button class="btn-box__btn"><span class="visually-hidden">В начало</span></button>
           <button class="btn-box__btn btn-box__btn--active"><span class="visually-hidden">Середина</span></button>
@@ -496,6 +500,7 @@
       </a>
     </section>
   </footer>
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts-default.js"></script>
+  <script src="js/scripts-index.js"></script>
 </body>
 </html>
