@@ -75,8 +75,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 /**
@@ -464,34 +463,12 @@ button:hover {
 .burger:active {
   opacity: 0.3;
 }
-@-webkit-keyframes burgerBar {
-  0% {
-    transform: translate(-50%, -50%) scaleX(1);
-  }
-  100% {
-    transform: translate(-50%, -50%) scaleX(0);
-  }
-}
 @keyframes burgerBar {
   0% {
     transform: translate(-50%, -50%) scaleX(1);
   }
   100% {
     transform: translate(-50%, -50%) scaleX(0);
-  }
-}
-@-webkit-keyframes burgerAfter {
-  0% {
-    transform: translate(0, 0) rotate(0) scaleX(1);
-  }
-  25% {
-    transform: translate(0, -9px) rotate(0) scaleX(1);
-  }
-  50% {
-    transform: translate(0, -9px) rotate(0) scaleX(0.8);
-  }
-  100% {
-    transform: translate(0, -9px) rotate(45deg) scaleX(0.8);
   }
 }
 @keyframes burgerAfter {
@@ -508,20 +485,6 @@ button:hover {
     transform: translate(0, -9px) rotate(45deg) scaleX(0.8);
   }
 }
-@-webkit-keyframes burgerBefore {
-  0% {
-    transform: translate(0, 0) rotate(0) scaleX(1);
-  }
-  25% {
-    transform: translate(0, 9px) rotate(0) scaleX(1);
-  }
-  50% {
-    transform: translate(0, 9px) rotate(0) scaleX(0.8);
-  }
-  100% {
-    transform: translate(0, 9px) rotate(-45deg) scaleX(0.8);
-  }
-}
 @keyframes burgerBefore {
   0% {
     transform: translate(0, 0) rotate(0) scaleX(1);
@@ -536,34 +499,12 @@ button:hover {
     transform: translate(0, 9px) rotate(-45deg) scaleX(0.8);
   }
 }
-@-webkit-keyframes burgerBarRev {
-  0% {
-    transform: translate(-50%, -50%) scaleX(1);
-  }
-  100% {
-    transform: translate(-50%, -50%) scaleX(0);
-  }
-}
 @keyframes burgerBarRev {
   0% {
     transform: translate(-50%, -50%) scaleX(1);
   }
   100% {
     transform: translate(-50%, -50%) scaleX(0);
-  }
-}
-@-webkit-keyframes burgerAfterRev {
-  0% {
-    transform: translate(0, 0) rotate(0) scaleX(1);
-  }
-  25% {
-    transform: translate(0, -9px) rotate(0) scaleX(1);
-  }
-  50% {
-    transform: translate(0, -9px) rotate(0) scaleX(0.8);
-  }
-  100% {
-    transform: translate(0, -9px) rotate(45deg) scaleX(0.8);
   }
 }
 @keyframes burgerAfterRev {
@@ -578,20 +519,6 @@ button:hover {
   }
   100% {
     transform: translate(0, -9px) rotate(45deg) scaleX(0.8);
-  }
-}
-@-webkit-keyframes burgerBeforeRev {
-  0% {
-    transform: translate(0, 0) rotate(0) scaleX(1);
-  }
-  25% {
-    transform: translate(0, 9px) rotate(0) scaleX(1);
-  }
-  50% {
-    transform: translate(0, 9px) rotate(0) scaleX(0.8);
-  }
-  100% {
-    transform: translate(0, 9px) rotate(-45deg) scaleX(0.8);
   }
 }
 @keyframes burgerBeforeRev {
@@ -609,71 +536,45 @@ button:hover {
   }
 }
 .burger--active .burger__bar {
-  -webkit-animation-name: burgerBar;
-          animation-name: burgerBar;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-          animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: burgerBar;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
+  animation-fill-mode: forwards;
 }
 .burger--active::after {
-  -webkit-animation-name: burgerAfter;
-          animation-name: burgerAfter;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-          animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: burgerAfter;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
+  animation-fill-mode: forwards;
 }
 .burger--active::before {
-  -webkit-animation-name: burgerBefore;
-          animation-name: burgerBefore;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-          animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: burgerBefore;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
+  animation-fill-mode: forwards;
 }
 .burger--disactive .burger__bar {
-  -webkit-animation-name: burgerBarRev;
-          animation-name: burgerBarRev;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: burgerBarRev;
+  animation-delay: 1s;
+  animation-duration: 1s;
   animation-direction: reverse;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 .burger--disactive::after {
-  -webkit-animation-name: burgerAfterRev;
-          animation-name: burgerAfterRev;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: burgerAfterRev;
+  animation-delay: 0;
+  animation-duration: 1s;
   animation-direction: reverse;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 .burger--disactive::before {
-  -webkit-animation-name: burgerBeforeRev;
-          animation-name: burgerBeforeRev;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: burgerBeforeRev;
+  animation-delay: 0;
+  animation-duration: 1s;
   animation-direction: reverse;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 /* btn-round */
 .btn-round {
@@ -809,17 +710,6 @@ button:hover {
 .btn-like__icon {
   fill: #d22856;
 }
-@-webkit-keyframes heart {
-  0% {
-    transform: translate(-100%, -50%) scale(1);
-  }
-  50% {
-    transform: translate(-100%, -50%) scale(1.6);
-  }
-  100% {
-    transform: translate(-100%, -50%) scale(1);
-  }
-}
 @keyframes heart {
   0% {
     transform: translate(-100%, -50%) scale(1);
@@ -834,12 +724,9 @@ button:hover {
 @media (min-width: 1200px) {
   .btn-like:hover .btn-like__icon {
     transform: translate(-100%, -50%) scale(1);
-    -webkit-animation-name: heart;
-            animation-name: heart;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: heart;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
   }
 }
 /* btn-small */
@@ -1445,14 +1332,6 @@ button:hover {
     text-align: center;
   }
 }
-@-webkit-keyframes ifonemain {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 @keyframes ifonemain {
   0% {
     transform: translateY(100%);
@@ -1464,29 +1343,20 @@ button:hover {
 @media (min-width: 1200px) {
   .pictures-list__img--active {
     transform: translateY(100%);
-    -webkit-animation-name: ifonemain;
-            animation-name: ifonemain;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
-            animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: ifonemain;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
+    animation-fill-mode: forwards;
   }
 }
 @media (min-width: 1200px) {
   .pictures-list__img-filter--active {
     transform: translateY(100%);
-    -webkit-animation-name: ifonemain;
-            animation-name: ifonemain;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
-            animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: ifonemain;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
+    animation-fill-mode: forwards;
   }
 }
 /* review */
@@ -2092,12 +1962,12 @@ button:hover {
     background-size: 660px auto, cover;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .no-webp .header {
     background-image: url("../image/min/hand-tablet@2x.png"), url("../image/min/back-tablet@2x.jpg");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .no-webp .header {
     background-image: url("../image/min/hand-tablet@3x.png"), url("../image/min/back-tablet@3x.jpg");
   }
@@ -2109,12 +1979,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .header {
     background-image: url("../image/min/back-desktop@2x.jpg");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .no-webp .header {
     background-image: url("../image/min/back-desktop@3x.jpg");
   }
@@ -2127,12 +1997,12 @@ button:hover {
     background-size: 660px auto, cover;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .webp .header {
     background-image: url("../image/min/hand-tablet@2x.webp"), url("../image/min/back-tablet@2x.webp");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .webp .header {
     background-image: url("../image/min/hand-tablet@3x.webp"), url("../image/min/back-tablet@3x.webp");
   }
@@ -2144,12 +2014,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .webp .header {
     background-image: url("../image/min/back-desktop@2x.webp");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .webp .header {
     background-image: url("../image/min/back-desktop@3x.webp");
   }
@@ -2160,12 +2030,12 @@ button:hover {
   background-position: center bottom;
   background-size: 280px auto, cover;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .no-webp .header__nav-box {
     background-image: url("../image/min/hand-mobile@2x.png"), url("../image/min/back-mobile@2x.jpg");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .no-webp .header__nav-box {
     background-image: url("../image/min/hand-mobile@3x.png"), url("../image/min/back-mobile@3x.jpg");
   }
@@ -2186,12 +2056,12 @@ button:hover {
   background-position: center bottom;
   background-size: 280px auto, cover;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .webp .header__nav-box {
     background-image: url("../image/min/hand-mobile@2x.webp"), url("../image/min/back-mobile@2x.webp");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .webp .header__nav-box {
     background-image: url("../image/min/hand-mobile@3x.webp"), url("../image/min/back-mobile@3x.webp");
   }
@@ -2227,12 +2097,12 @@ button:hover {
     background-size: 230px auto, 1050px auto;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .header__download-box {
     background-image: url("../image/min/filterheader-desktop@2x.png"), url("../image/min/iphonehand-desktop@2x.png");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .no-webp .header__download-box {
     background-image: url("../image/min/filterheader-desktop@3x.png"), url("../image/min/iphonehand-desktop@3x.png");
   }
@@ -2245,12 +2115,12 @@ button:hover {
     background-size: 230px auto, 1050px auto;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .webp .header__download-box {
     background-image: url("../image/min/filterheader-desktop@2x.webp"), url("../image/min/iphonehand-desktop@2x.webp");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .webp .header__download-box {
     background-image: url("../image/min/filterheader-desktop@3x.webp"), url("../image/min/iphonehand-desktop@3x.webp");
   }
@@ -2271,16 +2141,6 @@ button:hover {
     width: 660px;
   }
 }
-@-webkit-keyframes headerhand {
-  0% {
-    background-position: -500px 161px, -500px bottom;
-    opacity: 0;
-  }
-  100% {
-    background-position: 515px 161px, center bottom;
-    opacity: 1;
-  }
-}
 @keyframes headerhand {
   0% {
     background-position: -500px 161px, -500px bottom;
@@ -2289,14 +2149,6 @@ button:hover {
   100% {
     background-position: 515px 161px, center bottom;
     opacity: 1;
-  }
-}
-@-webkit-keyframes headerMenu {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 @keyframes headerMenu {
@@ -2316,26 +2168,18 @@ button:hover {
   }
 }
 .header__menu--open {
-  -webkit-animation-name: headerMenu;
-          animation-name: headerMenu;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: headerMenu;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 @media (min-width: 1200px) {
   .header__download-box {
     background-position: 515px 161px, center bottom;
-    -webkit-animation-name: headerhand;
-            animation-name: headerhand;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-timing-function: cubic-bezier(0, 0.49, 1, 0.37);
-            animation-timing-function: cubic-bezier(0, 0.49, 1, 0.37);
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: headerhand;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0, 0.49, 1, 0.37);
+    animation-fill-mode: forwards;
   }
 }
 /* main */
@@ -2580,12 +2424,12 @@ button:hover {
     background-size: 268px auto;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .no-webp .main__pictures-list {
     background-image: url("../image/min/Iphonescreen-tablet@2x.png");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .no-webp .main__pictures-list {
     background-image: url("../image/min/Iphonescreen-tablet@3x.png");
   }
@@ -2603,12 +2447,12 @@ button:hover {
     background-size: 268px auto;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .webp .main__pictures-list {
     background-image: url("../image/min/Iphonescreen-tablet@2x.webp");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .webp .main__pictures-list {
     background-image: url("../image/min/Iphonescreen-tablet@3x.webp");
   }
@@ -2971,12 +2815,12 @@ button:hover {
   background-position: center top, center bottom;
   background-size: 320px auto;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-mobile@2x.png");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-mobile@3x.png");
   }
@@ -2987,12 +2831,12 @@ button:hover {
     background-size: 660px auto;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-tablet@2x.png");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-tablet@3x.png");
   }
@@ -3003,12 +2847,12 @@ button:hover {
     background-size: 1200px auto;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map@2x.png");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map@3x.png");
   }
@@ -3019,12 +2863,12 @@ button:hover {
   background-position: center top, center bottom;
   background-size: 320px auto;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-mobile@2x.webp");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-mobile@3x.webp");
   }
@@ -3035,12 +2879,12 @@ button:hover {
     background-size: 660px auto;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-tablet@2x.webp");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-tablet@3x.webp");
   }
@@ -3051,12 +2895,12 @@ button:hover {
     background-size: 1200px auto;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map@2x.webp");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map@3x.webp");
   }
@@ -3407,12 +3251,12 @@ button:hover {
   background-position: center bottom;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-mobile@2x.jpg");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-mobile@3x.jpg");
   }
@@ -3424,12 +3268,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-tablet@2x.jpg");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-tablet@3x.jpg");
   }
@@ -3441,12 +3285,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-desktop@2x.jpg");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-desktop@3x.jpg");
   }
@@ -3456,12 +3300,12 @@ button:hover {
   background-position: center bottom;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-mobile@2x.webp");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-mobile@3x.webp");
   }
@@ -3473,12 +3317,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-tablet@2x.webp");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-tablet@3x.webp");
   }
@@ -3490,12 +3334,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-desktop@2x.webp");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-desktop@3x.webp");
   }
@@ -3923,17 +3767,6 @@ button:hover {
   background-color: #d22856;
   border-radius: 50%;
 }
-@-webkit-keyframes radio {
-  0% {
-    transform: translate(100%, -50%) scale(0);
-  }
-  50% {
-    transform: translate(100%, -50%) scale(1.2);
-  }
-  100% {
-    transform: translate(100%, -50%) scale(1);
-  }
-}
 @keyframes radio {
   0% {
     transform: translate(100%, -50%) scale(0);
@@ -3947,10 +3780,8 @@ button:hover {
 }
 .form__input-radio:checked + .label-radio::after {
   display: block;
-  -webkit-animation-name: radio;
-          animation-name: radio;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: radio;
+  animation-duration: 1s;
 }
 /* radio-checkbox */
 .label-checkbox {
@@ -3993,17 +3824,6 @@ button:hover {
   border-left: 2px solid #d22856;
   border-bottom: 2px solid #d22856;
 }
-@-webkit-keyframes checkbox {
-  0% {
-    transform: translate(8px, -70%) rotate(-45deg) scale(0);
-  }
-  50% {
-    transform: translate(8px, -70%) rotate(-45deg) scale(1.2);
-  }
-  100% {
-    transform: translate(8px, -70%) rotate(-45deg) scale(1);
-  }
-}
 @keyframes checkbox {
   0% {
     transform: translate(8px, -70%) rotate(-45deg) scale(0);
@@ -4017,10 +3837,8 @@ button:hover {
 }
 .form__input-checkbox:checked + .label-checkbox::after {
   display: block;
-  -webkit-animation-name: checkbox;
-          animation-name: checkbox;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: checkbox;
+  animation-duration: 1s;
 }
 /* input-text */
 .input-text__input {
@@ -4057,17 +3875,13 @@ button:hover {
 .input-email__icon {
   fill: #d22856;
 }
-@media (min-width: 1200px) {
-  .input-email__icon {
-    transition: transform 0.4s;
-  }
+.input-email__icon {
+  transition: transform 0.4s;
 }
-@media (min-width: 1200px) {
-  .input-email:hover .input-email__icon,
-  .input-email__input:focus + .input-email__icon {
-    transform: translate(0, -50%) rotate(360deg) scale(1.6);
-    transform-origin: 50% 50%;
-  }
+.input-email:hover .input-email__icon,
+.input-email__input:focus + .input-email__icon {
+  transform: translate(0, -50%) rotate(360deg) scale(1.6);
+  transform-origin: 50% 50%;
 }
 /* input-tel */
 .input-tel {
@@ -4096,17 +3910,13 @@ button:hover {
 .input-tel__icon {
   fill: #d22856;
 }
-@media (min-width: 1200px) {
-  .input-tel__icon {
-    transition: transform 0.4s;
-  }
+.input-tel__icon {
+  transition: transform 0.4s;
 }
-@media (min-width: 1200px) {
-  .input-tel:hover .input-tel__icon,
-  .input-tel__input:focus + .input-tel__icon {
-    transform: translate(0, -50%) rotate(360deg) scale(1.6);
-    transform-origin: 50% 50%;
-  }
+.input-tel:hover .input-tel__icon,
+.input-tel__input:focus + .input-tel__icon {
+  transform: translate(0, -50%) rotate(360deg) scale(1.6);
+  transform-origin: 50% 50%;
 }
 /* comment */
 .comment {
