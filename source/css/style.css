@@ -832,7 +832,8 @@ button:hover {
   }
 }
 @media (min-width: 1200px) {
-  .btn-like:hover .btn-like__icon {
+  .btn-like:hover .btn-like__icon,
+  .btn-like:focus .btn-like__icon {
     transform: translate(-100%, -50%) scale(1);
     -webkit-animation-name: heart;
             animation-name: heart;
@@ -1218,6 +1219,9 @@ button:hover {
 .icon-list__link {
   line-height: 0;
   text-decoration: none;
+}
+.icon-list__link:focus {
+  outline: 2px solid #d22856;
 }
 /* social-list */
 .social-list {
