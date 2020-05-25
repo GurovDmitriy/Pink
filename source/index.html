@@ -153,7 +153,7 @@
       <nav class="header__nav">
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
         <div class="header__logo-box">
-          <a class="logo header__logo" title="Вы уже здесь">
+          <a class="logo header__logo" title="Вы уже здесь" tabindex="0">
             <style>
               .logo__img-desktop {
                 display: none;
@@ -175,17 +175,17 @@
             <svg class="logo__img logo__img-desktop" width="147" height="40" fill="#ffffff">
               <use xlink:href="#icon-logodesktop"></use>
             </svg>
-            <strong class="visually-hidden">Логотип пинк</strong>
+            <span class="visually-hidden">Пинк - Вы на главной. Логотип пинк</span>
           </a>
           <button class="burger header__burger">
-            <span class="visually-hidden">Открыть/Закрыть</span>
+            <span class="visually-hidden">Кнопка меню. Открыть/Закрыть</span>
             <span class="burger__bar"></span>
           </button>
         </div>
         <div class="header__menu-box">
           <ul class="menu header__menu">
             <li class="menu__item">
-              <a class="menu__link menu__link--active" title="Вы уже здесь">Главная</a>
+              <a class="menu__link menu__link--active" title="Вы уже здесь" tabindex="0">Главная</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="photo.html">Фотографии</a>
@@ -252,7 +252,7 @@
                 srcset="image/min/Iphonemain-desktop@3x.png 3x,
                         image/min/Iphonemain-desktop@2x.png 2x,
                         image/min/Iphonemain-desktop.png">
-              <img class="pictures-list__img pictures-list__picture-iphone-1" src="image/min/placeholder.png" alt="Розовый фильтр на фото" width="157" height="320">
+              <img class="pictures-list__img pictures-list__picture-iphone-1" src="image/min/placeholder.png" alt="" width="157" height="320" aria-hidden="true">
             </picture>
             <picture>
               <source type="image/webp"
@@ -265,7 +265,7 @@
                 srcset="image/min/filternomain-desktop@3x.png 3x,
                         image/min/filternomain-desktop@2x.png 2x,
                         image/min/filternomain-desktop.png">
-              <img class="pictures-list__img-filter pictures-list__img-filter-1" src="image/min/placeholder.png" alt="Розовый фильтр на фото" width="165" height="294">
+              <img class="pictures-list__img-filter pictures-list__img-filter-1" src="image/min/placeholder.png" alt="Мусорка в черно-белых тонах" width="165" height="294">
             </picture>
           </div>
           <h3 class="pictures-list__caption">Поднимает настроение</h3>
@@ -284,7 +284,7 @@
                 srcset="image/min/Iphonemain-desktop@3x.png 3x,
                         image/min/Iphonemain-desktop@2x.png 2x,
                         image/min/Iphonemain-desktop.png">
-              <img class="pictures-list__img pictures-list__picture-iphone-2" src="image/min/placeholder.png" alt="Розовый фильтр на фото" width="157" height="320">
+              <img class="pictures-list__img pictures-list__picture-iphone-2" src="image/min/placeholder.png" alt="" width="157" height="320" aria-hidden="true">
             </picture>
             <picture>
               <source type="image/webp"
@@ -297,7 +297,7 @@
                 srcset="image/min/filtermain-desktop@3x.png 3x,
                         image/min/filtermain-desktop@2x.png 2x,
                         image/min/filtermain-desktop.png">
-              <img class="pictures-list__img-filter pictures-list__img-filter-2" src="image/min/placeholder.png" alt="Розовый фильтр на фото" width="165" height="294">
+              <img class="pictures-list__img-filter pictures-list__img-filter-2" src="image/min/placeholder.png" alt="Мусорка окрашенная в розовый фильтр" width="165" height="294">
             </picture>
           </div>
           <h3 class="pictures-list__caption">Меняет мир вокруг</h3>
@@ -327,7 +327,7 @@
                 srcset="image/min/iphonescreenmobile@3x.png 3x,
                         image/min/iphonescreenmobile@2x.png 2x,
                         image/min/iphonescreenmobile.png">
-              <img class="pictures-list__img pictures-list__picture-iphone-3" src="image/min/iphonescreenmobile.png" alt="Розовый фильтр на фото" width="157" height="320">
+              <img class="pictures-list__img pictures-list__picture-iphone-3" src="image/min/iphonescreenmobile.png" alt="" width="157" height="320" aria-hidden="true">
             </picture>
             <picture>
               <source type="image/webp"
@@ -340,7 +340,7 @@
                 srcset="image/min/filtersmilemain-desktop@3x.png 3x,
                         image/min/filtersmilemain-desktop@2x.png 2x,
                         image/min/filtersmilemain-desktop.png">
-              <img class="pictures-list__img-filter pictures-list__img-filter-3" src="image/min/placeholder.png" alt="Розовый фильтр на фото" width="165" height="294">
+              <img class="pictures-list__img-filter pictures-list__img-filter-3" src="image/min/placeholder.png" alt="Мусорка окрашенная в розовый фильтр с радостным смайлом" width="165" height="294">
             </picture>
           </div>
           <h3 class="pictures-list__caption">Заводит новых друзей</h3>
@@ -446,7 +446,7 @@
         </p>
         <p class="contacts__item">
           <span class="contacts__caption">Приезжайте в гости:</span>
-          <a class="contacts__link" title="Карта ниже">г. Ставрополь, ул. Дзержинского 176</a>
+          <a class="contacts__link" title="Карта ниже" tabindex="0">г. Ставрополь, ул. Дзержинского 176</a>
         </p>
         <p class="contacts__item">
           <span class="contacts__caption">Пишите:</span>
@@ -461,11 +461,11 @@
     </section>
     <section class="copyright footer__copyright">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a class="logo copyright__logo" title="Вы уже здесь">
+      <a class="logo copyright__logo" title="Вы уже здесь" tabindex="0">
         <svg class="logo__img copyright__logo-img" width="147" height="40" fill="#283645">
           <use xlink:href="#icon-logotablet"></use>
         </svg>
-        <strong class="visually-hidden">Логотип пинк</strong>
+        <span class="visually-hidden">Пинк - Вы на главной. Логотип пинк</span>
       </a>
       <ul class="social-list copyright__social-list">
         <li class="social-list__item">

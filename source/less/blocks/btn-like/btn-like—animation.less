@@ -10,12 +10,13 @@
   }
 }
 
-.btn-like:hover .btn-like__icon {
+.btn-like:hover .btn-like__icon,
+.btn-like:focus .btn-like__icon {
   @media (min-width: @desktop-width) {
     transform: translate(-100%, -50%) scale(1);
 
     animation-name: heart;
     animation-duration: 0.5s;
-    animation-iteration-count: infinite;    
+    animation-iteration-count: infinite;
   }
 }
