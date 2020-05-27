@@ -16,6 +16,7 @@
     document.createElement("picture");
   </script>
   <script src="js/picturefill.js" async></script>
+  <script  src="js/lazysizes.js" async></script>
 </head>
 <body>
   <div style="display: none">
@@ -244,28 +245,28 @@
             <picture>
               <source type="image/webp"
                 media="(min-width: 1200px)"
-                srcset="image/min/Iphonemain-desktop@3x.webp 3x,
+                data-srcset="image/min/Iphonemain-desktop@3x.webp 3x,
                         image/min/Iphonemain-desktop@2x.webp 2x,
                         image/min/Iphonemain-desktop.webp">
               <source type="image/png"
                 media="(min-width: 1200px)"
-                srcset="image/min/Iphonemain-desktop@3x.png 3x,
+                data-srcset="image/min/Iphonemain-desktop@3x.png 3x,
                         image/min/Iphonemain-desktop@2x.png 2x,
                         image/min/Iphonemain-desktop.png">
-              <img class="pictures-list__img pictures-list__picture-iphone-1" src="image/min/placeholder.png" alt="" width="157" height="320" aria-hidden="true">
+              <img class="pictures-list__img pictures-list__picture-iphone-1 lazyload" data-src="image/min/placeholder.png" alt="" width="157" height="320" aria-hidden="true">
             </picture>
             <picture>
               <source type="image/webp"
                 media="(min-width: 1200px)"
-                srcset="image/min/filternomain-desktop@3x.webp 3x,
+                data-srcset="image/min/filternomain-desktop@3x.webp 3x,
                         image/min/filternomain-desktop@2x.webp 2x,
                         image/min/filternomain-desktop.webp">
               <source type="image/png"
                 media="(min-width: 1200px)"
-                srcset="image/min/filternomain-desktop@3x.png 3x,
+                data-srcset="image/min/filternomain-desktop@3x.png 3x,
                         image/min/filternomain-desktop@2x.png 2x,
                         image/min/filternomain-desktop.png">
-              <img class="pictures-list__img-filter pictures-list__img-filter-1" src="image/min/placeholder.png" alt="Мусорка в черно-белых тонах" width="165" height="294">
+              <img class="pictures-list__img-filter pictures-list__img-filter-1 lazyload" data-src="image/min/placeholder.png" alt="Мусорка в черно-белых тонах" width="165" height="294">
             </picture>
           </div>
           <h3 class="pictures-list__caption">Поднимает настроение</h3>
@@ -276,28 +277,28 @@
             <picture>
               <source type="image/webp"
                 media="(min-width: 1200px)"
-                srcset="image/min/Iphonemain-desktop@3x.webp 3x,
+                data-srcset="image/min/Iphonemain-desktop@3x.webp 3x,
                         image/min/Iphonemain-desktop@2x.webp 2x,
                         image/min/Iphonemain-desktop.webp">
               <source type="image/png"
                 media="(min-width: 1200px)"
-                srcset="image/min/Iphonemain-desktop@3x.png 3x,
+                data-srcset="image/min/Iphonemain-desktop@3x.png 3x,
                         image/min/Iphonemain-desktop@2x.png 2x,
                         image/min/Iphonemain-desktop.png">
-              <img class="pictures-list__img pictures-list__picture-iphone-2" src="image/min/placeholder.png" alt="" width="157" height="320" aria-hidden="true">
+              <img class="pictures-list__img pictures-list__picture-iphone-2 lazyload" data-src="image/min/placeholder.png" alt="" width="157" height="320" aria-hidden="true">
             </picture>
             <picture>
               <source type="image/webp"
                 media="(min-width: 1200px)"
-                srcset="image/min/filtermain-desktop@3x.webp 3x,
+                data-srcset="image/min/filtermain-desktop@3x.webp 3x,
                         image/min/filtermain-desktop@2x.webp 2x,
                         image/min/filtermain-desktop.webp">
               <source type="image/png"
                 media="(min-width: 1200px)"
-                srcset="image/min/filtermain-desktop@3x.png 3x,
+                data-srcset="image/min/filtermain-desktop@3x.png 3x,
                         image/min/filtermain-desktop@2x.png 2x,
                         image/min/filtermain-desktop.png">
-              <img class="pictures-list__img-filter pictures-list__img-filter-2" src="image/min/placeholder.png" alt="Мусорка окрашенная в розовый фильтр" width="165" height="294">
+              <img class="pictures-list__img-filter pictures-list__img-filter-2 lazyload" data-src="image/min/placeholder.png" alt="Мусорка окрашенная в розовый фильтр" width="165" height="294">
             </picture>
           </div>
           <h3 class="pictures-list__caption">Меняет мир вокруг</h3>
@@ -308,39 +309,39 @@
             <picture>
               <source type="image/webp"
                 media="(min-width: 1200px)"
-                srcset="image/min/Iphonemain-desktop@3x.webp 3x,
+                data-srcset="image/min/Iphonemain-desktop@3x.webp 3x,
                         image/min/Iphonemain-desktop@2x.webp 2x,
                         image/min/Iphonemain-desktop.webp">
               <source type="image/png"
                 media="(min-width: 1200px)"
-                srcset="image/min/Iphonemain-desktop@3x.png 3x,
+                data-srcset="image/min/Iphonemain-desktop@3x.png 3x,
                         image/min/Iphonemain-desktop@2x.png 2x,
                         image/min/Iphonemain-desktop.png">
               <source type="image/png"
                 media="(min-width: 660px)"
-                srcset="image/min/placeholder.png">
+                data-srcset="image/min/placeholder.png">
               <source type="image/webp"
-                srcset="image/min/iphonescreenmobile@3x.webp 3x,
+                data-srcset="image/min/iphonescreenmobile@3x.webp 3x,
                         image/min/iphonescreenmobile@2x.webp 2x,
                         image/min/iphonescreenmobile.webp">
               <source type="image/png"
-                srcset="image/min/iphonescreenmobile@3x.png 3x,
+                data-srcset="image/min/iphonescreenmobile@3x.png 3x,
                         image/min/iphonescreenmobile@2x.png 2x,
                         image/min/iphonescreenmobile.png">
-              <img class="pictures-list__img pictures-list__picture-iphone-3" src="image/min/iphonescreenmobile.png" alt="" width="157" height="320" aria-hidden="true">
+              <img class="pictures-list__img pictures-list__picture-iphone-3 lazyload" data-src="image/min/iphonescreenmobile.png" alt="" width="157" height="320" aria-hidden="true">
             </picture>
             <picture>
               <source type="image/webp"
                 media="(min-width: 1200px)"
-                srcset="image/min/filtersmilemain-desktop@3x.webp 3x,
+                data-srcset="image/min/filtersmilemain-desktop@3x.webp 3x,
                         image/min/filtersmilemain-desktop@2x.webp 2x,
                         image/min/filtersmilemain-desktop.webp">
               <source type="image/png"
                 media="(min-width: 1200px)"
-                srcset="image/min/filtersmilemain-desktop@3x.png 3x,
+                data-srcset="image/min/filtersmilemain-desktop@3x.png 3x,
                         image/min/filtersmilemain-desktop@2x.png 2x,
                         image/min/filtersmilemain-desktop.png">
-              <img class="pictures-list__img-filter pictures-list__img-filter-3" src="image/min/placeholder.png" alt="Мусорка окрашенная в розовый фильтр с радостным смайлом" width="165" height="294">
+              <img class="pictures-list__img-filter pictures-list__img-filter-3 lazyload" data-src="image/min/placeholder.png" alt="Мусорка окрашенная в розовый фильтр с радостным смайлом" width="165" height="294">
             </picture>
           </div>
           <h3 class="pictures-list__caption">Заводит новых друзей</h3>
@@ -455,7 +456,7 @@
       </div>
       <div class="footer__map-box">
         <div class="footer__map">
-          <iframe class="footer__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.167502464121!2d41.950404515451694!3d45.04182266954826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f900bcb0f9b9af%3A0xfd52ef9a973669c0!2z0YPQuy4g0JTQt9C10YDQttC40L3RgdC60L7Qs9C-LCAxNzYsINCh0YLQsNCy0YDQvtC_0L7Qu9GMLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5LCAzNTUwMDM!5e0!3m2!1sru!2sru!4v1587826625794!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="footer__map-frame lazyload" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.167502464121!2d41.950404515451694!3d45.04182266954826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f900bcb0f9b9af%3A0xfd52ef9a973669c0!2z0YPQuy4g0JTQt9C10YDQttC40L3RgdC60L7Qs9C-LCAxNzYsINCh0YLQsNCy0YDQvtC_0L7Qu9GMLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5LCAzNTUwMDM!5e0!3m2!1sru!2sru!4v1587826625794!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </div>
     </section>
