@@ -1,310 +1,5 @@
 /* Глобальные свойства */
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
-}
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sub {
-  bottom: -0.25em;
-}
-sup {
-  top: -0.5em;
-}
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block;
-}
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}
+/* @import "global/normalize.less"; */
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/woff2/opensans-regular.woff2") format("woff2"), url("../fonts/woff/opensans-regular.woff") format("woff");
@@ -324,27 +19,6 @@ template {
   src: url("../fonts/woff2/opensans-bold.woff2") format("woff2"), url("../fonts/woff/opensans-bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/woff2/opensans-italic.woff2") format("woff2"), url("../fonts/woff/opensans-italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/woff2/opensans-lightitalic.woff2") format("woff2"), url("../fonts/woff/opensans-lightitalic.woff") format("woff");
-  font-weight: lighter;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/woff2/opensans-bolditalic.woff2") format("woff2"), url("../fonts/woff/opensans-bolditalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
   font-display: swap;
 }
 /* Цвет текста по умолчанию для документа */
@@ -464,34 +138,12 @@ button:hover {
 .burger:active {
   opacity: 0.3;
 }
-@-webkit-keyframes burgerBar {
-  0% {
-    transform: translate(-50%, -50%) scaleX(1);
-  }
-  100% {
-    transform: translate(-50%, -50%) scaleX(0);
-  }
-}
 @keyframes burgerBar {
   0% {
     transform: translate(-50%, -50%) scaleX(1);
   }
   100% {
     transform: translate(-50%, -50%) scaleX(0);
-  }
-}
-@-webkit-keyframes burgerAfter {
-  0% {
-    transform: translate(0, 0) rotate(0) scaleX(1);
-  }
-  25% {
-    transform: translate(0, -9px) rotate(0) scaleX(1);
-  }
-  50% {
-    transform: translate(0, -9px) rotate(0) scaleX(0.8);
-  }
-  100% {
-    transform: translate(0, -9px) rotate(45deg) scaleX(0.8);
   }
 }
 @keyframes burgerAfter {
@@ -508,20 +160,6 @@ button:hover {
     transform: translate(0, -9px) rotate(45deg) scaleX(0.8);
   }
 }
-@-webkit-keyframes burgerBefore {
-  0% {
-    transform: translate(0, 0) rotate(0) scaleX(1);
-  }
-  25% {
-    transform: translate(0, 9px) rotate(0) scaleX(1);
-  }
-  50% {
-    transform: translate(0, 9px) rotate(0) scaleX(0.8);
-  }
-  100% {
-    transform: translate(0, 9px) rotate(-45deg) scaleX(0.8);
-  }
-}
 @keyframes burgerBefore {
   0% {
     transform: translate(0, 0) rotate(0) scaleX(1);
@@ -536,34 +174,12 @@ button:hover {
     transform: translate(0, 9px) rotate(-45deg) scaleX(0.8);
   }
 }
-@-webkit-keyframes burgerBarRev {
-  0% {
-    transform: translate(-50%, -50%) scaleX(1);
-  }
-  100% {
-    transform: translate(-50%, -50%) scaleX(0);
-  }
-}
 @keyframes burgerBarRev {
   0% {
     transform: translate(-50%, -50%) scaleX(1);
   }
   100% {
     transform: translate(-50%, -50%) scaleX(0);
-  }
-}
-@-webkit-keyframes burgerAfterRev {
-  0% {
-    transform: translate(0, 0) rotate(0) scaleX(1);
-  }
-  25% {
-    transform: translate(0, -9px) rotate(0) scaleX(1);
-  }
-  50% {
-    transform: translate(0, -9px) rotate(0) scaleX(0.8);
-  }
-  100% {
-    transform: translate(0, -9px) rotate(45deg) scaleX(0.8);
   }
 }
 @keyframes burgerAfterRev {
@@ -578,20 +194,6 @@ button:hover {
   }
   100% {
     transform: translate(0, -9px) rotate(45deg) scaleX(0.8);
-  }
-}
-@-webkit-keyframes burgerBeforeRev {
-  0% {
-    transform: translate(0, 0) rotate(0) scaleX(1);
-  }
-  25% {
-    transform: translate(0, 9px) rotate(0) scaleX(1);
-  }
-  50% {
-    transform: translate(0, 9px) rotate(0) scaleX(0.8);
-  }
-  100% {
-    transform: translate(0, 9px) rotate(-45deg) scaleX(0.8);
   }
 }
 @keyframes burgerBeforeRev {
@@ -609,71 +211,45 @@ button:hover {
   }
 }
 .burger--active .burger__bar {
-  -webkit-animation-name: burgerBar;
-          animation-name: burgerBar;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-          animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: burgerBar;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
+  animation-fill-mode: forwards;
 }
 .burger--active::after {
-  -webkit-animation-name: burgerAfter;
-          animation-name: burgerAfter;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-          animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: burgerAfter;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
+  animation-fill-mode: forwards;
 }
 .burger--active::before {
-  -webkit-animation-name: burgerBefore;
-          animation-name: burgerBefore;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-          animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: burgerBefore;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
+  animation-fill-mode: forwards;
 }
 .burger--disactive .burger__bar {
-  -webkit-animation-name: burgerBarRev;
-          animation-name: burgerBarRev;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: burgerBarRev;
+  animation-delay: 1s;
+  animation-duration: 1s;
   animation-direction: reverse;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 .burger--disactive::after {
-  -webkit-animation-name: burgerAfterRev;
-          animation-name: burgerAfterRev;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: burgerAfterRev;
+  animation-delay: 0;
+  animation-duration: 1s;
   animation-direction: reverse;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 .burger--disactive::before {
-  -webkit-animation-name: burgerBeforeRev;
-          animation-name: burgerBeforeRev;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: burgerBeforeRev;
+  animation-delay: 0;
+  animation-duration: 1s;
   animation-direction: reverse;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 /* btn-round */
 .btn-round {
@@ -809,17 +385,6 @@ button:hover {
 .btn-like__icon {
   fill: #d22856;
 }
-@-webkit-keyframes heart {
-  0% {
-    transform: translate(-100%, -50%) scale(1);
-  }
-  50% {
-    transform: translate(-100%, -50%) scale(1.6);
-  }
-  100% {
-    transform: translate(-100%, -50%) scale(1);
-  }
-}
 @keyframes heart {
   0% {
     transform: translate(-100%, -50%) scale(1);
@@ -835,12 +400,9 @@ button:hover {
   .btn-like:hover .btn-like__icon,
   .btn-like:focus .btn-like__icon {
     transform: translate(-100%, -50%) scale(1);
-    -webkit-animation-name: heart;
-            animation-name: heart;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: heart;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
   }
 }
 /* btn-small */
@@ -1449,14 +1011,6 @@ button:hover {
     text-align: center;
   }
 }
-@-webkit-keyframes ifonemain {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 @keyframes ifonemain {
   0% {
     transform: translateY(100%);
@@ -1468,29 +1022,20 @@ button:hover {
 @media (min-width: 1200px) {
   .pictures-list__img--active {
     transform: translateY(100%);
-    -webkit-animation-name: ifonemain;
-            animation-name: ifonemain;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
-            animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: ifonemain;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
+    animation-fill-mode: forwards;
   }
 }
 @media (min-width: 1200px) {
   .pictures-list__img-filter--active {
     transform: translateY(100%);
-    -webkit-animation-name: ifonemain;
-            animation-name: ifonemain;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
-            animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: ifonemain;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.6, 0.02, 0.29, 0.99);
+    animation-fill-mode: forwards;
   }
 }
 /* review */
@@ -2096,12 +1641,12 @@ button:hover {
     background-size: 660px auto, cover;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .no-webp .header {
     background-image: url("../image/min/hand-tablet@2x.png"), url("../image/min/back-tablet@2x.jpg");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .no-webp .header {
     background-image: url("../image/min/hand-tablet@3x.png"), url("../image/min/back-tablet@3x.jpg");
   }
@@ -2113,12 +1658,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .header {
     background-image: url("../image/min/back-desktop@2x.jpg");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .no-webp .header {
     background-image: url("../image/min/back-desktop@3x.jpg");
   }
@@ -2131,12 +1676,12 @@ button:hover {
     background-size: 660px auto, cover;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .webp .header {
     background-image: url("../image/min/hand-tablet@2x.webp"), url("../image/min/back-tablet@2x.webp");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .webp .header {
     background-image: url("../image/min/hand-tablet@3x.webp"), url("../image/min/back-tablet@3x.webp");
   }
@@ -2148,12 +1693,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .webp .header {
     background-image: url("../image/min/back-desktop@2x.webp");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .webp .header {
     background-image: url("../image/min/back-desktop@3x.webp");
   }
@@ -2164,12 +1709,12 @@ button:hover {
   background-position: center bottom;
   background-size: 280px auto, cover;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .no-webp .header__nav-box {
     background-image: url("../image/min/hand-mobile@2x.png"), url("../image/min/back-mobile@2x.jpg");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .no-webp .header__nav-box {
     background-image: url("../image/min/hand-mobile@3x.png"), url("../image/min/back-mobile@3x.jpg");
   }
@@ -2190,12 +1735,12 @@ button:hover {
   background-position: center bottom;
   background-size: 280px auto, cover;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .webp .header__nav-box {
     background-image: url("../image/min/hand-mobile@2x.webp"), url("../image/min/back-mobile@2x.webp");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .webp .header__nav-box {
     background-image: url("../image/min/hand-mobile@3x.webp"), url("../image/min/back-mobile@3x.webp");
   }
@@ -2231,12 +1776,12 @@ button:hover {
     background-size: 230px auto, 1050px auto;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .header__download-box {
     background-image: url("../image/min/filterheader-desktop@2x.png"), url("../image/min/iphonehand-desktop@2x.png");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .no-webp .header__download-box {
     background-image: url("../image/min/filterheader-desktop@3x.png"), url("../image/min/iphonehand-desktop@3x.png");
   }
@@ -2249,12 +1794,12 @@ button:hover {
     background-size: 230px auto, 1050px auto;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .webp .header__download-box {
     background-image: url("../image/min/filterheader-desktop@2x.webp"), url("../image/min/iphonehand-desktop@2x.webp");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .webp .header__download-box {
     background-image: url("../image/min/filterheader-desktop@3x.webp"), url("../image/min/iphonehand-desktop@3x.webp");
   }
@@ -2275,16 +1820,6 @@ button:hover {
     width: 660px;
   }
 }
-@-webkit-keyframes headerhand {
-  0% {
-    background-position: -500px 161px, -500px bottom;
-    opacity: 0;
-  }
-  100% {
-    background-position: 515px 161px, center bottom;
-    opacity: 1;
-  }
-}
 @keyframes headerhand {
   0% {
     background-position: -500px 161px, -500px bottom;
@@ -2293,14 +1828,6 @@ button:hover {
   100% {
     background-position: 515px 161px, center bottom;
     opacity: 1;
-  }
-}
-@-webkit-keyframes headerMenu {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 @keyframes headerMenu {
@@ -2320,26 +1847,18 @@ button:hover {
   }
 }
 .header__menu--open {
-  -webkit-animation-name: headerMenu;
-          animation-name: headerMenu;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: headerMenu;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 @media (min-width: 1200px) {
   .header__download-box {
     background-position: 515px 161px, center bottom;
-    -webkit-animation-name: headerhand;
-            animation-name: headerhand;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-timing-function: cubic-bezier(0, 0.49, 1, 0.37);
-            animation-timing-function: cubic-bezier(0, 0.49, 1, 0.37);
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-name: headerhand;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0, 0.49, 1, 0.37);
+    animation-fill-mode: forwards;
   }
 }
 /* main */
@@ -2584,12 +2103,12 @@ button:hover {
     background-size: 268px auto;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .no-webp .main__pictures-list {
     background-image: url("../image/min/Iphonescreen-tablet@2x.png");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .no-webp .main__pictures-list {
     background-image: url("../image/min/Iphonescreen-tablet@3x.png");
   }
@@ -2607,12 +2126,12 @@ button:hover {
     background-size: 268px auto;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .webp .main__pictures-list {
     background-image: url("../image/min/Iphonescreen-tablet@2x.webp");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .webp .main__pictures-list {
     background-image: url("../image/min/Iphonescreen-tablet@3x.webp");
   }
@@ -2975,12 +2494,12 @@ button:hover {
   background-position: center top, center bottom;
   background-size: 320px auto;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-mobile@2x.png");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-mobile@3x.png");
   }
@@ -2991,12 +2510,12 @@ button:hover {
     background-size: 660px auto;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-tablet@2x.png");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-tablet@3x.png");
   }
@@ -3007,12 +2526,12 @@ button:hover {
     background-size: 1200px auto;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map@2x.png");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .no-webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map@3x.png");
   }
@@ -3023,12 +2542,12 @@ button:hover {
   background-position: center top, center bottom;
   background-size: 320px auto;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-mobile@2x.webp");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-mobile@3x.webp");
   }
@@ -3039,12 +2558,12 @@ button:hover {
     background-size: 660px auto;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-tablet@2x.webp");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map-tablet@3x.webp");
   }
@@ -3055,12 +2574,12 @@ button:hover {
     background-size: 1200px auto;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map@2x.webp");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .webp .footer__map {
     background-image: url("../image/min/maptriangle.svg"), url("../image/min/map@3x.webp");
   }
@@ -3411,12 +2930,12 @@ button:hover {
   background-position: center bottom;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-mobile@2x.jpg");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-mobile@3x.jpg");
   }
@@ -3428,12 +2947,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-tablet@2x.jpg");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-tablet@3x.jpg");
   }
@@ -3445,12 +2964,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-desktop@2x.jpg");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .no-webp .header-photo {
     background-image: url("../image/min/back-desktop@3x.jpg");
   }
@@ -3460,12 +2979,12 @@ button:hover {
   background-position: center bottom;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-mobile@2x.webp");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-resolution: 230dpi), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+@media (min-resolution: 230dpi), (min-resolution: 2.4dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-mobile@3x.webp");
   }
@@ -3477,12 +2996,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-tablet@2x.webp");
   }
 }
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 660px) and (min-resolution: 2.4dppx) {
+@media (min-width: 660px) and (min-resolution: 230dpi), (min-width: 660px) and (min-resolution: 2.4dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-tablet@3x.webp");
   }
@@ -3494,12 +3013,12 @@ button:hover {
     background-size: cover;
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-desktop@2x.webp");
   }
 }
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.3958333333333335), (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.4), (min-width: 1200px) and (min-resolution: 2.4dppx) {
+@media (min-width: 1200px) and (min-resolution: 230dpi), (min-width: 1200px) and (min-resolution: 2.4dppx) {
   .webp .header-photo {
     background-image: url("../image/min/back-desktop@3x.webp");
   }
@@ -3927,17 +3446,6 @@ button:hover {
   background-color: #d22856;
   border-radius: 50%;
 }
-@-webkit-keyframes radio {
-  0% {
-    transform: translate(100%, -50%) scale(0);
-  }
-  50% {
-    transform: translate(100%, -50%) scale(1.2);
-  }
-  100% {
-    transform: translate(100%, -50%) scale(1);
-  }
-}
 @keyframes radio {
   0% {
     transform: translate(100%, -50%) scale(0);
@@ -3951,10 +3459,8 @@ button:hover {
 }
 .form__input-radio:checked + .label-radio::after {
   display: block;
-  -webkit-animation-name: radio;
-          animation-name: radio;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: radio;
+  animation-duration: 1s;
 }
 /* radio-checkbox */
 .label-checkbox {
@@ -3997,17 +3503,6 @@ button:hover {
   border-left: 2px solid #d22856;
   border-bottom: 2px solid #d22856;
 }
-@-webkit-keyframes checkbox {
-  0% {
-    transform: translate(8px, -70%) rotate(-45deg) scale(0);
-  }
-  50% {
-    transform: translate(8px, -70%) rotate(-45deg) scale(1.2);
-  }
-  100% {
-    transform: translate(8px, -70%) rotate(-45deg) scale(1);
-  }
-}
 @keyframes checkbox {
   0% {
     transform: translate(8px, -70%) rotate(-45deg) scale(0);
@@ -4021,10 +3516,8 @@ button:hover {
 }
 .form__input-checkbox:checked + .label-checkbox::after {
   display: block;
-  -webkit-animation-name: checkbox;
-          animation-name: checkbox;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: checkbox;
+  animation-duration: 1s;
 }
 /* input-text */
 .input-text__input {
