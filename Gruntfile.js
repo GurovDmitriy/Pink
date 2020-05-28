@@ -5,6 +5,9 @@ module.exports = function (grunt) {
     concurrent: {
       targetWatch: ['watch:styleWatch', 'watch:jsWatch'],
       targetWatchDev: ['watch:HtmlWatchDev', 'watch:styleWatchDev', 'watch:jsWatchDev'],
+      targetBuild1: ['less', 'concat', 'clean:buildClean'],
+      targetBuild2: ['postcss', 'uglify'],
+      targetServe: ['less', 'concat'],
     },
 
     watch: {
@@ -49,6 +52,35 @@ module.exports = function (grunt) {
           watchTask: true,
         },
       },
+    },
+
+    compress: {
+      dist: {
+        options: {
+          mode: 'gzip'
+        },
+        expand: true,
+        cwd: 'build/',
+        src: ['**/*'],
+        dest: 'build/'
+      }
+    },
+
+    connect: {
+      server_gzip: {
+        options: {
+          port: 3000,
+          livereload: false,
+          base: 'build',
+          middleware: function(connect, options, middlewares) {
+            middlewares.unshift(function(req, res, next) {
+              res.setHeader('Content-Encoding', 'gzip');
+              return next();
+              });
+            return middlewares;
+          },
+        }
+      }
     },
 
     less: {
@@ -252,20 +284,18 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('serve', [
-    'less',
-    'concat',
+    'concurrent:targetServe',
     'browserSync:serverSync',
     'concurrent:targetWatch',
   ]);
 
   grunt.registerTask('serveDev', [
-    'less',
-    'concat',
-    'clean:buildClean',
+    'concurrent:targetBuild1',
     'copy:buildCopy',
-    'postcss',
+    'concurrent:targetBuild2',
     'csso',
-    'uglify',
+    'compress',
+    'connect',
     'browserSync:serverSyncDev',
     'concurrent:targetWatchDev',
   ]);
@@ -277,12 +307,9 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'less',
-    'concat',
-    'clean:buildClean',
+    'concurrent:targetBuild1',
     'copy:buildCopy',
-    'postcss',
+    'concurrent:targetBuild2',
     'csso',
-    'uglify',
   ]);
 };
