@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink - Главная</title>
+  <meta name="description" content="Pink - приложение для красочной жизни. Розовый фильтр для фотографий">
+  <meta name="keywords" content="Pink, пинк розовый фильтр, фильтр для фото">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="css/style.css" as="style">
-  <link rel="preload" href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/woff2/opensans-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="js/picturefill.js" as="script">
+  <link rel="preload" href="fonts/woff2/opensans-light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/woff2/opensans-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="js/modernizr-custom.js" as="script">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="js/modernizr-custom.js"></script>
+  <script src="js/modernizr-custom.js" async></script>
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -456,7 +458,7 @@
       </div>
       <div class="footer__map-box">
         <div class="footer__map">
-          <iframe class="footer__map-frame lazyload" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.167502464121!2d41.950404515451694!3d45.04182266954826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f900bcb0f9b9af%3A0xfd52ef9a973669c0!2z0YPQuy4g0JTQt9C10YDQttC40L3RgdC60L7Qs9C-LCAxNzYsINCh0YLQsNCy0YDQvtC_0L7Qu9GMLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5LCAzNTUwMDM!5e0!3m2!1sru!2sru!4v1587826625794!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="footer__map-frame lazyload" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.167502464121!2d41.950404515451694!3d45.04182266954826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f900bcb0f9b9af%3A0xfd52ef9a973669c0!2z0YPQuy4g0JTQt9C10YDQttC40L3RgdC60L7Qs9C-LCAxNzYsINCh0YLQsNCy0YDQvtC_0L7Qu9GMLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5LCAzNTUwMDM!5e0!3m2!1sru!2sru!4v1587826625794!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта с проездом до Дзержинского 176"></iframe>
         </div>
       </div>
     </section>
@@ -501,7 +503,7 @@
       </a>
     </section>
   </footer>
-  <script src="js/scripts-default.js"></script>
-  <script src="js/scripts-index.js"></script>
+  <script src="js/scripts-default.js" defer></script>
+  <script src="js/scripts-index.js" defer></script>
 </body>
 </html>

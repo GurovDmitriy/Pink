@@ -2,6 +2,11 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
+    concurrent: {
+      targetWatch: ['watch:styleWatch', 'watch:jsWatch'],
+      targetWatchDev: ['watch:HtmlWatchDev', 'watch:styleWatchDev', 'watch:jsWatchDev'],
+    },
+
     watch: {
       styleWatch: {
         files: ['source/less/**/*.less'],
@@ -10,6 +15,18 @@ module.exports = function (grunt) {
       jsWatch: {
         files: ['source/js/*/*.js'],
         tasks: ['concat'],
+      },
+      HtmlWatchDev: {
+        files: ['source/*.html'],
+        tasks: ['clean:buildCleanHtmlDev', 'copy:buildHtmlCopy'],
+      },
+      styleWatchDev: {
+        files: ['source/less/**/*.less'],
+        tasks: ['less', 'clean:buildCleanStyleDev', 'copy:buildStyleCopy', 'postcss', 'csso'],
+      },
+      jsWatchDev: {
+        files: ['source/js/*/*.js'],
+        tasks: ['concat', 'clean:buildCleanJsDev', 'copy:buildJsCopy', 'uglify'],
       },
     },
 
@@ -20,6 +37,15 @@ module.exports = function (grunt) {
         },
         options: {
           server: 'source/',
+          watchTask: true,
+        },
+      },
+      serverSyncDev: {
+        bsFiles: {
+          src: ['build/*.html', 'build/css/*.css', 'build/js/*.js'],
+        },
+        options: {
+          server: 'build/',
           watchTask: true,
         },
       },
@@ -43,7 +69,7 @@ module.exports = function (grunt) {
             require('autoprefixer')(),
           ],
         },
-        src: 'source/css/style.css',
+        src: 'build/css/style.css',
       },
     },
 
@@ -94,6 +120,21 @@ module.exports = function (grunt) {
           dest: 'build/js'
         }]
       },
+    },
+
+    critical: {
+      test: {
+        options: {
+          base: './',
+          css: [
+              'build/css/style.css',
+          ],
+          width: 320,
+          height: 100
+        },
+        src: 'build/index.html',
+        dest: 'build/index.html'
+      }
     },
 
     svgstore: {
@@ -151,6 +192,15 @@ module.exports = function (grunt) {
       buildClean: {
         src: ['build/'],
       },
+      buildCleanStyleDev: {
+        src: ['build/css/'],
+      },
+      buildCleanJsDev: {
+        src: ['build/js/'],
+      },
+      buildCleanHtmlDev: {
+        src: ['build/*.html'],
+      },
     },
 
     copy: {
@@ -168,14 +218,56 @@ module.exports = function (grunt) {
           dest: 'build/',
         }],
       },
+      buildStyleCopy: {
+        files: [{
+          expand: true,
+          cwd: 'source',
+          src: [
+            'css/style.css',
+          ],
+          dest: 'build/',
+        }],
+      },
+      buildJsCopy: {
+        files: [{
+          expand: true,
+          cwd: 'source',
+          src: [
+            'js/*.js',
+          ],
+          dest: 'build/',
+        }],
+      },
+      buildHtmlCopy: {
+        files: [{
+          expand: true,
+          cwd: 'source',
+          src: [
+            '*.html',
+          ],
+          dest: 'build/',
+        }],
+      },
     },
   });
 
   grunt.registerTask('serve', [
     'less',
     'concat',
-    'browserSync',
-    'watch',
+    'browserSync:serverSync',
+    'concurrent:targetWatch',
+  ]);
+
+  grunt.registerTask('serveDev', [
+    'less',
+    'concat',
+    'clean:buildClean',
+    'copy:buildCopy',
+    'postcss',
+    'csso',
+    'uglify',
+    'browserSync:serverSyncDev',
+    'concurrent:targetWatchDev',
   ]);
 
   grunt.registerTask('imgpress', [
@@ -187,8 +279,8 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'less',
     'concat',
-    'clean',
-    'copy',
+    'clean:buildClean',
+    'copy:buildCopy',
     'postcss',
     'csso',
     'uglify',
