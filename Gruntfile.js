@@ -2,12 +2,10 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
+
     concurrent: {
       targetWatch: ['watch:styleWatch', 'watch:jsWatch'],
       targetWatchDev: ['watch:HtmlWatchDev', 'watch:styleWatchDev', 'watch:jsWatchDev'],
-      targetBuild1: ['less', 'concat', 'clean:buildClean'],
-      targetBuild2: ['postcss', 'uglify'],
-      targetServe: ['less', 'concat'],
     },
 
     watch: {
@@ -57,7 +55,10 @@ module.exports = function (grunt) {
     compress: {
       dist: {
         options: {
-          mode: 'gzip'
+          mode: 'brotli',
+/*          brotli: {
+            mode: 1
+          },*/
         },
         expand: true,
         cwd: 'build/',
@@ -74,7 +75,7 @@ module.exports = function (grunt) {
           base: 'build',
           middleware: function(connect, options, middlewares) {
             middlewares.unshift(function(req, res, next) {
-              res.setHeader('Content-Encoding', 'gzip');
+              res.setHeader('Content-Encoding', 'brotli');
               return next();
               });
             return middlewares;
@@ -284,18 +285,23 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('serve', [
-    'concurrent:targetServe',
+    'less',
+    'concat',
     'browserSync:serverSync',
     'concurrent:targetWatch',
   ]);
 
   grunt.registerTask('serveDev', [
-    'concurrent:targetBuild1',
+    'less',
+    'concat',
+    'clean:buildClean',
     'copy:buildCopy',
-    'concurrent:targetBuild2',
+    'postcss',
     'csso',
-    'compress',
-    'connect',
+    'uglify',
+/*    'critical',*/
+/*    'compress',*/
+/*    'connect',*/
     'browserSync:serverSyncDev',
     'concurrent:targetWatchDev',
   ]);
@@ -307,9 +313,12 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'concurrent:targetBuild1',
+    'less',
+    'concat',
+    'clean:buildClean',
     'copy:buildCopy',
-    'concurrent:targetBuild2',
+    'postcss',
     'csso',
+    'uglify',
   ]);
 };
