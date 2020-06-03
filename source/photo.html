@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8"/>
   <title>Pink - Фотографии</title>
-  <meta name="description" content="Pink - приложение для красочной жизни. Галерея Пинк">
-  <meta name="keywords" content="Pink, пинкб розовый фильтр, фильтр для фото, галерея, пользователи пинк">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="css/style.css" as="style">
-  <link rel="preload" href="fonts/woff2/opensans-light.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/woff2/opensans-bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="js/modernizr-custom.js" as="script">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <meta name="description"              content="Pink - приложение для красочной жизни. Галерея Пинк"/>
+  <meta name="keywords"                 content="Pink, пинк розовый фильтр, фильтр для фото, галерея, пользователи пинк"/>
+  <meta name="author"                   content="Гуров Дмитрий">
+  <meta name="robots"                   content="">
+  <meta name="googlebot"                content="">
+  <meta name="google-site-verification" content="">
+  <meta name="viewport"                 content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="preload"    href="fonts/woff2/opensans-light.woff2"   as="font" type="font/woff2" crossorigin/>
+  <link rel="preload"    href="fonts/woff2/opensans-bold.woff2"    as="font" type="font/woff2" crossorigin/>
+  <link rel="preload"    href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload"    href="css/style.css"                      as="style"/>
+  <link rel="preload"    href="js/modernizr-custom.js"             as="script"/>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <link rel="icon" href="image/min/fav.svg" type="image/svg+xml">
+
   <script src="js/modernizr-custom.js" async></script>
-  <script>
-    // Picture element HTML5 shiv
-    document.createElement("picture");
-  </script>
+  <script>document.createElement("picture");</script>
   <script src="js/picturefill.js" async></script>
-  <script  src="js/lazysizes.js" async></script>
+  <script src="js/lazysizes.js"   async></script>
 </head>
 <body>
   <div style="display: none">
@@ -153,6 +159,7 @@
   <header class="header-photo header">
     <h1 class="visually-hidden">Фотографии пользователей</h1>
     <div class="header-photo__nav-box header__nav-box">
+      <a class="skip-link" href="#main">Перейти к содержанию</a>
       <nav class="header__nav">
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
         <div class="header__logo-box">
@@ -205,7 +212,7 @@
     </div>
     <h2 class="header-photo__caption header__caption">Фотографии пользователей</h2>
   </header>
-  <main class="main-photo">
+  <main class="main-photo" id="main">
     <h2 class="main-photo__caption">
       Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
     </h2>
@@ -670,7 +677,7 @@
           </a>
         </li>
       </ul>
-      <a class="copyright__link" href="https://github.com/GurovDmitriy" target="_blank" rel="noopener">
+      <a class="copyright__link" href="https://github.com/GurovDmitriy">
         Гуров Дмитрий
         <svg class="copyright__link-icon" width="27" height="24">
           <use xlink:href="#icon-github"></use>
@@ -680,5 +687,6 @@
   </footer>
   <script src="js/scripts-default.js" async></script>
   <script src="js/scripts-photo.js" async></script>
+  <script src="js/focus-visible.js" async></script>
 </body>
 </html>

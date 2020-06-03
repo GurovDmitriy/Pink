@@ -153,6 +153,7 @@
   <header class="header">
     <h1 class="visually-hidden">Pink - Приложение для красочной жизни</h1>
     <div class="header__nav-box">
+      <a class="skip-link" href="#main">Skip to main</a>
       <nav class="header__nav">
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
         <div class="header__logo-box">
@@ -180,8 +181,7 @@
             </svg>
             <span class="visually-hidden">Пинк - Вы на главной. Логотип пинк</span>
           </a>
-          <button class="burger header__burger">
-            <span class="visually-hidden">Кнопка меню. Открыть/Закрыть</span>
+          <button class="burger header__burger" aria-label="Кнопка меню">
             <span class="burger__bar"></span>
           </button>
         </div>
@@ -236,7 +236,7 @@
       </div>
     </div>
   </header>
-  <main class="main">
+  <main class="main" id="main">
     <section class="main__promo">
       <h2 class="main__caption">Устали от серости мегаполиса?</h2>
       <span class="main__caption main__caption-2">Нам есть, что вам предложить!</span>
@@ -393,12 +393,12 @@
           </blockquote>
         </div>
         <div class="btn-box review__btn-box">
-          <button class="btn-box__btn"><span class="visually-hidden">В начало</span></button>
-          <button class="btn-box__btn btn-box__btn--active"><span class="visually-hidden">Середина</span></button>
-          <button class="btn-box__btn"><span class="visually-hidden">Конец</span></button>
+          <button class="btn-box__btn" aria-label="Кнопка слайда. Первый слайд"></button>
+          <button class="btn-box__btn btn-box__btn--active" aria-label="Кнопка слайда. Второй слайд"></button>
+          <button class="btn-box__btn" aria-label="Кнопка слайда. Второй слайд"></button>
         </div>
-        <button class="btn-mark btn-mark-1 review__btn-mark-1"><span class="visually-hidden">Назад</span></button>
-        <button class="btn-mark btn-mark-2 review__btn-mark-2"><span class="visually-hidden">Вперед</span></button>
+        <button class="btn-mark btn-mark-1 review__btn-mark-1" aria-label="Кнопка слайда. Назад"></button>
+        <button class="btn-mark btn-mark-2 review__btn-mark-2" aria-label="Кнопка слайда. Вперед"></button>
       </div>
     </section>
     <div class="main__table-shell">
@@ -505,5 +505,6 @@
   </footer>
   <script src="js/scripts-default.js" async></script>
   <script src="js/scripts-index.js" async></script>
+  <script src="js/focus-visible.js" async></script>
 </body>
 </html>

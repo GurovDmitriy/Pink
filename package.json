@@ -41,7 +41,9 @@
     "posthtml-include": "^1.4.3"
   },
   "homepage": "https://github.com/GurovDmitriy/Pink#readme",
-  "dependencies": {},
+  "dependencies": {
+    "focus-visible": "^5.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }

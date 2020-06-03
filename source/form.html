@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8"/>
   <title>Pink - Форма регистрации</title>
-  <meta name="description" content="Pink - приложение для красочной жизни. Форма регистрации">
-  <meta name="keywords" content="Pink, пинк розовый фильтр, фильтр для фото, регистрация в приложении пинк">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="css/style.css" as="style">
-  <link rel="preload" href="fonts/woff2/opensans-light.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/woff2/opensans-bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="js/modernizr-custom.js" as="script">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <meta name="description"              content="Pink - приложение для красочной жизни. Форма регистрации"/>
+  <meta name="keywords"                 content="Pink, пинк розовый фильтр, фильтр для фото, регистрация в приложении пинк"/>
+  <meta name="author"                   content="Гуров Дмитрий">
+  <meta name="robots"                   content="">
+  <meta name="googlebot"                content="">
+  <meta name="google-site-verification" content="">
+  <meta name="viewport"                 content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="preload"    href="fonts/woff2/opensans-light.woff2"   as="font" type="font/woff2" crossorigin/>
+  <link rel="preload"    href="fonts/woff2/opensans-bold.woff2"    as="font" type="font/woff2" crossorigin/>
+  <link rel="preload"    href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload"    href="css/style.css"                      as="style"/>
+  <link rel="preload"    href="js/modernizr-custom.js"             as="script"/>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <link rel="icon" href="image/min/fav.svg" type="image/svg+xml">
+
   <script src="js/modernizr-custom.js" async></script>
-  <script>
-    // Picture element HTML5 shiv
-    document.createElement("picture");
-  </script>
+  <script>document.createElement("picture");</script>
   <script src="js/picturefill.js" async></script>
-  <script  src="js/lazysizes.js" async></script>
+  <script src="js/lazysizes.js"   async></script>
 </head>
 <body>
   <div style="display: none">
@@ -153,6 +159,7 @@
   <header class="header header-form header-photo">
     <h1 class="visually-hidden">Форма регистрации</h1>
     <div class="header-photo__nav-box header__nav-box">
+      <a class="skip-link" href="#main">Перейти к содержанию</a>
       <nav class="header__nav">
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
         <div class="header__logo-box">
@@ -205,24 +212,26 @@
     </div>
     <h2 class="header-form__caption">Конкурс на самое безбашенное путешествие с Пинк</h2>
   </header>
-  <main class="main-form">
+  <main class="main-form" id="main">
     <h2 class="main-form__caption">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
     </h2>
-    <form class="form main__form">
+    <form class="form main__form" name="form-main" action="#" method="post" novalidate>
       <div class="form__fieldset-box">
         <fieldset class="form__fieldset-name">
           <legend class="form__legend-name">
             <span class="visually-hidden">Укажите как вас зовут</span>
           </legend>
           <div class="form__fieldset-name-inner">
-            <label class="form__label-text" for="soname-field">Фамилия:</label>
+            <label class="form__label-text" for="soname-field">Фамилия:<abbr class="visually-hidden" title="Это поле обязательное к заполнению" aria-label="Обязательное поле">*</abbr></label>
             <div class="input-text form__input-text">
-              <input class="input-text__input" id="soname-field" type="text" name="soname" placeholder="Укажите Фамилию&lowast;" required pattern="[A-Za-zА-Яа-яЁё]{1, 15}">
+              <input class="input-text__input" id="soname-field" type="text" name="soname" placeholder="Укажите Фамилию&lowast;" required>
+              <span class="error" aria-live="polite"></span>
             </div>
-            <label class="form__label-text" for="name-field">Имя:</label>
+            <label class="form__label-text" for="name-field">Имя:<abbr class="visually-hidden" title="Это поле обязательное к заполнению" aria-label="Обязательное поле">*</abbr></label>
             <div class="input-text form__input-text">
-              <input class="input-text__input" id="name-field" type="text" name="name" placeholder="Введите ваше имя&lowast;" required pattern="[A-Za-zА-Яа-яЁё]{1, 15}">
+              <input class="input-text__input" id="name-field" type="text" name="name" placeholder="Введите ваше имя&lowast;" required>
+              <span class="error" aria-live="polite"></span>
             </div>
             <label class="form__label-text" for="patronymic-field">Отчество:</label>
             <div class="input-text form__input-text">
@@ -238,11 +247,11 @@
           </legend>
           <div class="form__fieldset-app-inner">
             <input class="form__input-radio visually-hidden" id="ios-field" type="radio" name="app" value="ios" checked>
-            <label class="label-radio form__label-radio" for="ios-field" tabindex="0">Pink для iOS</label>
+            <label class="label-radio form__label-radio" for="ios-field">Pink для iOS</label>
             <input class="form__input-radio visually-hidden" id="android-field" type="radio" name="app" value="android">
-            <label class="label-radio form__label-radio" for="android-field" tabindex="0">Pink для Android</label>
+            <label class="label-radio form__label-radio" for="android-field">Pink для Android</label>
             <input class="form__input-radio visually-hidden" type="radio" name="app" value="windows" id="windows-field">
-            <label class="label-radio form__label-radio" for="windows-field" tabindex="0">Windows Phone</label>
+            <label class="label-radio form__label-radio" for="windows-field">Windows Phone</label>
           </div>
         </fieldset>
       </div>
@@ -251,7 +260,7 @@
           <legend class="form__legend-contacts">Контактная информация</legend>
           <div class="form__fieldset-contacts-inner">
             <div class="input-tel form__input-tel">
-              <input class="input-tel__input" id="tel-field" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+              <input class="input-tel__input" id="tel-field" type="tel" name="tel" placeholder="Номер, пожалуйста">
               <svg class="input-tel__icon" width="20" height="20" fill="#d22856">
                 <use xlink:href="#icon-tel"></use>
               </svg>
@@ -262,6 +271,7 @@
               <svg class="input-email__icon" width="20" height="20" fill="#d22856">
                 <use xlink:href="#icon-email"></use>
               </svg>
+              <span class="error" aria-live="polite"></span>
             </div>
             <label class="form__label-email" for="email-field">Адрес почты</label>
           </div>
@@ -272,17 +282,17 @@
           <legend class="form__legend form__legend-progress">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__fieldset-progress-inner">
             <input class="form__input-checkbox visually-hidden" id="a-field" type="checkbox" name="a" value="a" checked>
-            <label class="label-checkbox form__label-checkbox" for="a-field" tabindex="0">Сделал селфи с акулой</label>
+            <label class="label-checkbox form__label-checkbox" for="a-field">Сделал селфи с акулой</label>
             <input class="form__input-checkbox visually-hidden" id="b-field" type="checkbox" name="b" value="b" checked>
-            <label class="label-checkbox form__label-checkbox" for="b-field" tabindex="0">Обгорел на пляже</label>
+            <label class="label-checkbox form__label-checkbox" for="b-field">Обгорел на пляже</label>
             <input class="form__input-checkbox visually-hidden" id="c-field" type="checkbox" name="c" value="c">
-            <label class="label-checkbox form__label-checkbox" for="c-field" tabindex="0">Видел Чака Норриса</label>
+            <label class="label-checkbox form__label-checkbox" for="c-field">Видел Чака Норриса</label>
             <input class="form__input-checkbox visually-hidden" id="d-field" type="checkbox" name="d" value="d">
-            <label class="label-checkbox form__label-checkbox" for="d-field" tabindex="0">Накупил сувениров</label>
+            <label class="label-checkbox form__label-checkbox" for="d-field">Накупил сувениров</label>
             <input class="form__input-checkbox visually-hidden" id="e-field" type="checkbox" name="e" value="e" checked>
-            <label class="label-checkbox form__label-checkbox" for="e-field" tabindex="0">Удержал башню</label>
+            <label class="label-checkbox form__label-checkbox" for="e-field">Удержал башню</label>
             <input class="form__input-checkbox visually-hidden" id="f-field" type="checkbox" name="f" value="f">
-            <label class="label-checkbox form__label-checkbox" for="f-field" tabindex="0">Разгромил отель</label>
+            <label class="label-checkbox form__label-checkbox" for="f-field">Разгромил отель</label>
           </div>
         </fieldset>
       </div>
@@ -352,7 +362,7 @@
           </a>
         </li>
       </ul>
-      <a class="copyright__link" href="https://github.com/GurovDmitriy" target="_blank" rel="noopener">
+      <a class="copyright__link" href="https://github.com/GurovDmitriy">
         Гуров Дмитрий
         <svg class="copyright__link-icon" width="27" height="27">
           <use xlink:href="#icon-github"></use>
@@ -361,6 +371,7 @@
     </section>
   </footer>
   <script src="js/scripts-default.js" async></script>
-  <script src="js/scripts-form.js" async></script>
+  <script src="js/focus-visible.js"   async></script>
+  <script src="js/valid-form.js"   async></script>
 </body>
 </html>
