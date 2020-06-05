@@ -26,7 +26,7 @@ for (let i = 0; i < btnsReview.length; i++) {
 
 function slideReview(element, position) {
   for (let i = 0; i < btnsReview.length; i++) {
-    if (element.classList.contains(`review__inner-box--left-${i}x`) && i != position) {
+    if (element.classList.contains(`review__inner-box--left-${i}x`) && i !== position) {
       element.classList.remove(`review__inner-box--left-${i}x`);
     }
   }
