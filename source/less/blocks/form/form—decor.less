@@ -16,6 +16,14 @@
   }
 }
 
+.form__error {
+  background-color: @color-pink;
+}
+
+input:not(:required) ~ .form__error {
+  background-color: @color-green;
+}
+
 .form__footnote-star {
   color: @color-pink;
 }
