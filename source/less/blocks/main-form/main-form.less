@@ -3,7 +3,7 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 93px;
-  }  
+  }
 }
 
 .main-form__caption {
@@ -18,13 +18,14 @@
 
   @media (min-width: @desktop-width) {
     width: 752px;
-  }  
+  }
 }
 
 .main-form__modal {
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 3;
 
   display: none;
   width: 280px;
@@ -33,18 +34,19 @@
 
   @media (min-width: @tablet-width) {
     width: 460px;
-  }  
+  }
 }
 
 .main-form__modal-complete {
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 4;
 
   display: none;
   width: 280px;
 
-  transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%);
 
   @media (min-width: @tablet-width) {
     width: 460px;
@@ -52,6 +54,6 @@
 
   @media (min-width: @desktop-width) {
     width: 780px;
-  }   
+  }
 }
 
