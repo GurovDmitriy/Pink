@@ -22,6 +22,9 @@
   <script>document.createElement("picture");</script>
   <script src="js/picturefill.js" async></script>
   <script src="js/lazysizes.js" async></script>
+  <style>
+    .logo__img-desktop {display: none;}@media (min-width: 660px){.logo__img-mobile{display: none;}.logo__img-desktop{display: block;}}
+    </style>
 </head>
 
 <body>
@@ -308,21 +311,6 @@
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
         <div class="header__logo-box">
           <a class="logo header__logo" href="index.html">
-            <style>
-              .logo__img-desktop {
-                display: none;
-              }
-
-              @media (min-width: 660px) {
-                .logo__img-mobile {
-                  display: none;
-                }
-
-                .logo__img-desktop {
-                  display: block;
-                }
-              }
-            </style>
             <svg class="logo__img logo__img-mobile" width="75" height="22">
               <use xlink:href="#icon-logomobile"></use>
             </svg>

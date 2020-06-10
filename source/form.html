@@ -24,6 +24,9 @@
     </script>
   <script src="js/picturefill.js" async></script>
   <script src="js/lazysizes.js" async></script>
+  <style>
+    .logo__img-desktop {display: none;}@media (min-width: 660px){.logo__img-mobile{display: none;}.logo__img-desktop{display: block;}}
+    </style>
 </head>
 
 <body>
@@ -310,21 +313,6 @@
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
         <div class="header__logo-box">
           <a class="logo header__logo" href="index.html">
-            <style>
-              .logo__img-desktop {
-                  display: none;
-                }
-
-                @media (min-width: 660px) {
-                  .logo__img-mobile {
-                    display: none;
-                  }
-
-                  .logo__img-desktop {
-                    display: block;
-                  }
-                }
-              </style>
             <svg class="logo__img logo__img-mobile" width="75" height="22">
               <use xlink:href="#icon-logomobile"></use>
             </svg>
@@ -365,19 +353,19 @@
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
       миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
     </h2>
-    <form class="form main__form" name="form-main" action="#" method="" novalidate>
+    <form class="form main__form" name="form-main" action="" method="" novalidate>
       <div class="form__fieldset-box">
         <fieldset class="form__fieldset-name">
           <legend class="form__legend-name">
             <span class="visually-hidden">Укажите как вас зовут</span>
           </legend>
           <div class="form__fieldset-name-inner">
-            <label class="form__label-text" for="soname-field">Фамилия:<abbr class="visually-hidden" title="Это поле обязательное к заполнению" aria-label="Обязательное поле">*</abbr></label>
+            <label class="form__label-text" for="soname-field">Фамилия:<abbr class="visually-hidden" title="Это поле обязательное к заполнению">*</abbr></label>
             <div class="input-text form__input-text">
               <input class="input-text__input" id="soname-field" type="text" name="soname" placeholder="Укажите Фамилию&lowast;" required pattern="^[A-Za-zА-Яа-яЁё]{1,25}$" minlength="1" maxlength="25" />
               <span class="form__error" aria-live="polite">Буквы русского и английского алфавита, не более 25</span>
             </div>
-            <label class="form__label-text" for="name-field">Имя:<abbr class="visually-hidden" title="Это поле обязательное к заполнению" aria-label="Обязательное поле">*</abbr></label>
+            <label class="form__label-text" for="name-field">Имя:<abbr class="visually-hidden" title="Это поле обязательное к заполнению">*</abbr></label>
             <div class="input-text form__input-text">
               <input class="input-text__input" id="name-field" type="text" name="name" placeholder="Введите ваше имя&lowast;" required pattern="^[A-Za-zА-Яа-яЁё]{1,25}$" minlength="1" maxlength="25" />
               <span class="form__error" aria-live="polite">Буквы русского и английского алфавита, не более 25</span>
