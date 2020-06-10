@@ -527,42 +527,42 @@ button:hover {
 }
 .burger--active .burger__bar {
   animation-name: burgerBar;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
   animation-fill-mode: forwards;
 }
 .burger--active::after {
   animation-name: burgerAfter;
-  animation-delay: 1s;
-  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
   animation-fill-mode: forwards;
 }
 .burger--active::before {
   animation-name: burgerBefore;
-  animation-delay: 1s;
-  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.06, 0.71, 0.32, 1);
   animation-fill-mode: forwards;
 }
 .burger--disactive .burger__bar {
   animation-name: burgerBarRev;
-  animation-delay: 1s;
-  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
   animation-direction: reverse;
   animation-fill-mode: backwards;
 }
 .burger--disactive::after {
   animation-name: burgerAfterRev;
   animation-delay: 0;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-direction: reverse;
   animation-fill-mode: backwards;
 }
 .burger--disactive::before {
   animation-name: burgerBeforeRev;
   animation-delay: 0;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-direction: reverse;
   animation-fill-mode: backwards;
 }
@@ -709,8 +709,7 @@ button:hover {
   }
 }
 @media (min-width: 1200px) {
-  .btn-like:hover .btn-like__icon,
-  .btn-like:focus .btn-like__icon {
+  .btn-like:hover .btn-like__icon {
     transform: translate(-100%, -50%) scale(1);
     animation-name: heart;
     animation-duration: 0.5s;
@@ -1087,6 +1086,11 @@ button:hover {
 .icon-list__link {
   line-height: 0;
   text-decoration: none;
+}
+.icon-list__link:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.88, 0.02, 0.07, 0.97);
 }
 /* social-list */
 .social-list {
@@ -2149,8 +2153,8 @@ button:hover {
 }
 .header__menu--open {
   animation-name: headerMenu;
-  animation-delay: 1s;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.88, 0.02, 0.07, 0.97);
   animation-fill-mode: forwards;
 }
 @media (min-width: 1200px) {
@@ -3579,6 +3583,9 @@ button:hover {
     right: 129px;
   }
 }
+.panorama__btn:focus {
+  outline-color: white;
+}
 /* gallery */
 @media (min-width: 660px) {
   .gallery {
@@ -4112,8 +4119,11 @@ button:hover {
 }
 @media (min-width: 1200px) {
   .form__label-checkbox {
-    margin-bottom: 0px;
+    margin: auto 0;
   }
+}
+.form__label-checkbox:last-of-type {
+  margin-bottom: auto;
 }
 @media (min-width: 1200px) {
   .form__input-tel,
