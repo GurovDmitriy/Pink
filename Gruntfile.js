@@ -221,6 +221,41 @@ module.exports = function (grunt) {
       },
     },
 
+    prettify: {
+      options: {
+        config: '.prettifyrc',
+      },
+      files: {
+        expand: true,
+        cwd: 'build/',
+        ext: '.html',
+        src: ['*.html'],
+        dest: 'build/',
+      },
+    },
+
+    htmlmin: {
+      dev: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true,
+        },
+        files: [{
+          expand: true,
+          cwd: 'build',
+          src: ['**/*.html', '*.html'],
+          dest: 'build',
+        }],
+      },
+    },
+
+    ttf2woff2: {
+      default: {
+        src: ['source/fonts/ttf/*.ttf'],
+        dest: 'source/fonts/woff2/',
+      },
+    },
+
     clean: {
       buildClean: {
         src: ['build/'],

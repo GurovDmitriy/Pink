@@ -354,7 +354,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  min-width: 320px;
+  min-width: 280px;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 18px;
@@ -2339,7 +2339,7 @@ button:hover {
   }
 }
 .main__table-box {
-  max-width: 320px;
+  max-width: 280px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -3503,7 +3503,7 @@ button:hover {
 }
 .panorama__post {
   position: relative;
-  max-width: 320px;
+  max-width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
