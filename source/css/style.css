@@ -344,6 +344,7 @@ body {
   margin: 0;
   padding: 0;
 }
+/*Box sizing*/
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -353,6 +354,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+/*Body*/
 body {
   min-width: 280px;
   font-family: "Open Sans", sans-serif;
@@ -361,6 +363,7 @@ body {
   font-weight: normal;
   color: #283645;
 }
+/*Screen reader only*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -371,6 +374,7 @@ body {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+/*Custom focus*/
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
@@ -378,18 +382,20 @@ body {
   outline: 2px solid #d22856;
   outline-offset: -2px;
 }
+/*a*/
 a:hover,
 button:hover {
   cursor: pointer;
 }
+/*Skip link*/
 .skip-link {
-  position: absolute;
-  top: -40px;
+  position: fixed;
+  top: -100%;
   left: 0;
-  background: #000000;
-  color: white;
-  padding: 8px;
   z-index: 100;
+  padding: 10px;
+  color: var(--colorWhite);
+  background-color: var(--colorBlack);
 }
 .skip-link:focus {
   top: 0;
@@ -440,6 +446,11 @@ button:hover {
 .burger__bar {
   background-color: #ffffff;
   border-radius: 3px;
+}
+.burger .burger__bar,
+.burger::after,
+.burger::before {
+  transition: background-color 0.4s;
 }
 .burger:hover .burger__bar,
 .burger:hover::after,
@@ -589,10 +600,8 @@ button:hover {
   border: 3px solid #ffffff;
   border-radius: 50px;
 }
-@media (min-width: 1200px) {
-  .btn-round {
-    transition: background-color 0.4s, color 0.4s;
-  }
+.btn-round {
+  transition: background-color 0.4s, color 0.4s;
 }
 .btn-round:hover {
   background-color: #ffffff;
@@ -600,11 +609,7 @@ button:hover {
 }
 .btn-round:active {
   color: rgba(210, 40, 86, 0.3);
-}
-@media (min-width: 1200px) {
-  .btn-round:active {
-    transition: background-color 0s, color 0s;
-  }
+  transition: background-color 0s, color 0s;
 }
 /* btn-box */
 .btn-box {
@@ -735,10 +740,8 @@ button:hover {
   border: none;
   border-radius: 3px;
 }
-@media (min-width: 1200px) {
-  .btn-small {
-    transition: background-color 0.4s, color 0.4s;
-  }
+.btn-small {
+  transition: background-color 0.4s, color 0.4s;
 }
 .btn-small:hover {
   background-color: #ffffff;
@@ -773,10 +776,8 @@ button:hover {
   background-color: #d4d4d4;
   color: #ffffff;
 }
-@media (min-width: 1200px) {
-  .btn-large {
-    transition: background-color 0.4s;
-  }
+.btn-large {
+  transition: background-color 0.4s;
 }
 .btn-large:hover {
   background-color: #135d39;
@@ -909,10 +910,8 @@ button:hover {
 .custom-range__icon {
   fill: #283645;
 }
-@media (min-width: 1200px) {
-  .custom-range__icon {
-    transition: fill 0.4s;
-  }
+.custom-range__icon {
+  transition: fill 0.4s;
 }
 .custom-range__icon:hover {
   fill: #d22856;
@@ -954,10 +953,8 @@ button:hover {
 .logo__img {
   fill: #ffffff;
 }
-@media (min-width: 1200px) {
-  .logo__img {
-    transition: fill 0.4s;
-  }
+.logo__img {
+  transition: fill 0.4s;
 }
 .logo:hover .logo__img {
   fill: #d22856;
@@ -965,11 +962,7 @@ button:hover {
 .logo:active .logo__img {
   fill: #ffffff;
   opacity: 0.3;
-}
-@media (min-width: 1200px) {
-  .logo:active .logo__img {
-    transition: fill 0s;
-  }
+  transition: fill 0s;
 }
 /* menu */
 .menu {
@@ -1030,21 +1023,19 @@ button:hover {
     box-shadow: 0 2px 0 0 #ffffff;
   }
 }
-@media (min-width: 1200px) {
-  .menu__link {
-    transition: color 0.4s;
-  }
+.menu__link {
+  transition: color 0.4s;
 }
 .menu__link:hover {
   color: #d22856;
 }
 .menu__link:active {
   color: rgba(210, 40, 86, 0.3);
+  transition: color 0s;
 }
 @media (min-width: 1200px) {
   .menu__link:active {
     color: rgba(255, 255, 255, 0.3);
-    transition: color 0s;
   }
 }
 /* icon-list */
@@ -1130,15 +1121,11 @@ button:hover {
 .social-list__icon {
   fill: #d22856;
 }
-@media (min-width: 1200px) {
-  .social-list__link {
-    transition: border-color 0.4s;
-  }
+.social-list__link {
+  transition: border-color 0.4s;
 }
-@media (min-width: 1200px) {
-  .social-list__icon {
-    transition: fill 0.4s;
-  }
+.social-list__icon {
+  transition: fill 0.4s;
 }
 .social-list__link:hover {
   border-color: #d22856;
@@ -3048,10 +3035,8 @@ button:hover {
   fill: #d22856;
   opacity: 0.3;
 }
-@media (min-width: 1200px) {
-  .copyright__link-icon {
-    transition: fill 0.4s;
-  }
+.copyright__link-icon {
+  transition: fill 0.4s;
 }
 .copyright__link:hover .copyright__link-icon {
   fill: #d22856;
@@ -3503,40 +3488,11 @@ button:hover {
 }
 .panorama__post {
   position: relative;
-  max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width: 660px) {
-  .panorama__post {
-    max-width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (min-width: 1200px) {
-  .panorama__post {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 .panorama__img {
   display: block;
-  width: 320px;
-  height: 137px;
-}
-@media (min-width: 660px) {
-  .panorama__img {
-    width: 660px;
-    height: 509px;
-  }
-}
-@media (min-width: 1200px) {
-  .panorama__img {
-    width: 1200px;
-    height: 506px;
-  }
+  width: 100%;
+  height: auto;
 }
 .panorama__caption {
   width: 280px;

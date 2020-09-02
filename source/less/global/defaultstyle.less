@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
+/*Box sizing*/
 
 html {
   box-sizing: border-box;
@@ -13,6 +14,8 @@ html {
   box-sizing: inherit;
 }
 
+/*Body*/
+
 body {
   min-width: @mobile-width;
 
@@ -21,6 +24,8 @@ body {
   font-weight: normal;
   color: @color-text;
 }
+
+/*Screen reader only*/
 
 .visually-hidden {
   position: absolute;
@@ -36,6 +41,8 @@ body {
   overflow: hidden;
 }
 
+/*Custom focus*/
+
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
@@ -44,19 +51,26 @@ body {
   .outline-focus();
 }
 
+/*a*/
+
 a:hover,
 button:hover {
   cursor: pointer;
 }
 
+/*Skip link*/
+
 .skip-link {
-  position: absolute;
-  top: -40px;
+  position: fixed;
+  top: -100%;
   left: 0;
-  background: #000000;
-  color: white;
-  padding: 8px;
   z-index: 100;
+
+  padding: 10px;
+
+  color: var(--colorWhite);
+
+  background-color: var(--colorBlack);
 }
 
 .skip-link:focus {
