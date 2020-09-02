@@ -1,7 +1,5 @@
 .menu__link {
-  @media (min-width: @desktop-width) {
-    transition: color 0.4s;
-  }
+  transition: color 0.4s;
 }
 
 .menu__link:hover {
@@ -11,8 +9,9 @@
 .menu__link:active {
   color: rgba(210, 40, 86, 0.3);
 
+  transition: color 0s;
+
   @media (min-width: @desktop-width) {
     color: rgba(255, 255, 255, 0.3);
-    transition: color 0s;
   }
 }
