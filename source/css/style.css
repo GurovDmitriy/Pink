@@ -1244,14 +1244,14 @@ button:hover {
 @media (min-width: 1200px) {
   .pictures-list__img-filter {
     display: block;
-    width: 165px;
-    height: 294px;
+    width: 169px;
+    height: 298px;
   }
 }
 .pictures-list__img-filter {
   position: absolute;
   top: 44px;
-  left: 11px;
+  left: 8px;
 }
 .pictures-list__caption {
   margin-top: 0;
@@ -2462,17 +2462,17 @@ button:hover {
 }
 @media (max-width: 660px) {
   .main__table-price--left-0x {
-    transform: translateX(-275px);
+    transform: translateX(-290px);
   }
 }
 @media (max-width: 660px) {
   .main__table-price--left-1x {
-    transform: translateX(-565px);
+    transform: translateX(-580px);
   }
 }
 @media (max-width: 660px) {
   .main__table-price--left-2x {
-    transform: translateX(-840px);
+    transform: translateX(-870px);
   }
 }
 .main__table-price {
