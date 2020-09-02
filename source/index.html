@@ -2,32 +2,58 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Pink - Главная</title>
-  <meta name="description" content="Pink - приложение для красочной жизни. Розовый фильтр для фотографий" />
-  <meta name="keywords" content="Pink, пинк розовый фильтр, фильтр для фото" />
-  <meta name="author" content="Гуров Дмитрий">
-  <meta name="robots" content="">
-  <meta name="googlebot" content="">
+
+  <meta charset="utf-8">
+  <title>Pink - Форма регистрации</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"              content="Pink - приложение для красочной жизни. Розовый фильтр для фотографий">
+  <meta name="keywords"                 content="Pink, розовый, фильтр, фото">
+  <meta name="author"                   content="Гуров Дмитрий">
+  <meta name="robots"                   content="">
+  <meta name="googlebot"                content="">
   <meta name="google-site-verification" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preload" href="fonts/woff2/opensans-light.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="fonts/woff2/opensans-bold.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="css/style.css" as="style" />
-  <link rel="preload" href="js/webp.js" as="script" />
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
-  <link rel="icon" href="image/min/fav.svg" type="image/svg+xml">
+
+  <link rel="preload" href="fonts/woff2/opensans-light.woff2"   as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/woff2/opensans-bold.woff2"    as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/woff2/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="js/webp.js"    as="script">
+
+  <link rel="stylesheet" href="css/style.css"     type="text/css">
+  <link rel="icon"       href="image/min/fav.svg" type="image/svg+xml">
+
   <script src="js/webp.js" async></script>
   <script>document.createElement("picture");</script>
+
   <script src="js/picturefill.js" async></script>
-  <script src="js/lazysizes.js" async></script>
+  <script src="js/lazysizes.js"   async></script>
+
   <style>
     .logo__img-desktop {display: none;}@media (min-width: 660px){.logo__img-mobile{display: none;}.logo__img-desktop{display: block;}}
     </style>
+
 </head>
 
+<!-- Navigation -->
+
+<!-- -SVG sprite -->
+<!-- -Header -->
+<!-- -Nav -->
+<!-- -Download box -->
+<!-- -Main -->
+<!-- -Picture box -->
+<!-- -Advrt box -->
+<!-- -Review -->
+<!-- -Table -->
+<!-- -Footer -->
+<!-- -Social list -->
+
 <body>
+
+  <!-- -SVG sprite -->
   <div style="display: none;">
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -303,12 +329,21 @@
       </symbol>
     </svg>
   </div>
+  <!-- SVG sprite end -->
+
+  <!-- -Header -->
   <header class="header">
+
     <h1 class="visually-hidden">Pink - Приложение для красочной жизни</h1>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+
     <div class="header__nav-box">
-      <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+      <!-- -Nav -->
       <nav class="header__nav">
+
         <h2 class="visually-hidden">Главная навигация по сайту</h2>
+
         <div class="header__logo-box">
           <a class="logo header__logo" title="Вы уже здесь" tabindex="0">
             <svg class="logo__img logo__img-mobile" width="75" height="22" fill="#ffffff">
@@ -334,18 +369,21 @@
             <li class="menu__item">
               <a class="menu__link" href="form.html">Конкурс</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">О макете Pink</a>
-            </li>
           </ul>
         </div>
       </nav>
+      <!-- Nav end -->
     </div>
+
     <div class="header__download-box">
       <div class="header__download">
+
         <strong class="header__caption">Взгляните на жизнь иначе!</strong>
         <a class="btn-round header__btn" href="#">Скачать приложение</a>
+
+        <!-- -Download box -->
         <ul class="icon-list header__icon-list">
+
           <li class="icon-list__item">
             <a class="icon-list__link" href="#">
               <svg class="icon-list__icon" width="41" height="50">
@@ -353,6 +391,7 @@
               </svg>
               <span class="visually-hidden">Скачать для Apple</span></a>
           </li>
+
           <li class="icon-list__item">
             <a class="icon-list__link" href="#">
               <svg class="icon-list__icon" width="46" height="50">
@@ -361,6 +400,7 @@
               <span class="visually-hidden">Скачать для Android</span>
             </a>
           </li>
+
           <li class="icon-list__item">
             <a class="icon-list__link" href="#">
               <svg class="icon-list__icon" width="46" height="46">
@@ -369,107 +409,184 @@
               <span class="visually-hidden">Скачать для Windows</span>
             </a>
           </li>
+
         </ul>
+        <!-- Download end -->
+
         <strong class="header__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows8</strong>
+
       </div>
+
     </div>
+
   </header>
+  <!-- Header end -->
+
+  <!-- -Main -->
   <main class="main" id="main">
+
     <section class="main__promo">
-      <h2 class="main__caption">Устали от серости мегаполиса?</h2>
-      <span class="main__caption main__caption-2">Нам есть, что вам предложить!</span>
+
+      <h2 class="main__caption" tabindex="0">Устали от серости мегаполиса?</h2>
+      <p class="main__caption main__caption-2">Нам есть, что вам предложить!</p>
+
+      <!-- -Picture box -->
       <div class="main__pictures-box">
+
         <ul class="pictures-list main__pictures-list">
+
           <li class="pictures-list__item">
             <div class="pictures-list__img-box pictures-list__img-box-1">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" data-srcset="image/min/Iphonemain-desktop@3x.webp 3x,
+                <source type="image/webp" media="(min-width: 1200px)"
+                        data-srcset="image/min/Iphonemain-desktop@3x.webp 3x,
                         image/min/Iphonemain-desktop@2x.webp 2x,
                         image/min/Iphonemain-desktop.webp" />
-                <source type="image/png" media="(min-width: 1200px)" data-srcset="image/min/Iphonemain-desktop@3x.png 3x,
+
+                <source type="image/png" media="(min-width: 1200px)"
+                        data-srcset="image/min/Iphonemain-desktop@3x.png 3x,
                         image/min/Iphonemain-desktop@2x.png 2x,
                         image/min/Iphonemain-desktop.png" />
-                <img class="pictures-list__img pictures-list__picture-iphone-1 lazyload" data-src="image/min/placeholder.png" alt="" width="157" height="320" aria-hidden="true" />
+
+                <img class="pictures-list__img pictures-list__picture-iphone-1 lazyload"
+                     data-src="image/min/placeholder.png"
+                     alt=""
+                     width="157"
+                     height="320"
+                     aria-hidden="true" />
               </picture>
+
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" data-srcset="image/min/filternomain-desktop@3x.webp 3x,
+                <source type="image/webp" media="(min-width: 1200px)"
+                        data-srcset="image/min/filternomain-desktop@3x.webp 3x,
                         image/min/filternomain-desktop@2x.webp 2x,
                         image/min/filternomain-desktop.webp" />
-                <source type="image/png" media="(min-width: 1200px)" data-srcset="image/min/filternomain-desktop@3x.png 3x,
+
+                <source type="image/png" media="(min-width: 1200px)"
+                        data-srcset="image/min/filternomain-desktop@3x.png 3x,
                         image/min/filternomain-desktop@2x.png 2x,
                         image/min/filternomain-desktop.png" />
-                <img class="pictures-list__img-filter pictures-list__img-filter-1 lazyload" data-src="image/min/placeholder.png" alt="Мусорка в черно-белых тонах" width="169" height="298" />
+
+                <img class="pictures-list__img-filter pictures-list__img-filter-1 lazyload"
+                     data-src="image/min/placeholder.png"
+                     alt="Мусорка в черно-белых тонах"
+                     width="169"
+                     height="298" />
               </picture>
             </div>
-            <h3 class="pictures-list__caption">Поднимает настроение</h3>
-            <p class="pictures-list__text">
-              Приложение позволит вам победить осеннюю хандру и депрессию
-              буквально в несколько кликов!
-            </p>
+
+            <h3 class="pictures-list__caption" tabindex="0">Поднимает настроение</h3>
+            <p class="pictures-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+
           </li>
+
           <li class="pictures-list__item">
             <div class="pictures-list__img-box pictures-list__img-box-2">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" data-srcset="image/min/Iphonemain-desktop@3x.webp 3x,
+                <source type="image/webp" media="(min-width: 1200px)"
+                        data-srcset="image/min/Iphonemain-desktop@3x.webp 3x,
                         image/min/Iphonemain-desktop@2x.webp 2x,
                         image/min/Iphonemain-desktop.webp" />
-                <source type="image/png" media="(min-width: 1200px)" data-srcset="image/min/Iphonemain-desktop@3x.png 3x,
+
+                <source type="image/png" media="(min-width: 1200px)"
+                        data-srcset="image/min/Iphonemain-desktop@3x.png 3x,
                         image/min/Iphonemain-desktop@2x.png 2x,
                         image/min/Iphonemain-desktop.png" />
-                <img class="pictures-list__img pictures-list__picture-iphone-2 lazyload" data-src="image/min/placeholder.png" alt="" width="157" height="320" aria-hidden="true" />
+
+                <img class="pictures-list__img pictures-list__picture-iphone-2 lazyload"
+                     data-src="image/min/placeholder.png"
+                     alt=""
+                     width="157"
+                     height="320"
+                     aria-hidden="true" />
               </picture>
+
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" data-srcset="image/min/filtermain-desktop@3x.webp 3x,
+                <source type="image/webp" media="(min-width: 1200px)"
+                        data-srcset="image/min/filtermain-desktop@3x.webp 3x,
                         image/min/filtermain-desktop@2x.webp 2x,
                         image/min/filtermain-desktop.webp" />
-                <source type="image/png" media="(min-width: 1200px)" data-srcset="image/min/filtermain-desktop@3x.png 3x,
+
+                <source type="image/png" media="(min-width: 1200px)"
+                        data-srcset="image/min/filtermain-desktop@3x.png 3x,
                         image/min/filtermain-desktop@2x.png 2x,
                         image/min/filtermain-desktop.png" />
-                <img class="pictures-list__img-filter pictures-list__img-filter-2 lazyload" data-src="image/min/placeholder.png" alt="Мусорка окрашенная в розовый фильтр" width="169" height="298" />
+
+                <img class="pictures-list__img-filter pictures-list__img-filter-2 lazyload"
+                    data-src="image/min/placeholder.png"
+                    alt="Мусорка окрашенная в розовый фильтр"
+                    width="169"
+                    height="298" />
               </picture>
             </div>
-            <h3 class="pictures-list__caption">Меняет мир вокруг</h3>
-            <p class="pictures-list__text">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью,
-              чтобы усилить эффект
-            </p>
+
+            <h3 class="pictures-list__caption" tabindex="0">Меняет мир вокруг</h3>
+            <p class="pictures-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+
           </li>
+
           <li class="pictures-list__item">
             <div class="pictures-list__img-box pictures-list__img-box-3">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" data-srcset="image/min/Iphonemain-desktop@3x.webp 3x,
+                <source type="image/webp" media="(min-width: 1200px)"
+                        data-srcset="image/min/Iphonemain-desktop@3x.webp 3x,
                         image/min/Iphonemain-desktop@2x.webp 2x,
                         image/min/Iphonemain-desktop.webp" />
-                <source type="image/png" media="(min-width: 1200px)" data-srcset="image/min/Iphonemain-desktop@3x.png 3x,
+
+                <source type="image/png" media="(min-width: 1200px)"
+                        data-srcset="image/min/Iphonemain-desktop@3x.png 3x,
                         image/min/Iphonemain-desktop@2x.png 2x,
                         image/min/Iphonemain-desktop.png" />
+
                 <source type="image/png" media="(min-width: 660px)" data-srcset="image/min/placeholder.png" />
-                <source type="image/webp" data-srcset="image/min/iphonescreenmobile@3x.webp 3x,
+
+                <source type="image/webp"
+                        data-srcset="image/min/iphonescreenmobile@3x.webp 3x,
                         image/min/iphonescreenmobile@2x.webp 2x,
                         image/min/iphonescreenmobile.webp" />
-                <source type="image/png" data-srcset="image/min/iphonescreenmobile@3x.png 3x,
+
+                <source type="image/png"
+                        data-srcset="image/min/iphonescreenmobile@3x.png 3x,
                         image/min/iphonescreenmobile@2x.png 2x,
                         image/min/iphonescreenmobile.png" />
-                <img class="pictures-list__img pictures-list__picture-iphone-3 lazyload" data-src="image/min/iphonescreenmobile.png" alt="" width="157" height="320" aria-hidden="true" />
+
+                <img class="pictures-list__img pictures-list__picture-iphone-3 lazyload"
+                     data-src="image/min/iphonescreenmobile.png"
+                     alt=""
+                     width="157"
+                     height="320"
+                     aria-hidden="true" />
               </picture>
+
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" data-srcset="image/min/filtersmilemain-desktop@3x.webp 3x,
+                <source type="image/webp" media="(min-width: 1200px)"
+                        data-srcset="image/min/filtersmilemain-desktop@3x.webp 3x,
                         image/min/filtersmilemain-desktop@2x.webp 2x,
                         image/min/filtersmilemain-desktop.webp" />
-                <source type="image/png" media="(min-width: 1200px)" data-srcset="image/min/filtersmilemain-desktop@3x.png 3x,
+
+                <source type="image/png" media="(min-width: 1200px)"
+                        data-srcset="image/min/filtersmilemain-desktop@3x.png 3x,
                         image/min/filtersmilemain-desktop@2x.png 2x,
                         image/min/filtersmilemain-desktop.png" />
-                <img class="pictures-list__img-filter pictures-list__img-filter-3 lazyload" data-src="image/min/placeholder.png" alt="Мусорка окрашенная в розовый фильтр с радостным смайлом" width="169" height="298" />
+
+                <img class="pictures-list__img-filter pictures-list__img-filter-3 lazyload"
+                     data-src="image/min/placeholder.png"
+                     alt="Мусорка окрашенная в розовый фильтр с радостным смайлом"
+                     width="169"
+                     height="298" />
               </picture>
             </div>
-            <h3 class="pictures-list__caption">Заводит новых друзей</h3>
-            <p class="pictures-list__text">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-              заводите новых
-            </p>
+
+            <h3 class="pictures-list__caption" tabindex="0">Заводит новых друзей</h3>
+            <p class="pictures-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
+
         </ul>
+        <!-- Picture box end -->
+
       </div>
+
+      <!-- -Advrt box -->
       <div class="main__advrt-box">
         <div class="advrt main__advrt">
           <div class="advrt__time">
@@ -478,21 +595,24 @@
             </svg>
           </div>
           <div class="advrt__descript">
-            <h3 class="advrt__caption">Эффект на 24 часа!</h3>
-            <p class="advrt__text">
-              Британские ученые провели исследования и доказали, что
-              положительный эффект от использования приложения длится целые
-              сутки!
-            </p>
+            <h3 class="advrt__caption" tabindex="0">Эффект на 24 часа!</h3>
+            <p class="advrt__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="advrt__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
       </div>
+      <!-- Advrt box end -->
+
     </section>
+
+    <!-- -Review -->
     <section class="main__review-box">
+
       <h2 class="visually-hidden">Отзывы о нас</h2>
+
       <div class="review main__review">
         <div class="review__inner-box review__inner-box--left-1x">
+
           <blockquote class="review__item">
             <p class="review__text">
               «Это приложение перевернуло мой мир и позволило по-новому
@@ -504,6 +624,7 @@
               <span class="review__autor-info">29 лет, свободный человек</span>
             </cite>
           </blockquote>
+
           <blockquote class="review__item">
             <p class="review__text">
               «Это приложение перевернуло мой мир и позволило по-новому
@@ -515,6 +636,7 @@
               <span class="review__autor-info">29 лет, свободный человек</span>
             </cite>
           </blockquote>
+
           <blockquote class="review__item">
             <p class="review__text">
               «Это приложение перевернуло мой мир и позволило по-новому
@@ -526,7 +648,9 @@
               <span class="review__autor-info">29 лет, свободный человек</span>
             </cite>
           </blockquote>
+
         </div>
+
         <div class="btn-box review__btn-box">
           <button class="btn-box__btn" aria-label="Кнопка слайда. Первый слайд"></button>
           <button class="btn-box__btn btn-box__btn--active" aria-label="Кнопка слайда. Второй слайд"></button>
@@ -535,12 +659,20 @@
         <button class="btn-mark btn-mark-1 review__btn-mark-1" aria-label="Кнопка слайда. Назад"></button>
         <button class="btn-mark btn-mark-2 review__btn-mark-2" aria-label="Кнопка слайда. Вперед"></button>
       </div>
+
     </section>
+    <!-- Review end -->
+
+    <!-- -Table -->
     <div class="main__table-shell">
       <div class="main__table-box">
+
         <h2 class="visually-hidden">Таблица c тарифами приложения Pink</h2>
-        <table class="table-price main__table-price main__table-price--left-1x">
+
+        <table class="table-price main__table-price main__table-price--left-1x" tabindex="0">
+
           <caption class="visually-hidden">Таблица тарифов приложения Pink</caption>
+
           <tr class="table-price__tr">
             <th class="table-price__th"></th>
             <th class="table-price__th">
@@ -553,6 +685,7 @@
               Анлим<span class="table-price__price">9,99 USD</span>
             </th>
           </tr>
+
           <tr class="table-price__tr">
             <td class="table-price__td">Розовый фильтр</td>
             <td class="table-price__td">
@@ -565,6 +698,7 @@
               <span class="table-price__label">Розовый фильтр</span>
             </td>
           </tr>
+
           <tr class="table-price__tr">
             <td class="table-price__td">Смайлики</td>
             <td class="table-price__td table-price__td--disabled">
@@ -577,6 +711,7 @@
               <span class="table-price__label">Смайлики</span>
             </td>
           </tr>
+
           <tr class="table-price__tr">
             <td class="table-price__td">Комментарии</td>
             <td class="table-price__td table-price__td--disabled">
@@ -589,7 +724,9 @@
               <span class="table-price__label">Комментарии</span>
             </td>
           </tr>
+
         </table>
+
       </div>
       <div class="btn-box main__btn-box">
         <button class="btn-box__btn">
@@ -603,31 +740,46 @@
         </button>
       </div>
     </div>
+    <!-- Table end -->
+
   </main>
+  <!-- Main end -->
+
+  <!-- -Footer -->
   <footer class="footer">
+
     <section class="footer__location">
-      <h2 class="footer__caption">Остались вопросы? Свяжитесь с нами!</h2>
+
+      <h2 class="footer__caption" tabindex="0">Остались вопросы? Свяжитесь с нами!</h2>
+
       <div class="contacts footer__contacts">
+
         <p class="contacts__item">
           <span class="contacts__caption">Звоните:</span>
           <a class="contacts__link" href="tel:+79887646888">+7(988)764-68-88</a>
         </p>
+
         <p class="contacts__item">
           <span class="contacts__caption">Приезжайте в гости:</span>
           <a class="contacts__link" title="Карта ниже" tabindex="0">г. Ставрополь, ул. Дзержинского 176</a>
         </p>
+
         <p class="contacts__item">
           <span class="contacts__caption">Пишите:</span>
           <a class="contacts__link" href="mailto:gurovdmitriy1991@gmail.com">gurovdmitriy1991@gmail.com</a>
         </p>
+
       </div>
+
       <div class="footer__map-box">
         <div class="footer__map">
           <iframe class="footer__map-frame lazyload" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.167502464121!2d41.950404515451694!3d45.04182266954826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f900bcb0f9b9af%3A0xfd52ef9a973669c0!2z0YPQuy4g0JTQt9C10YDQttC40L3RgdC60L7Qs9C-LCAxNzYsINCh0YLQsNCy0YDQvtC_0L7Qu9GMLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5LCAzNTUwMDM!5e0!3m2!1sru!2sru!4v1587826625794!5m2!1sru!2sru" width="320" height="200" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта с проездом"></iframe>
         </div>
       </div>
+
     </section>
     <section class="copyright footer__copyright">
+
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <a class="logo copyright__logo" title="Вы уже здесь" tabindex="0">
         <svg class="logo__img copyright__logo-img" width="147" height="40">
@@ -635,7 +787,10 @@
         </svg>
         <span class="visually-hidden">Пинк - Вы на главной. Логотип пинк</span>
       </a>
+
+      <!-- -Social list -->
       <ul class="social-list copyright__social-list">
+
         <li class="social-list__item">
           <a class="social-list__link" href="#">
             <svg class="social-list__icon" width="18" height="14" fill="#d22856">
@@ -643,6 +798,7 @@
             </svg>
             <span class="visually-hidden">Твиттер</span></a>
         </li>
+
         <li class="social-list__item">
           <a class="social-list__link" href="#">
             <svg class="social-list__icon" width="9" height="18" fill="#d22856">
@@ -651,6 +807,7 @@
             <span class="visually-hidden">Фэйсбук</span>
           </a>
         </li>
+
         <li class="social-list__item">
           <a class="social-list__link" href="#">
             <svg class="social-list__icon social-list__icon-youtube" width="15" height="13" fill="#d22856">
@@ -659,7 +816,10 @@
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
+
       </ul>
+      <!-- Social list end -->
+
       <a class="copyright__link" href="https://github.com/GurovDmitriy">
         Гуров Дмитрий
         <svg class="copyright__link-icon" width="27" height="24">
@@ -667,10 +827,13 @@
         </svg>
       </a>
     </section>
+
   </footer>
-<script src="js/scripts-default.js" async></script>
-<script src="js/scripts-index.js" async></script>
-<script src="js/focus-visible.js" async></script>
+
+  <script src="js/scripts-default.js" async></script>
+  <script src="js/scripts-index.js"   async></script>
+  <script src="js/focus-visible.js"   async></script>
+
 </body>
 
 </html>
