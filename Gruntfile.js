@@ -6,6 +6,9 @@ module.exports = function (grunt) {
     concurrent: {
       targetWatch: ['watch:styleWatch', 'watch:jsWatch'],
       targetWatchDev: ['watch:HtmlWatchDev', 'watch:styleWatchDev', 'watch:jsWatchDev'],
+      options: {
+        logConcurrentOutput: true,
+      },
     },
 
     watch: {
@@ -13,21 +16,17 @@ module.exports = function (grunt) {
         files: ['source/less/**/*.less'],
         tasks: ['less'],
       },
-      jsWatch: {
-        files: ['source/js/*/*.js'],
-        tasks: ['concat'],
-      },
       HtmlWatchDev: {
         files: ['source/*.html'],
-        tasks: ['clean:buildCleanHtmlDev', 'copy:buildHtmlCopy'],
+        tasks: ['clean:buildCleanHtmlDev', 'copy:buildHtmlCopy', 'htmlmin'],
       },
       styleWatchDev: {
         files: ['source/less/**/*.less'],
-        tasks: ['less', 'clean:buildCleanStyleDev', 'copy:buildStyleCopy', 'postcss', 'csso'],
+        tasks: ['less', 'clean:buildCleanStyleDev', 'copy:buildStyleCopy', 'postcss', 'cssmin'],
       },
       jsWatchDev: {
-        files: ['source/js/*/*.js'],
-        tasks: ['concat', 'clean:buildCleanJsDev', 'copy:buildJsCopy', 'uglify'],
+        files: ['source/js/**/*.js'],
+        tasks: ['clean:buildCleanJsDev', 'copy:buildJsCopy', 'uglify'],
       },
     },
 
@@ -52,40 +51,8 @@ module.exports = function (grunt) {
       },
     },
 
-    compress: {
-      dist: {
-        options: {
-          mode: 'brotli',
-/*          brotli: {
-            mode: 1
-          },*/
-        },
-        expand: true,
-        cwd: 'build/',
-        src: ['**/*'],
-        dest: 'build/'
-      }
-    },
-
-    connect: {
-      server_gzip: {
-        options: {
-          port: 3000,
-          livereload: false,
-          base: 'build',
-          middleware: function(connect, options, middlewares) {
-            middlewares.unshift(function(req, res, next) {
-              res.setHeader('Content-Encoding', 'brotli');
-              return next();
-              });
-            return middlewares;
-          },
-        }
-      }
-    },
-
     less: {
-      styleLess: {
+      lessCompil: {
         options: {
           relativeUrls: true,
         },
@@ -106,38 +73,15 @@ module.exports = function (grunt) {
       },
     },
 
-    csso: {
-      styleMin: {
-        options: {
-          report: 'gzip',
-        },
-        expand: true,
-        cwd: 'build/css/',
-        src: ['*.css', '!*.min.css'],
-        dest: 'build/css/',
-      },
-    },
-
-    concat: {
-      options: {
-        separator: '\n',
-      },
-      dist: {
-        src: ['source/js/default/strict.js', 'source/js/default/*.js'],
-        dest: 'source/js/scripts-default.js',
-      },
-      dist2: {
-        src: ['source/js/index/strict.js', 'source/js/index/*.js'],
-        dest: 'source/js/scripts-index.js',
-      },
-      dist3: {
-        src: ['source/js/photo/strict.js', 'source/js/photo/*.js'],
-        dest: 'source/js/scripts-photo.js',
-      },
-      dist4: {
-        src: ['source/js/form/strict.js', 'source/js/form/*.js'],
-        dest: 'source/js/scripts-form.js',
-      },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'build/css/',
+          src: ['*.css', '!*.min.css'],
+          dest: 'build/css/',
+        }]
+      }
     },
 
     uglify: {
@@ -150,24 +94,9 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'build/js',
           src: '*.js',
-          dest: 'build/js'
-        }]
+          dest: 'build/js',
+        }],
       },
-    },
-
-    critical: {
-      test: {
-        options: {
-          base: './',
-          css: [
-              'build/css/style.css',
-          ],
-          width: 320,
-          height: 100
-        },
-        src: 'build/index.html',
-        dest: 'build/index.html'
-      }
     },
 
     svgstore: {
@@ -277,9 +206,11 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'source',
           src: [
+            '*.xml',
             '*.html',
             'fonts/woff2/*',
             'image/min/*',
+            'image/favicon/*',
             'css/style.css',
             'js/*.js',
           ],
@@ -321,22 +252,18 @@ module.exports = function (grunt) {
 
   grunt.registerTask('serve', [
     'less',
-    'concat',
     'browserSync:serverSync',
     'concurrent:targetWatch',
   ]);
 
   grunt.registerTask('serveDev', [
     'less',
-    'concat',
     'clean:buildClean',
     'copy:buildCopy',
     'postcss',
-    'csso',
+    'cssmin',
     'uglify',
-/*    'critical',*/
-/*    'compress',*/
-/*    'connect',*/
+    'htmlmin',
     'browserSync:serverSyncDev',
     'concurrent:targetWatchDev',
   ]);
@@ -349,11 +276,11 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'less',
-    'concat',
     'clean:buildClean',
     'copy:buildCopy',
     'postcss',
-    'csso',
+    'cssmin',
     'uglify',
+    'htmlmin',
   ]);
 };
