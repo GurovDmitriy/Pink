@@ -4,7 +4,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
 
     concurrent: {
-      targetWatch: ['watch:styleWatch', 'watch:jsWatch'],
+      targetWatch: ['watch:styleWatch'],
       targetWatchDev: ['watch:HtmlWatchDev', 'watch:styleWatchDev', 'watch:jsWatchDev'],
       options: {
         logConcurrentOutput: true,
