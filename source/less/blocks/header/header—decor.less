@@ -4,46 +4,8 @@
 
 .no-webp .header {
   @media (min-width: @tablet-width) {
-    background-image: url("../../../image/min/hand-tablet.png"),
-                      url("../../../image/min/back-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 660px auto, cover; 
-  }
-
-  @media (min-width: @tablet-width) and (min-resolution: @x2retina-dpi),
-         (min-width: @tablet-width) and (min-resolution: @x2retina-dppx) {
-    background-image: url("../../../image/min/hand-tablet@2x.png"),
-                      url("../../../image/min/back-tablet@2x.jpg"); 
-  }
-
-  @media (min-width: @tablet-width) and (min-resolution: @x3retina-dpi),
-         (min-width: @tablet-width) and (min-resolution: @x3retina-dppx) {
-    background-image: url("../../../image/min/hand-tablet@3x.png"),
-                      url("../../../image/min/back-tablet@3x.jpg");  
-  }
-
-  @media (min-width: @desktop-width) {
-    background-image: url("../../../image/min/back-desktop.jpg");
-    background-position: center bottom;
-    background-size: cover; 
-  }
-
-  @media (min-width: @desktop-width) and (min-resolution: @x2retina-dpi),
-         (min-width: @desktop-width) and (min-resolution: @x2retina-dppx) {
-      background-image: url("../../../image/min/back-desktop@2x.jpg");    
-  }
-
-  @media (min-width: @desktop-width) and (min-resolution: @x3retina-dpi),
-         (min-width: @desktop-width) and (min-resolution: @x3retina-dppx) {
-    background-image: url("../../../image/min/back-desktop@3x.jpg");    
-  }
-}
-
-.webp .header {
-  @media (min-width: @tablet-width) {
-    background-image: url("../../../image/min/hand-tablet.webp"),
-                      url("../../../image/min/back-tablet.webp");  
+    background-image: url("../../../image/hand-tablet.png"),
+                      url("../../../image/back-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 660px auto, cover;
@@ -51,50 +13,88 @@
 
   @media (min-width: @tablet-width) and (min-resolution: @x2retina-dpi),
          (min-width: @tablet-width) and (min-resolution: @x2retina-dppx) {
-    background-image: url("../../../image/min/hand-tablet@2x.webp"),
-                      url("../../../image/min/back-tablet@2x.webp");    
+    background-image: url("../../../image/hand-tablet@2x.png"),
+                      url("../../../image/back-tablet@2x.jpg");
   }
 
   @media (min-width: @tablet-width) and (min-resolution: @x3retina-dpi),
          (min-width: @tablet-width) and (min-resolution: @x3retina-dppx) {
-    background-image: url("../../../image/min/hand-tablet@3x.webp"),
-                      url("../../../image/min/back-tablet@3x.webp");    
+    background-image: url("../../../image/hand-tablet@3x.png"),
+                      url("../../../image/back-tablet@3x.jpg");
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../../image/min/back-desktop.webp");
+    background-image: url("../../../image/back-desktop.jpg");
     background-position: center bottom;
-    background-size: cover;  
+    background-size: cover;
   }
 
   @media (min-width: @desktop-width) and (min-resolution: @x2retina-dpi),
          (min-width: @desktop-width) and (min-resolution: @x2retina-dppx) {
-    background-image: url("../../../image/min/back-desktop@2x.webp");    
+      background-image: url("../../../image/back-desktop@2x.jpg");
   }
 
   @media (min-width: @desktop-width) and (min-resolution: @x3retina-dpi),
          (min-width: @desktop-width) and (min-resolution: @x3retina-dppx) {
-    background-image: url("../../../image/min/back-desktop@3x.webp");    
+    background-image: url("../../../image/back-desktop@3x.jpg");
+  }
+}
+
+.webp .header {
+  @media (min-width: @tablet-width) {
+    background-image: url("../../../image/hand-tablet.webp"),
+                      url("../../../image/back-tablet.webp");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 660px auto, cover;
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: @x2retina-dpi),
+         (min-width: @tablet-width) and (min-resolution: @x2retina-dppx) {
+    background-image: url("../../../image/hand-tablet@2x.webp"),
+                      url("../../../image/back-tablet@2x.webp");
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: @x3retina-dpi),
+         (min-width: @tablet-width) and (min-resolution: @x3retina-dppx) {
+    background-image: url("../../../image/hand-tablet@3x.webp"),
+                      url("../../../image/back-tablet@3x.webp");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../../image/back-desktop.webp");
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: @x2retina-dpi),
+         (min-width: @desktop-width) and (min-resolution: @x2retina-dppx) {
+    background-image: url("../../../image/back-desktop@2x.webp");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: @x3retina-dpi),
+         (min-width: @desktop-width) and (min-resolution: @x3retina-dppx) {
+    background-image: url("../../../image/back-desktop@3x.webp");
   }
 }
 
 .no-webp .header__nav-box {
-  background-image: url("../../../image/min/hand-mobile.png"),
-                    url("../../../image/min/back-mobile.jpg");  
+  background-image: url("../../../image/hand-mobile.png"),
+                    url("../../../image/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 280px auto, cover;
 
   @media (min-resolution: @x2retina-dpi),
          (min-resolution: @x2retina-dppx) {
-    background-image: url("../../../image/min/hand-mobile@2x.png"),
-                      url("../../../image/min/back-mobile@2x.jpg");    
+    background-image: url("../../../image/hand-mobile@2x.png"),
+                      url("../../../image/back-mobile@2x.jpg");
   }
 
   @media (min-resolution: @x3retina-dpi),
          (min-resolution: @x3retina-dppx) {
-    background-image: url("../../../image/min/hand-mobile@3x.png"),
-                      url("../../../image/min/back-mobile@3x.jpg");    
+    background-image: url("../../../image/hand-mobile@3x.png"),
+                      url("../../../image/back-mobile@3x.jpg");
   }
 
   @media (min-width: @tablet-width) {
@@ -103,26 +103,26 @@
 
   @media (min-width: @desktop-width) {
     background-color: @color-blue-x1;
-  }       
+  }
 }
 
 .webp .header__nav-box {
-  background-image: url("../../../image/min/hand-mobile.webp"),
-                    url("../../../image/min/back-mobile.webp");
+  background-image: url("../../../image/hand-mobile.webp"),
+                    url("../../../image/back-mobile.webp");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 280px auto, cover;
 
   @media (min-resolution: @x2retina-dpi),
          (min-resolution: @x2retina-dppx) {
-    background-image: url("../../../image/min/hand-mobile@2x.webp"),
-                      url("../../../image/min/back-mobile@2x.webp");  
+    background-image: url("../../../image/hand-mobile@2x.webp"),
+                      url("../../../image/back-mobile@2x.webp");
   }
 
   @media (min-resolution: @x3retina-dpi),
          (min-resolution: @x3retina-dppx) {
-    background-image: url("../../../image/min/hand-mobile@3x.webp"),
-                      url("../../../image/min/back-mobile@3x.webp");    
+    background-image: url("../../../image/hand-mobile@3x.webp"),
+                      url("../../../image/back-mobile@3x.webp");
   }
 
   @media (min-width: @tablet-width) {
@@ -131,7 +131,7 @@
 
   @media (min-width: @desktop-width) {
     background-color: @color-blue-x1;
-  }      
+  }
 }
 
 .header__nav {
@@ -150,30 +150,30 @@
 
 .no-webp .header__download-box {
   @media (min-width: @desktop-width) {
-    background-image: url("../../../image/min/filterheader-desktop.png"),
-                      url("../../../image/min/iphonehand-desktop.png");
+    background-image: url("../../../image/filterheader-desktop.png"),
+                      url("../../../image/iphonehand-desktop.png");
     background-repeat: no-repeat, no-repeat;
     background-position: 515px 161px, center bottom;
-    background-size: 230px auto, 1050px auto; 
+    background-size: 230px auto, 1050px auto;
   }
 
   @media (min-width: @desktop-width) and (min-resolution: @x2retina-dpi),
          (min-width: @desktop-width) and (min-resolution: @x2retina-dppx) {
-    background-image: url("../../../image/min/filterheader-desktop@2x.png"),
-                      url("../../../image/min/iphonehand-desktop@2x.png");    
+    background-image: url("../../../image/filterheader-desktop@2x.png"),
+                      url("../../../image/iphonehand-desktop@2x.png");
   }
 
   @media (min-width: @desktop-width) and (min-resolution: @x3retina-dpi),
          (min-width: @desktop-width) and (min-resolution: @x3retina-dppx) {
-    background-image: url("../../../image/min/filterheader-desktop@3x.png"),
-                      url("../../../image/min/iphonehand-desktop@3x.png");    
+    background-image: url("../../../image/filterheader-desktop@3x.png"),
+                      url("../../../image/iphonehand-desktop@3x.png");
   }
 }
 
 .webp .header__download-box {
   @media (min-width: @desktop-width) {
-    background-image: url("../../../image/min/filterheader-desktop.webp"),
-                      url("../../../image/min/iphonehand-desktop.webp");
+    background-image: url("../../../image/filterheader-desktop.webp"),
+                      url("../../../image/iphonehand-desktop.webp");
 
     background-repeat: no-repeat, no-repeat;
     background-position: 515px 161px, center bottom;
@@ -182,13 +182,13 @@
 
   @media (min-width: @desktop-width) and (min-resolution: @x2retina-dpi),
          (min-width: @desktop-width) and (min-resolution: @x2retina-dppx) {
-    background-image: url("../../../image/min/filterheader-desktop@2x.webp"),
-                      url("../../../image/min/iphonehand-desktop@2x.webp");    
+    background-image: url("../../../image/filterheader-desktop@2x.webp"),
+                      url("../../../image/iphonehand-desktop@2x.webp");
   }
 
   @media (min-width: @desktop-width) and (min-resolution: @x3retina-dpi),
          (min-width: @desktop-width) and (min-resolution: @x3retina-dppx) {
-    background-image: url("../../../image/min/filterheader-desktop@3x.webp"),
-                      url("../../../image/min/iphonehand-desktop@3x.webp");    
+    background-image: url("../../../image/filterheader-desktop@3x.webp"),
+                      url("../../../image/iphonehand-desktop@3x.webp");
   }
 }
